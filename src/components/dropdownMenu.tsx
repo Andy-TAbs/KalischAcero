@@ -8,15 +8,15 @@ const DropdownMenu: React.FC = () => {
     };
 
     return (
-        <div className="dropdown-menu">
-            <button className="dropdown-toggle" onClick={toggleMenu}>
+        <div className="relative">
+            <button className="bg-blue-500 text-white px-4 py-2 rounded" onClick={toggleMenu}>
                 Menu
             </button>
             {isOpen && (
-                <ul className="dropdown-items">
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
+                <ul className="absolute top-10 right-0 bg-white border border-gray-300 rounded shadow">
+                    <li className="px-4 py-2 hover:bg-gray-100">Item 1</li>
+                    <li className="px-4 py-2 hover:bg-gray-100">Item 2</li>
+                    <li className="px-4 py-2 hover:bg-gray-100">Item 3</li>
                 </ul>
             )}
         </div>

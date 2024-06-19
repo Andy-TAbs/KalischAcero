@@ -5,13 +5,13 @@ import { Footer } from "../components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex flex-col  items-center justify-between">
-      <div>
+    <div className="flex flex-col min-h-screen">
+      <div className="">
         <Header title="Kalisch Acero" />
       </div>
-      <div>
+      <div className="flex flex-shrink-0 mt-auto">
         <Footer />
       </div>
-    </main>
+    </div>
   );
 }
