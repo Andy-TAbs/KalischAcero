@@ -9,7 +9,7 @@ export interface FooterProps {
 export const Footer: React.FC<FooterProps> = () => {
     return (
         <div>
-            <footer className="flex flex-col md:flex-row items-center justify-between w-screen h-72  bg-black">
+            <footer className="flex flex-col md:flex-row items-center justify-between w-screen h-72 bg  bg-black">
                 <div>
                     <div className="flex flex-col">
                         <img src="/kfa_movil_40_white.png" alt="Logo_KalischFA_white" />

@@ -1,16 +1,34 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 import DropdownMenu from './dropdownMenu';
-import  { SecHeader } from './secHeader';
+import  { SecHeader } from './secHeader.client';
 
 interface HeaderProps {
     title: string;
 }
 
-export const Header: React.FC<HeaderProps> = ({ title }) => {
+ export const Header: React.FC<HeaderProps> = ({ title }) => {
+        
+        const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        // Esta función se ejecuta solo en el cliente
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        // Establecer el valor inicial al montar el componente
+        handleResize();
+
+        // Agregar listener para cambios de tamaño
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+    
     return (
 <div>
-    <SecHeader title="Header" />
+    {!isMobile && <SecHeader title="Header" />} {/* Render SecHeader only if not mobile */}
     <header className='w-screen'>
         <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
             <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
