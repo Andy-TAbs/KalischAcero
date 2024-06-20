@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import { Header } from "./Header";
 
 export function Hero() {
-  return (
+return (
     <div>
-      <div className="flex flex-col">
+     <div className="flex flex-col">
         <div className="">
             <div id="animation-carousel" className="relative w-full" data-carousel="slide">
                 <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
@@ -32,11 +33,11 @@ export function Hero() {
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
                         </svg>
                         <span className="sr-only">Next</span>
-                      </span>
+                    </span>
                 </button>
             </div>
         </div>
-      </div>
     </div>
-  );
+    </div>
+    );
 }
