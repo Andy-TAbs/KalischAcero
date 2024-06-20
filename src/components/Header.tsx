@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect} from 'react';
 import DropdownMenu from './dropdownMenu';
-import { SecHeader } from '@/app/page';
+import { SecHeader } from './secHeader';
 
 interface HeaderProps {
     title: string;
