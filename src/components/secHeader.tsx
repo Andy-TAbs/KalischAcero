@@ -9,7 +9,7 @@ interface HeaderProps {
 export const SecHeader: React.FC<HeaderProps> = ({ title }) => {
     return (
 <div>
-    <header className='w-screen'>
+    <header className='w-screen h-10'>
         <nav className="bg-white border-gray-200 px-6 lg:px-6 py-1 dark:bg-gray-800">
             <div className="flex flex-wrap justify-between items-end mx-auto max-w-screen-xl">
                     <div className="flex flex-row" >
@@ -33,7 +33,8 @@ export const SecHeader: React.FC<HeaderProps> = ({ title }) => {
                 </div>
                 <div className="hidden justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                     <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                        <li>
+                        <li className='flex flex-row'>
+                            <img src="/cc_logo.png"  className="mr-2 h-4 w-4 sm:h-9" alt="Flowbite Logo" />
                             <a href="#" className="block py-2 pr-4 pl-3 text-xs text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Cliente consentido</a>
                         </li>
                         <li>

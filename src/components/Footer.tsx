@@ -14,7 +14,24 @@ export const Footer: React.FC<FooterProps> = () => {
                     <div className="flex flex-col">
                         <img src="/kfa_movil_40_white.png" alt="Logo_KalischFA_white" />
                         <div className="flex flex-row">
-
+                            <div className="flex flex-row">
+                                <img src="/logo-facebook-white.png" className="w-3 h-3 flex" alt="Facebook" />
+                            </div>
+                            <div>
+                                <img src="/instagram.png" className="w-3 h-3 flex" alt="Instagram" />
+                            </div>
+                            <div>
+                                <img src="/twitter.png" className="w-3 h-3 flex" alt="Twitter" />
+                            </div>
+                            <div>
+                                <img src="/youtube.png" className="w-3 h-3 flex" alt="Youtube" />
+                            </div>
+                            <div>
+                                <img src="/linkedin.png" className="w-3 h-3 flex" alt="Linkedin" />
+                            </div>
+                            <div>
+                                <img src="/tiktok.png" className="w-3 h-3 flex" alt="tik tok"/>
+                            </div>
                         </div>
                     </div>
 
