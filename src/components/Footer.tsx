@@ -34,19 +34,17 @@ export const Footer: React.FC<FooterProps> = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </footer>
 
-            <footer className="flex flex-col md:flex-row items-center justify-between w-screen h-20 lg:max-h-20 bg-gray-500">
-            <div className="flex flex-row ">
-                <div>
+            <footer className="flex flex-col md:flex-row items-center justify-between w-screen h-20 mr-96 lg:max-h-20 bg-gray-500">
+            <div className="flex mr-16 items-end ">
                 <p className=" text-gray-300 text-xs">© 2022 Todos los derechos reservados.</p>
                 </div>
                 <div className="w-100 items-end">
                 <a className="text-gray-300 text-xs">Términos y Condiciones | Aviso de Privacidad</a>
                 </div>
-            </div>
+            
         </footer>
     </div>
     );
