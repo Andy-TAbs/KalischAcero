@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import DropdownMenu from './dropdownMenu';
 
 interface HeaderProps {
     title: string;
