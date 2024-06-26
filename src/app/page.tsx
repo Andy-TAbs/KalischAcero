@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import { Header } from "../components/Header";
-import { Footer } from "../components/Footer";
+import { Header } from "../components/Global/Header";
+import { Footer } from "../components/Global/Footer";
 import { Hero } from "../components/Hero";
 import dynamic from 'next/dynamic';
 
