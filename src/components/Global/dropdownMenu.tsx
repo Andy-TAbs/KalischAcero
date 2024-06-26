@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import DropdownMenuMobile from '../Mobile/dropdownMenu-Mobile';
+import DropdownMenuMobile from '../Mobile/dropdownMenuMobile';
 
 interface buttonText {
     title: string;

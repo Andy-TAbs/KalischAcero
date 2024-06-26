@@ -3,7 +3,7 @@
 import React, { useState, useEffect} from 'react';
 import DropdownMenu from './dropdownMenu';
 import { SecHeader } from './secHeader';
-import  DropdownMenuMobile  from '../Mobile/dropdownMenu-Mobile';
+import  DropdownMenuMobile  from '../Mobile/dropdownMenuMobile';
 
 interface HeaderProps {
     title: string;
