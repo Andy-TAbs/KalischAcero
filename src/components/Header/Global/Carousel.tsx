@@ -11,7 +11,6 @@ const Carousel = () => {
         const newIndex = (currentIndex - 1 + images.length) % images.length;
         setCurrentIndex(newIndex);
         };
-    
         const nextSlide = () => {
         const newIndex = (currentIndex + 1) % images.length;
         setCurrentIndex(newIndex);
