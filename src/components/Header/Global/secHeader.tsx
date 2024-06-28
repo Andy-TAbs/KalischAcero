@@ -24,7 +24,9 @@ export const SecHeader: React.FC<HeaderProps> = ({ title }) => {
                             </div>
                         </div>
                         <div>
-                            <img src="/flecha.png" className="h-4 w-3 ml-3 mt-3 sm:h-3" alt="Flecha" />
+                            <svg xmlns="http://www.w3.org/2000/svg" className="mt-3" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 16.5l-8-8 1.5-1.5L12 13.5l6.5-6.5 1.5 1.5z"  fill="currentColor"/>
+                            </svg>
                         </div>
                     </div>
                 <div className="hidden pr-40 pb-5 justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
