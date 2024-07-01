@@ -53,6 +53,15 @@ export const Footer: React.FC<FooterProps> = () => {
                 <div className='flex h-60 w-60'>
                     <img src="/esr_gptw-1.png" className=" ml-32 w-60 h-24 " alt="Kalisch_Logo"/>
                 </div>
+                <div className='flex flex-col ml-32'>
+                    <p className='pl-7 text-sm text-white'>Suscribete a nuestras noticias</p>
+                    <div className='flex flex-col w-72 pt-3'>
+                        <div className=' ml-7 mt-2 py-4 justify-items-center bg-white flex mr-32 items-center rounded-md'>
+                            <a className=' text-xs text-gray-400 pl-4'>Suscribete</a>
+                        </div>
+                        <p className='pl-7 pt-2 text-xs text-zinc-400 '>Al suscribirse, usted, está de acuerdo con nuestro <a className='text-xs text-zinc-600 hover:text-white hover:transition'>Aviso de privacidad</a> y proporciona su consentimiento para recibir actualizaciones de kalisch Acero.</p>
+                        </div>
+                </div>
             </div>
         </div>
     </footer>
