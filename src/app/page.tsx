@@ -11,7 +11,7 @@ export default function Home() {
             <div className="h-28">
                 <Header title="Kalisch Acero" />
             </div>
-            <div>
+            <div className="h-auto">
                 <Hero />
             </div>
             <div>
