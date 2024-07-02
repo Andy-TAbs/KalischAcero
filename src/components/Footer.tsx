@@ -83,7 +83,7 @@ export const Footer: React.FC<FooterProps> = () => {
             <div className="lg:flex  lg:ml-16 lg:pl-16">
                 <a className="text-gray-300 text-xs">© 2022 Todos los derechos reservados.</a>
             </div>
-            <div className="lg:flex xl:ml-96 lg:ml-80 md:ml-72 xl:pl-96 lg:pl-80 md:pl-72">
+            <div className="flex xl:ml-96 lg:ml-80 md:ml-72 mt-10 xl:pl-96 lg:pl-80 md:pl-72">
                 <a className="text-gray-300 text-xs sm:pb-10">Términos y Condiciones | Aviso de Privacidad</a>
             </div>
         </div>
