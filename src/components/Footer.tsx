@@ -13,66 +13,78 @@ export interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = () => {
     return (
-        <div>
-    <footer className="flex flex-col md:flex-row items-start justify-between w-full h-72 bg-black">
-        <div className=' mt-7 ml-48'>
-            <div className='flex flex-row mt-5 ml-5'>
-                <div className="flex-col flex">
-                    <img src="/kfa_movil_40_white.png" alt="Logo_KalischFA_white" />
-                    <div className="flex flex-row">
-                        <div className="flex flex-row h-7 w-7 mt-3 ml-2">
-                            <FaFacebookSquare className='bg-black h-7 w-7 text-zinc-400' />
-                        </div>
-                        <div className="flex flex-row h-7 w-7 mt-3 ml-2">
-                            <FaInstagram className='bg-black h-7 w-7 text-zinc-400' />
-                        </div>
-                        <div className="flex flex-row h-7 w-7 mt-3 ml-2">
-                            <FaXTwitter className='bg-black h-7 w-7 text-zinc-400' />
-                        </div>
-                        <div className="flex flex-row h-7 w-7 mt-3 ml-2">
-                            <FaYoutube className='bg-black h-8 w-8 text-zinc-400' />
-                        </div>
-                        <div className="flex flex-row h-7 w-7 mt-3 ml-2">
-                            <FaLinkedin className='bg-black h-7 w-7 text-zinc-400' />
-                        </div>
-                        <div className="flex flex-row h-7 w-7 mt-3 ml-2">
-                            <FaTiktok className='bg-black h-7 w-7 text-zinc-400' />
-                        </div>
+        <div className=''>
+<footer className="flex flex-col items-start justify-between w-screen lg:h-80 xs:h-auto sm:h-auto bg-black">
+    <div className='xl:mt-7 xl:ml-48 sm:ml-10 sm:flex-col md:flex'>
+        <div className='flex flex-col md:flex-row'>
+            {/* Sección de redes sociales */}
+            <div className="flex-col flex mb-5 sm:mb-0 xs:pt-5 pl-5">
+                <img src="/kfa_movil_40_white.png" alt="Logo_KalischFA_white" />
+                <div className="flex flex-row mt-3">
+                    <div className="flex flex-row h-7 w-7 mt-2 mr-2">
+                        <FaFacebookSquare className='bg-black h-7 w-7 text-zinc-400' />
                     </div>
-                </div>
-                <div className='flex flex-col '>
-                    <p className='pl-7 text-sm text-white'>Empresa</p>
-                    <div className='flex flex-col pt-7'>
-                        <p className='pl-7 pt-2 text-sm text-zinc-400 hover:text-white hover:transition'>Acerca de Nosotros</p>
-                        <p className='pl-7 pt-2 text-sm text-zinc-400 hover:text-white hover:transition'>Misión y Visión</p>
-                        <p className='pl-7 pt-2 text-sm text-zinc-400 hover:text-white hover:transition '>Código de ética</p>
-                        <p className='pl-7 pt-2 text-sm text-zinc-400 hover:text-white hover:transition'>Cultura</p>
-                        <p className='pl-7 pt-2 text-sm text-zinc-400 hover:text-white hover:transition'>Bolsa de Trabajo</p>
+                    <div className="flex flex-row h-7 w-7 mt-2 mr-2">
+                        <FaInstagram className='bg-black h-7 w-7 text-zinc-400' />
                     </div>
-                </div>
-                <div className='flex h-60 w-60'>
-                    <img src="/esr_gptw-1.png" className=" ml-32 w-60 h-24 " alt="Kalisch_Logo"/>
-                </div>
-                <div className='flex flex-col ml-32'>
-                    <p className='pl-7 text-sm text-white'>Suscribete a nuestras noticias</p>
-                    <div className='flex flex-col w-72 pt-3'>
-                        <div className=' ml-7 mt-2 py-4 justify-items-center bg-white flex mr-32 items-center rounded-md'>
-                            <a className=' text-xs text-gray-400 pl-4'>Suscribete</a>
-                        </div>
-                        <p className='pl-7 pt-2 text-xs text-zinc-400 '>Al suscribirse, usted, está de acuerdo con nuestro <a className='text-xs text-zinc-600 hover:text-white hover:transition'>Aviso de privacidad</a> y proporciona su consentimiento para recibir actualizaciones de kalisch Acero.</p>
-                        </div>
+                    <div className="flex flex-row h-7 w-7 mt-2 mr-2">
+                        <FaXTwitter className='bg-black h-7 w-7 text-zinc-400' />
+                    </div>
+                    <div className="flex flex-row h-7 w-7 mt-2 mr-2">
+                        <FaYoutube className='bg-black h-8 w-8 text-zinc-400' />
+                    </div>
+                    <div className="flex flex-row h-7 w-7 mt-2 mr-2">
+                        <FaLinkedin className='bg-black h-7 w-7 text-zinc-400' />
+                    </div>
+                    <div className="flex flex-row h-7 w-7 mt-2 mr-2">
+                        <FaTiktok className='bg-black h-7 w-7 text-zinc-400' />
+                    </div>
                 </div>
             </div>
+            {/* Sección de empresa */}
+            <div className='flex flex-col mb-5 sm:mb-0  sm:pt-3 '>
+                <p className='pl-7 text-sm  text-white'>Empresa</p>
+                <div className='flex flex-col lg:pt-3'>
+                    <p className='pl-7 pt-2 text-sm text-zinc-400 hover:text-white hover:transition'>Acerca de Nosotros</p>
+                    <p className='pl-7 pt-2 text-sm text-zinc-400 hover:text-white hover:transition'>Misión y Visión</p>
+                    <p className='pl-7 pt-2 text-sm text-zinc-400 hover:text-white hover:transition'>Código de ética</p>
+                    <p className='pl-7 pt-2 text-sm text-zinc-400 hover:text-white hover:transition'>Cultura</p>
+                    <p className='pl-7 pt-2 text-sm text-zinc-400 hover:text-white hover:transition'>Bolsa de Trabajo</p>
+                </div>
+            </div>
+            {/* Sección del logo */}
+            <div className='flex sm:pl-7 h-30 mb-6 w-72 lg:mb-5 sm:mb-0'>
+                <img src="/esr_gptw-1.png" className="xl:ml-32 w-60 h-24 " alt="Kalisch_Logo"/>
+            </div>
+            {/* Sección de suscripción */}
+            <div className='flex flex-col md:ml-0 xl:ml-32 sm:ml-5 sm:mb-5 pb-5 md:pr-14'>
+    <p className='pl-7 text-base sm:text-sm md:text-md lg:text-lg text-white'>
+        Suscríbete a nuestras noticias
+    </p>
+    <div className='flex flex-col lg:w-72 md:w-auto pt-3'>
+        <div className='lg:ml-7 lg:mt-2 lg:py-4 justify-items-center w-auto bg-white flex lg:mr-32 items-center rounded-md'>
+            <a className='text-xs text-gray-400 pl-4'>Suscríbete</a>
         </div>
-    </footer>
+        <p className='pl-7 pt-2 text-xs md:w-auto text-zinc-400'>
+            Al suscribirse, usted, está de acuerdo con nuestro <a className='text-xs text-zinc-600 hover:text-white hover:transition'>Aviso de privacidad</a> y proporciona su consentimiento para recibir actualizaciones de Kalisch Acero.
+        </p>
+    </div>
+</div>
 
-    <footer className="flex flex-col md:flex-row items-center justify-between w-full h-20 lg:max-h-20 bg-gray-500">
-        <div className='flex flex-row'>
-            <div className="flex items-end mr-4">
+        </div>
+    </div>
+</footer>
+
+
+
+
+    <footer className="lg:flex flex-col md:flex-row items-center justify-between w-full h-20 lg:max-h-20 bg-gray-500">
+        <div className='w-screen flex flex-row items-center'>
+            <div className="lg:flex  lg:ml-16 lg:pl-16">
                 <a className="text-gray-300 text-xs">© 2022 Todos los derechos reservados.</a>
             </div>
-            <div className="flex items-end w-full md:w-auto">
-                <a className="text-gray-300 text-xs">Términos y Condiciones | Aviso de Privacidad</a>
+            <div className="flex xl:ml-96 lg:ml-80 md:ml-72 mt-10 xl:pl-96 lg:pl-80 md:pl-72">
+                <a className="text-gray-300 text-xs sm:pb-10">Términos y Condiciones | Aviso de Privacidad</a>
             </div>
         </div>
     </footer>
