@@ -9,6 +9,47 @@ interface HeaderProps {
     title: string;
 }
 
+const headerOptionsNosotros = [
+    { label: 'Acerca de nosotros', link: '/' },
+    { label: 'Misión y Visión', link: '/about' },
+    { label: 'Código de ética', link: '/services' },
+    { label: 'Cultura', link: '/contact' },
+    { label: 'Talento', link: '/blog' },
+    { label: 'Noticias', link: '/blog' }
+  ];
+  const headerOptionsSostenibilidad = [
+    { label: 'Acerca de nosotros', link: '/' },
+    { label: 'Misión y Visión', link: '/about' },
+    { label: 'Código de ética', link: '/services' },
+    { label: 'Cultura', link: '/contact' },
+    { label: 'Talento', link: '/blog' },
+    { label: 'Noticias', link: '/blog' }
+  ];
+  const headerOptionsDivisiones = [
+    { label: 'Acerca de nosotros', link: '/' },
+    { label: 'Misión y Visión', link: '/about' },
+    { label: 'Código de ética', link: '/services' },
+    { label: 'Cultura', link: '/contact' },
+    { label: 'Talento', link: '/blog' },
+    { label: 'Noticias', link: '/blog' }
+  ];
+  const headerOptionsProductos = [
+    { label: 'Acerca de nosotros', link: '/' },
+    { label: 'Misión y Visión', link: '/about' },
+    { label: 'Código de ética', link: '/services' },
+    { label: 'Cultura', link: '/contact' },
+    { label: 'Talento', link: '/blog' },
+    { label: 'Noticias', link: '/blog' }
+  ];
+  const headerOptionsPromociones = [
+    { label: 'Acerca de nosotros', link: '/' },
+    { label: 'Misión y Visión', link: '/about' },
+    { label: 'Código de ética', link: '/services' },
+    { label: 'Cultura', link: '/contact' },
+    { label: 'Talento', link: '/blog' },
+    { label: 'Noticias', link: '/blog' }
+  ];
+
 export const Header: React.FC<HeaderProps> = ({ title }) => {
     return (
         <div className=''>
@@ -34,19 +75,19 @@ export const Header: React.FC<HeaderProps> = ({ title }) => {
                                     </button>
                                 </li>
                                     <li className="lg:mr-10 pt-5">
-                                        <DropdownMenu title="Nosotros"/>
+                                        <DropdownMenu title="Nosotros" options={headerOptionsNosotros}/>
                                     </li>
                                     <li className="lg:mr-10 pt-5">
-                                        <DropdownMenu title="Sostenibilidad"/>
+                                        <DropdownMenu title="Sostenibilidad" options={headerOptionsSostenibilidad}/>
                                     </li>
                                     <li className="lg:mr-10 pt-5">
-                                        <DropdownMenu title="Divisiones" />
+                                        <DropdownMenu title="Divisiones" options={headerOptionsDivisiones}/>
                                     </li>
                                     <li className="lg:mr-10 pt-5">
-                                        <DropdownMenu title='Productos' />
+                                        <DropdownMenu title='Productos' options={headerOptionsProductos}/>
                                     </li>
                                     <li className="lg:mr-10 pt-5">
-                                        <DropdownMenu title='Promociones' />
+                                        <DropdownMenu title='Promociones' options={headerOptionsPromociones}/>
                                     </li>
                                     <li className="lg:mr-10 pt-5">
                                         <a href="#" className=" pt-5">Tienda en línea</a>
