@@ -78,8 +78,8 @@ export const Footer: React.FC<FooterProps> = () => {
     </div>
 </footer>
 
-    <footer className="lg:flex flex-col md:flex-row items-center justify-between w-full h-20 lg:max-h-20 bg-gray-500">
-        <div className='w-screen flex flex-row items-center'>
+    <footer className="lg:flex flex-col md:flex-row  items-center justify-between w-full h-20 lg:max-h-20 bg-gray-500">
+        <div className='w-screen flex xs:flex-col sm:flex-row  lg:flex-row items-center'>
             <div className="lg:flex  lg:ml-16 lg:pl-16">
                 <a className="text-gray-300 text-xs">© 2022 Todos los derechos reservados.</a>
             </div>
