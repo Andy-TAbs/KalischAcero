@@ -18,37 +18,30 @@ const headerOptionsNosotros = [
     { label: 'Noticias', link: '/blog' }
   ];
   const headerOptionsSostenibilidad = [
-    { label: 'Acerca de nosotros', link: '/' },
-    { label: 'Misión y Visión', link: '/about' },
-    { label: 'Código de ética', link: '/services' },
-    { label: 'Cultura', link: '/contact' },
-    { label: 'Talento', link: '/blog' },
-    { label: 'Noticias', link: '/blog' }
-  ];
-  const headerOptionsDivisiones = [
-    { label: 'Acerca de nosotros', link: '/' },
-    { label: 'Misión y Visión', link: '/about' },
-    { label: 'Código de ética', link: '/services' },
-    { label: 'Cultura', link: '/contact' },
-    { label: 'Talento', link: '/blog' },
-    { label: 'Noticias', link: '/blog' }
-  ];
-  const headerOptionsProductos = [
-    { label: 'Acerca de nosotros', link: '/' },
-    { label: 'Misión y Visión', link: '/about' },
-    { label: 'Código de ética', link: '/services' },
-    { label: 'Cultura', link: '/contact' },
-    { label: 'Talento', link: '/blog' },
-    { label: 'Noticias', link: '/blog' }
-  ];
-  const headerOptionsPromociones = [
-    { label: 'Acerca de nosotros', link: '/' },
-    { label: 'Misión y Visión', link: '/about' },
-    { label: 'Código de ética', link: '/services' },
-    { label: 'Cultura', link: '/contact' },
-    { label: 'Talento', link: '/blog' },
-    { label: 'Noticias', link: '/blog' }
-  ];
+    { label: 'Filantropía', link: '/' },
+    { label: 'Empresa socialmente responsable', link: '/about' },
+    { label: 'Politica de medio ambiente', link: '/services' }
+];
+const headerOptionsDivisiones = [
+    { label: 'Kalisch Steel', link: '/' },
+    { label: 'Faber', link: '/about' },
+    { label: 'Besthal', link: '/services' },
+    { label: 'Boxtool', link: '/contact' }
+];
+const headerOptionsProductos = [
+    { label: 'Planos', link: '/' },
+    { label: 'Estructurales', link: '/about' },
+    { label: 'Perfilería', link: '/services' },
+    { label: 'Recubiertos', link: '/contact' },
+    { label: 'Solidos', link: '/blog' },
+    { label: 'Trefilados', link: '/blog' },
+    { label: 'Polinería', link: '/blog' },
+    { label: 'Tubería', link: '/blog' }
+];
+const headerOptionsPromociones = [
+    { label: 'Promociones', link: '/' },
+    { label: 'La hora del hierro', link: '/about' }
+];
 
 export const Header: React.FC<HeaderProps> = ({ title }) => {
     return (
