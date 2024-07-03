@@ -67,9 +67,6 @@ export const Footer: React.FC<FooterProps> = () => {
                 Suscríbete
             </a>
         </div>
-
-
-
         <div>
             <p className='pl-7 pt-2 text-xs md:w-auto text-zinc-400'>
                 Al suscribirse, usted, está de acuerdo con nuestro <a className='text-xs text-zinc-600 hover:text-white hover:transition'>Aviso de privacidad</a> y proporciona su consentimiento para recibir actualizaciones de Kalisch Acero.
@@ -77,13 +74,9 @@ export const Footer: React.FC<FooterProps> = () => {
         </div>
     </div>
 </div>
-
         </div>
     </div>
 </footer>
-
-
-
 
     <footer className="lg:flex flex-col md:flex-row items-center justify-between w-full h-20 lg:max-h-20 bg-gray-500">
         <div className='w-screen flex flex-row items-center'>
@@ -96,6 +89,5 @@ export const Footer: React.FC<FooterProps> = () => {
         </div>
     </footer>
 </div>
-
     );
 };

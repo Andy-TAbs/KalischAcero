@@ -7,12 +7,12 @@ import Carousel from "./Header/Global/Carousel";
 
 export const Hero = () => {
 return (
-    <div className="w-full contents">
+    <div className="w-full contents overflow-hidden">
         <div className="flex flex-row">
-            <div className="">
+            <div className="fle">
             <img src="/Portada_K_1.png" alt="Logo_KalischFA_white" />
             </div>
-            <div>
+            <div className="">
                 <img src="/Portada_K_2.png" alt="Logo_KalischFA_black" />
             </div>
         </div>
