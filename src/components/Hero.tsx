@@ -7,9 +7,9 @@ import Carousel from "./Header/Global/Carousel";
 
 export const Hero = () => {
 return (
-    <div className="w-full">
+    <div className="w-full contents">
         <div className="flex flex-row">
-            <div>
+            <div className="">
             <img src="/Portada_K_1.png" alt="Logo_KalischFA_white" />
             </div>
             <div>

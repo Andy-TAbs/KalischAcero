@@ -11,19 +11,19 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ title }) => {
     return (
-        <div className=' '>
+        <div className=''>
             <div className="hidden lg:block h-10">
                 <SecHeader title="Header" />
             </div>
             <div className="h-28 ">
                 <header className="w-full">
-                    <nav className="bg-white border-gray-200 px-2 lg:px-4 py-2.5 dark:bg-gray-800 border-b-2 shadow-md ">
+                    <nav className="bg-white border-gray-200 px-2  lg:px-4 dark:bg-gray-800 border-b-2 shadow-md ">
                         <div className="flex items-center justify-between w-full lg:justify-start lg:flex-grow-0 lg:order-2">
                             <div className="lg:hidden">
                                 <DropdownMenuMobile />
                             </div>
                             <a href="https://flowbite.com" className="mx-auto lg:mx-0 xl::ml-12">
-                                <img src="/kfa_movil_50.png" className="lg:h-9 sm:h-9 2xl:pl-20 2xl:ml-28" alt="Kalisch_Logo"/>
+                                <img src="/kfa_movil_50.png" className="lg:h-9 sm:h-9 xs:h-9 2xl:pl-20 2xl:ml-28" alt="Kalisch_Logo"/>
                             </a>
                             <img src="/search.png" className="w-6 h-6 lg:hidden" alt="Search" />
                             <div className="hidden lg:flex flex-col lg:flex-row lg:items-center lg:ml-auto 2xl:mr-52 ">
