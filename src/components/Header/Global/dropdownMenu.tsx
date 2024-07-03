@@ -1,14 +1,13 @@
 "use client";
 import React, { useState } from 'react';
-import DropdownMenuMobile from '../Mobile/dropdownMenuMobile';
 
 interface buttonText {
-    title: string;
+  title: string;
+  options: { label: string, link: string }[];
 }
 
-const DropdownMenu: React.FC<buttonText> = ({ title }) => {
+const DropdownMenu: React.FC<buttonText> = ({ title, options }) => {
   const [isOpen, setIsOpen] = useState(false);
-
 
   const handleMouseEnter = () => {
     setIsOpen(true);
@@ -27,19 +26,15 @@ const DropdownMenu: React.FC<buttonText> = ({ title }) => {
       </button>
 
       {isOpen && (
-        <ul className="absolute z-10 bg-white shadow-lg w-48 "
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
+        <ul className="absolute z-10 bg-white shadow-lg w-48"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
         >
-          <li className="block py-2 px-4 text-gray-700 hover:bg-gray-100">
-            <a href="#">Opción 1</a>
-          </li>
-          <li className="block py-2 px-4 text-gray-700 hover:bg-gray-100">
-            <a href="#">Opción 2</a>
-          </li>
-          <li className="block py-2 px-4 text-gray-700 hover:bg-gray-100">
-            <a href="#">Opción 3</a>
-          </li>
+          {options.map((option, index) => (
+            <li key={index} className="block py-2 px-4 text-gray-700 hover:bg-gray-100">
+              <a href={option.link}>{option.label}</a>
+            </li>
+          ))}
         </ul>
       )}
     </div>
@@ -47,3 +42,4 @@ const DropdownMenu: React.FC<buttonText> = ({ title }) => {
 };
 
 export default DropdownMenu;
+
