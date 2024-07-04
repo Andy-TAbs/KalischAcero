@@ -4,6 +4,7 @@ import React from 'react';
 import DropdownMenu from './dropdownMenu';
 import { SecHeader } from './secHeader';
 import DropdownMenuMobile from '../Mobile/dropdownMenuMobile';
+import Link from 'next/link';
 
 interface HeaderProps {
     title: string;
@@ -23,10 +24,10 @@ const headerOptionsNosotros = [
     { label: 'Politica de medio ambiente', link: '/services' }
 ];
 const headerOptionsDivisiones = [
-    { label: 'Kalisch Steel', link: '/' },
-    { label: 'Faber', link: '/about' },
-    { label: 'Besthal', link: '/services' },
-    { label: 'Boxtool', link: '/contact' }
+    { label: 'Kalisch Steel', link: 'https://kalischsteel.com/' },
+    { label: 'Faber', link: 'https://www.faberkalisch.com/' },
+    { label: 'Besthal', link: 'https://besthal.com/' },
+    { label: 'Boxtool', link: 'https://www.boxtool.mx/' }
 ];
 const headerOptionsProductos = [
     { label: 'Planos', link: '/' },
@@ -56,7 +57,7 @@ export const Header: React.FC<HeaderProps> = ({ title }) => {
                             <div className="lg:hidden">
                                 <DropdownMenuMobile />
                             </div>
-                            <a href="https://flowbite.com" className="mx-auto lg:mx-0 xl::ml-12">
+                            <a href="/" className="mx-auto lg:mx-0 xl::ml-12">
                                 <img src="/kfa_movil_50.png" className="lg:h-9 sm:h-9 xs:h-14 2xl:pl-20 2xl:ml-28" alt="Kalisch_Logo"/>
                             </a>
                             <img src="/search.png" className="w-6 h-6 lg:hidden" alt="Search" />

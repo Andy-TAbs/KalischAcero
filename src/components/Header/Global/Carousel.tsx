@@ -16,8 +16,8 @@ const Carousel = () => {
         setCurrentIndex(newIndex);
         };
         return (
-        <div className="relative w-full max-w-4xl mx-auto">
-            <div className="overflow-hidden rounded-lg">
+        <div className="relative   mx-auto">
+            <div className="overflow-hidden w-full rounded-lg">
             <img src={images[currentIndex]} className="w-full h-64 object-cover md:h-96" alt={`Slide ${currentIndex}`} />
             </div>
             <button

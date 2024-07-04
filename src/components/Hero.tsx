@@ -9,13 +9,14 @@ export const Hero = () => {
 return (
     <div className="w-full contents overflow-hidden">
         <div className="flex flex-row">
-            <div className="fle">
+            <div className="">
             <img src="/Portada_K_1.png" className="" alt="Logo_KalischFA_white" />
             </div>
             <div className="">
                 <img src="/Portada_K_2.png" className="" alt="Logo_KalischFA_black" />
             </div>
         </div>
+        <Carousel />
 </div>
     );
 }
