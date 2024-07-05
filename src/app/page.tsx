@@ -8,10 +8,10 @@ import dynamic from 'next/dynamic';
 export default function Home() {
     return (
         <div className="flex-col flex w-screen">
-            <div className="fixed">
+            <div className="fixed z-50">
                 <Header title="Kalisch Acero" />
             </div>
-            <div className="lg:mt-24 md:mt-11 xs:mt-10">
+            <div className="lg:mt-11 md:mt-5 sm:mt-2">
                 <Hero />
             </div>
             <div>
