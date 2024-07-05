@@ -17,8 +17,8 @@ const Carousel = () => {
         };
         return (
         <div className="relative   mx-auto">
-            <div className="overflow-hidden w-full rounded-lg">
-            <img src={images[currentIndex]} className="w-full h-64 object-cover md:h-96" alt={`Slide ${currentIndex}`} />
+            <div className="overflow-hidden w-full  rounded-lg">
+            <img src={images[currentIndex]} className="w-full " alt={`Slide ${currentIndex}`} />
             </div>
             <button
             className="absolute top-1/2 left-0 transform -translate-y-1/2 p-2 bg-white/30 hover:bg-white/50 rounded-full"
@@ -39,5 +39,5 @@ const Carousel = () => {
         </div>
         );
     };
-    
-  export default Carousel;
+
+export default Carousel;
