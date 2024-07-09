@@ -15,7 +15,7 @@ const Counter: React.FC<{value:string}> = ({ value }) => {
             const end = parseInt(value, 10);
             if (start === end) return;
 
-            let totalDuration = 2000; // Duración total de la animación en milisegundos
+            let totalDuration = 2500; // Duración total de la animación en milisegundos
             let incrementTime = (totalDuration / end) * 1.5; // Intervalo entre incrementos
 
             const timer = setInterval(() => {
@@ -27,9 +27,9 @@ const Counter: React.FC<{value:string}> = ({ value }) => {
     }, [inView, value]);
 
     return (
-        <p ref={ref} className="text-7xl text-white font-extrabold">
-            {count}
-        </p>
+        <div ref={ref} className={`transition-transform transform ${inView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+            <p className="text-7xl text-white font-extrabold">{count}</p>
+        </div>
     );
 };
 
@@ -50,6 +50,7 @@ return (
     <div className="w-full">
             <Carousel />
     </div>
+    {/* Seccion de Sucursales */}
     <div className="xl:h-80 lg:h-auto bg-slate-900 xs:py-16 items-center justify-center lg:flex lg:flex-row">
         <div className="flex flex-col items-center lg:mr-32">
             <Counter value="44" />
