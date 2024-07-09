@@ -1,8 +1,37 @@
+"use client";
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-
+import React, {useEffect, useState} from "react";
 import CarouselMobile from "./Header/Mobile/carouselMobile";
 import Carousel from "./Header/Global/Carousel";
+import { useInView } from 'react-intersection-observer';
+
+const Counter: React.FC<{value:string}> = ({ value }) => {
+    const [count, setCount] = useState(0);
+    const { ref, inView } = useInView({ triggerOnce: true });
+
+    useEffect(() => {
+        if (inView) {
+            let start = 0;
+            const end = parseInt(value, 10);
+            if (start === end) return;
+
+            let totalDuration = 2000; // Duración total de la animación en milisegundos
+            let incrementTime = (totalDuration / end) * 1.5; // Intervalo entre incrementos
+
+            const timer = setInterval(() => {
+                start += 1;
+                setCount(start);
+                if (start === end) clearInterval(timer);
+            }, incrementTime);
+        }
+    }, [inView, value]);
+
+    return (
+        <p ref={ref} className="text-7xl text-white font-extrabold">
+            {count}
+        </p>
+    );
+};
 
 export const Hero = () => {
 return (
@@ -23,23 +52,23 @@ return (
     </div>
     <div className="xl:h-80 lg:h-auto bg-slate-900 xs:py-16 items-center justify-center lg:flex lg:flex-row">
         <div className="flex flex-col items-center lg:mr-32">
-            <p className="text-7xl text-white font-extrabold">44</p>
+            <Counter value="44" />
             <p className="text-white text-2xl font-serif mt-5">Años</p>
         </div>
         <div className="flex flex-col items-center lg:mr-32">
-            <p className="text-7xl text-white font-extrabold">44</p>
+            <Counter value="44" />
             <p className="text-white text-2xl font-serif mt-5">Sucursales</p>
         </div>
         <div className="flex flex-col items-center lg:mr-32">
-            <p className="text-7xl text-white font-extrabold">22</p>
+            <Counter value="22" />
             <p className="text-white text-2xl font-serif mt-5">Ciudades</p>
         </div>
         <div className="flex flex-col items-center lg:mr-32">
-            <p className="text-7xl text-white font-extrabold">8</p>
+            <Counter value="8" />
             <p className="text-white text-2xl font-serif mt-5">Estados</p>
         </div>
         <div className="flex flex-col items-center lg:mr-32">
-            <p className="text-7xl text-white font-extrabold">2</p>
+            <Counter value="2" />
             <p className="text-white text-2xl font-serif mt-5">Países</p>
         </div>
     </div>
