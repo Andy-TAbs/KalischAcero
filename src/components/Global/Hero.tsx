@@ -89,14 +89,43 @@ export const Hero = () => {
                 )}
             </div>
             {/* Seccion de Sucursales*/}
-            <div className="flex flex-row">
-                <div>
-                <FlipCard 
-                image="https://via.placeholder.com/150"
-                title="Título 1"
-                text="Texto adicional 1"
-                link="#link1"
-            />
+            <div className="flex flex-col mb-16 mx-36 items-center">
+                <div className="">
+                    <p className=" font-normal my-14 text-3xl">Divisiones</p>
+                </div>
+                <div className="flex flex-row ">
+                    <div className="mr-8">
+                        <FlipCard
+                        image="https://via.placeholder.com/150"
+                        title="Título 1"
+                        text="Texto adicional 1"
+                        link="#link1"
+                        />
+                    </div>
+                    <div className="mr-8">
+                        <FlipCard
+                        image="https://via.placeholder.com/150"
+                        title="Título 1"
+                        text="Texto adicional 1"
+                        link="#link1"
+                        />
+                    </div>
+                    <div className="mr-8">
+                        <FlipCard
+                        image="https://via.placeholder.com/150"
+                        title="Título 1"
+                        text="Texto adicional 1"
+                        link="#link1"
+                        />
+                    </div>
+                    <div className="mr-8">
+                        <FlipCard
+                        image="https://via.placeholder.com/150"
+                        title="Título 1"
+                        text="Texto adicional 1"
+                        link="#link1"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
