@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
 import Carousel from "./Carousel";
+import FlipCard from "./FlipCard";
 import { useInView } from 'react-intersection-observer';
 
 const Counter: React.FC<{ value: string }> = ({ value }) => {
@@ -41,7 +42,7 @@ export const Hero = () => {
 
         setTimeout(() => {
             setShowCounters(true);
-        }, 1000); // Retraso de 2 segundos para mostrar los contadores
+        }, 1500); // Retraso de 2 segundos para mostrar los contadores
     }, []);
 
     return (
@@ -88,8 +89,15 @@ export const Hero = () => {
                 )}
             </div>
             {/* Seccion de Sucursales*/}
-            <div>
-                {/* Aquí puedes añadir más contenido */}
+            <div className="flex flex-row">
+                <div>
+                <FlipCard 
+                image="https://via.placeholder.com/150"
+                title="Título 1"
+                text="Texto adicional 1"
+                link="#link1"
+            />
+                </div>
             </div>
         </div>
     );

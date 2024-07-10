@@ -2,8 +2,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import DropdownMenu from './dropdownMenu';
-import { SecHeader } from '../Global/secHeader';
-import DropdownMenuMobile from '../Mobile/dropdownMenuMobile';
+import { SecHeader } from './secHeader';
+import DropdownMenuMobile from './dropdownMenuMobile';
 import Link from 'next/link';
 
 interface HeaderProps {
