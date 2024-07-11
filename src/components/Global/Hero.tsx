@@ -19,7 +19,7 @@ const Counter: React.FC<{ value: string }> = ({ value }) => {
             let incrementTime = (totalDuration / end) * 1.5; // Intervalo entre incrementos
 
             const timer = setInterval(() => {
-                start += 1;
+                start += 2;
                 setCount(start);
                 if (start === end) clearInterval(timer);
             }, incrementTime);
@@ -93,8 +93,9 @@ export const Hero = () => {
                 <div className="">
                     <p className=" font-normal my-14 text-3xl">Divisiones</p>
                 </div>
-                <div className="flex flex-row ">
-                    <div className="mr-8">
+                <div className="flex lg:flex-row xs:flex-col ">
+
+                    <div className="xl:mr-8 lg:mr-3 lg:ml-3 xs:mb-10">
                         <FlipCard
                         image="https://via.placeholder.com/150"
                         title="Título 1"
@@ -102,7 +103,7 @@ export const Hero = () => {
                         link="#link1"
                         />
                     </div>
-                    <div className="mr-8">
+                    <div className="xl:mr-8 lg:mr-3 xs:mb-10">
                         <FlipCard
                         image="https://via.placeholder.com/150"
                         title="Título 1"
@@ -110,7 +111,7 @@ export const Hero = () => {
                         link="#link1"
                         />
                     </div>
-                    <div className="mr-8">
+                    <div className="xl:mr-8 lg:mr-3 xs:mb-10">
                         <FlipCard
                         image="https://via.placeholder.com/150"
                         title="Título 1"
@@ -118,7 +119,7 @@ export const Hero = () => {
                         link="#link1"
                         />
                     </div>
-                    <div className="mr-8">
+                    <div className="xl:mr-8  xs:mb-10">
                         <FlipCard
                         image="https://via.placeholder.com/150"
                         title="Título 1"
