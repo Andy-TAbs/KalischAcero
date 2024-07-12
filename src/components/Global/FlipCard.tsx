@@ -19,7 +19,7 @@ const FlipCard = ({ image, title, text, link }: FlipCardProps) => {
     };
 
     return (
-        <div 
+        <div
             className="relative lg:w-64 lg:h-64 xs:h-64 md:w-80 xs:w-screen sm:w-116  cursor-pointer"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -44,7 +44,3 @@ const FlipCard = ({ image, title, text, link }: FlipCardProps) => {
 };
 
 export default FlipCard;
-
-
-
-

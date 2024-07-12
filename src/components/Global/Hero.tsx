@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 import Carousel from "./Carousel";
 import FlipCard from "./FlipCard";
 import { useInView } from 'react-intersection-observer';
+import FlipCardSlider from "./SliderCards";
+
 
 const Counter: React.FC<{ value: string }> = ({ value }) => {
     const [count, setCount] = useState(0);
@@ -128,6 +130,9 @@ export const Hero = () => {
                         />
                     </div>
                 </div>
+            </div>
+            <div>
+                <FlipCardSlider />
             </div>
         </div>
     );

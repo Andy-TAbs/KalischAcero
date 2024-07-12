@@ -11,7 +11,7 @@ export default function Home() {
             <div className="fixed w-full z-50">
                 <Header title="Kalisch Acero" />
             </div>
-            <div className=" overflow-hidden">
+            <div className=" overflow-hidden lg:mt-11 md:mt-5 sm:mt-2">
                 <Hero />
             </div>
             <div className="w-screen overflow-hidden">
