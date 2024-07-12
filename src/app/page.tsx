@@ -1,20 +1,20 @@
 import Image from "next/image";
 import React from "react";
-import { Header } from "../components/Header/Global/Header";
+import { Header } from "../components/Header/Header";
 import { Footer } from "../components/Footer";
-import { Hero }  from "../components/Hero";
+import { Hero }  from "../components/Global/Hero";
 import dynamic from 'next/dynamic';
 
 export default function Home() {
     return (
-        <div className="flex-col flex w-screen">
-            <div className="fixed z-50">
+        <div className="flex-col flex w-full overflow-hidden">
+            <div className="fixed w-full z-50">
                 <Header title="Kalisch Acero" />
             </div>
-            <div className="lg:mt-11 md:mt-5 sm:mt-2">
+            <div className=" overflow-hidden lg:mt-11 md:mt-5 sm:mt-2">
                 <Hero />
             </div>
-            <div>
+            <div className="w-screen overflow-hidden">
                 <Footer />
             </div>
         </div>
