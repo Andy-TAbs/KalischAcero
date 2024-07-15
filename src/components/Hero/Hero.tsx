@@ -6,6 +6,7 @@ import FlipCard from "../Global/FlipCard";
 import { useInView } from 'react-intersection-observer';
 import FlipCardSlider from "../Global/SliderCards";
 import { FaArrowRight } from "react-icons/fa";
+import NewsCarousel from "./NewsCarousel";
 
 
 const Counter: React.FC<{ value: string }> = ({ value }) => {
@@ -214,6 +215,9 @@ export const Hero = () => {
             <div className="flex flex-col mb-16 mx-36 items-center">
                 <div className="">
                     <p className=" font-normal my-14 text-3xl">Noticias</p>
+                </div>
+                <div>
+                    <NewsCarousel />
                 </div>
             </div>
         </div>
