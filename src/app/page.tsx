@@ -1,15 +1,16 @@
 import Image from "next/image";
 import React from "react";
 import { Header } from "../components/Header/Header";
-import { Footer } from "../components/Footer";
-import { Hero }  from "../components/Global/Hero";
+import { Footer } from "../components/Footer/Footer";
+import { Hero }  from "../components/Hero/Hero";
 import dynamic from 'next/dynamic';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
     return (
         <div className="flex-col flex w-full overflow-hidden">
             <div className="fixed w-full z-50">
-                <Header title="Kalisch Acero" />
+                <Header title="Kalisch Ac0ero" />
             </div>
             <div className=" overflow-hidden lg:mt-11 md:mt-5 sm:mt-2">
                 <Hero />
@@ -17,6 +18,7 @@ export default function Home() {
             <div className="w-screen overflow-hidden">
                 <Footer />
             </div>
+            <SpeedInsights />
         </div>
     );
 }

@@ -2,9 +2,9 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
 import Carousel from "./Carousel";
-import FlipCard from "./FlipCard";
+import FlipCard from "../Global/FlipCard";
 import { useInView } from 'react-intersection-observer';
-import FlipCardSlider from "./SliderCards";
+import FlipCardSlider from "../Global/SliderCards";
 import { FaArrowRight } from "react-icons/fa";
 
 

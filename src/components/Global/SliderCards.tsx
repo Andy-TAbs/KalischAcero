@@ -13,14 +13,14 @@
     }, [cardsToShow]);
 
     return (
-        <div className="flex flex-col mb-16 mx-36 items-center">
+        <div className="flex flex-col mb-16  items-center">
         <div className="">
             <p className="font-normal my-14 text-3xl">Divisiones</p>
         </div>
         <div className="flex lg:flex-row xs:flex-col ">
             {cardsToShow === "firstSet" ? (
             <>
-                <div className="xl:mr-8 lg:mr-3 lg:ml-3 xs:mb-10">
+                <div className="xl:mr-6 lg:mr-3 lg:ml-3 xs:mb-10">
                 <FlipCard
                     image="https://via.placeholder.com/150"
                     title="Título 1"
@@ -28,7 +28,7 @@
                     link="#link1"
                 />
                 </div>
-                <div className="xl:mr-8 lg:mr-3 lg:ml-3 xs:mb-10">
+                <div className="xl:mr-6 lg:mr-3 lg:ml-3 xs:mb-10">
                 <FlipCard
                     image="https://via.placeholder.com/150"
                     title="Título 1"
@@ -36,7 +36,7 @@
                     link="#link1"
                 />
                 </div>
-                <div className="xl:mr-8 lg:mr-3 lg:ml-3 xs:mb-10">
+                <div className="xl:mr-6 lg:mr-3 lg:ml-3 xs:mb-10">
                 <FlipCard
                     image="https://via.placeholder.com/150"
                     title="Título 1"
@@ -44,7 +44,7 @@
                     link="#link1"
                 />
                 </div>
-                <div className="xl:mr-8 lg:mr-3 lg:ml-3 xs:mb-10">
+                <div className="xl:mr-6 lg:mr-3 lg:ml-3 xs:mb-10">
                 <FlipCard
                     image="https://via.placeholder.com/150"
                     title="Título 1"
@@ -56,7 +56,7 @@
             </>
             ) : (
             <>
-                <div className="xl:mr-8 lg:mr-3 xs:mb-10">
+                <div className="xl:mr-6 lg:mr-3 xs:mb-10">
                 <FlipCard
                     image="https://via.placeholder.com/150"
                     title="Título 5"
@@ -64,7 +64,7 @@
                     link="#link5"
                 />
                 </div>
-                <div className="xl:mr-8 lg:mr-3 lg:ml-3 xs:mb-10">
+                <div className="xl:mr-6 lg:mr-3 lg:ml-3 xs:mb-10">
                 <FlipCard
                     image="https://via.placeholder.com/150"
                     title="Título 1"
@@ -72,7 +72,7 @@
                     link="#link1"
                 />
                 </div>
-                <div className="xl:mr-8 lg:mr-3 lg:ml-3 xs:mb-10">
+                <div className="xl:mr-6 lg:mr-3 lg:ml-3 xs:mb-10">
                 <FlipCard
                     image="https://via.placeholder.com/150"
                     title="Título 1"
@@ -80,7 +80,7 @@
                     link="#link1"
                 />
                 </div>
-                <div className="xl:mr-8 lg:mr-3 lg:ml-3 xs:mb-10">
+                <div className="xl:mr-6 lg:mr-3 lg:ml-3 xs:mb-10">
                 <FlipCard
                     image="https://via.placeholder.com/150"
                     title="Título 1"
