@@ -16,10 +16,10 @@ export const Footer: React.FC<FooterProps> = () => {
         <div className='w-full'>
 <footer className="flex flex-col items-start justify-between w-full lg:h-80 xs:h-auto sm:h-auto bg-black">
     <div className='xl:mt-7 xl:ml-48 sm:ml-10 sm:flex-col md:flex'>
-        <div className='flex flex-col md:flex-row'>
+        <div className='flex flex-col lg:flex-row'>
             {/* Sección de redes sociales */}
             <div className="flex-col flex mb-5 sm:mb-0 xs:pt-5 pl-5">
-                <img src="/kfa_movil_40_white.png" className='xs:h-1/4 xs:w-2/4 md:w-auto' alt="Logo_KalischFA_white" />
+                <img src="/kfa_movil_40_white.png" className='xs:h-1/4 xs:w-2/4 md:w-80 md:h-auto' alt="Logo_KalischFA_white" />
                 <div className="flex flex-row mt-3">
                     <div className="flex flex-row h-7 w-7 mt-2 mr-2">
                         <FaFacebookSquare className='bg-black h-7 w-7 text-zinc-400 transition duration-200 ease-in-out hover:text-white transform hover:scale-105' />
@@ -63,7 +63,7 @@ export const Footer: React.FC<FooterProps> = () => {
     </p>
     <div className='flex flex-col lg:w-72 md:w-auto pt-3'>
         <div className="xs:ml-7 xs:mr-60  lg:ml-7 lg:mt-2 lg:mr-32">
-            <a className="flex items-center h-10 justify-center w-full lg:w-auto py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold tracking-wide rounded-md shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+            <a className="flex items-center h-10 justify-center xs:w-auto lg:w-auto py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold tracking-wide rounded-md shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
                 Suscríbete
             </a>
         </div>
