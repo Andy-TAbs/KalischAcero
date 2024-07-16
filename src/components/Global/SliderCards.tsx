@@ -1,5 +1,6 @@
     import React, { useState, useEffect } from 'react';
-    import FlipCard from './FlipCard'; // Asegúrate de importar correctamente tu componente FlipCard
+    import FlipCard from './FlipCard'; 
+    import FlipCard2 from './FlipCard2';
 
     const FlipCardSlider: React.FC = () => {
     const [cardsToShow, setCardsToShow] = useState<"firstSet" | "secondSet">("firstSet");
@@ -21,7 +22,7 @@
             {cardsToShow === "firstSet" ? (
             <>
                 <div className="xl:mr-6 lg:mr-3 lg:ml-3 xs:mb-10">
-                <FlipCard
+                <FlipCard2
                     image="https://via.placeholder.com/150"
                     title="Título 1"
                     text="Texto adicional 1"
@@ -29,7 +30,7 @@
                 />
                 </div>
                 <div className="xl:mr-6 lg:mr-3 lg:ml-3 xs:mb-10">
-                <FlipCard
+                <FlipCard2
                     image="https://via.placeholder.com/150"
                     title="Título 1"
                     text="Texto adicional 1"
@@ -37,7 +38,7 @@
                 />
                 </div>
                 <div className="xl:mr-6 lg:mr-3 lg:ml-3 xs:mb-10">
-                <FlipCard
+                <FlipCard2
                     image="https://via.placeholder.com/150"
                     title="Título 1"
                     text="Texto adicional 1"
@@ -45,7 +46,7 @@
                 />
                 </div>
                 <div className="xl:mr-6 lg:mr-3 lg:ml-3 xs:mb-10">
-                <FlipCard
+                <FlipCard2
                     image="https://via.placeholder.com/150"
                     title="Título 1"
                     text="Texto adicional 1"
@@ -57,7 +58,7 @@
             ) : (
             <>
                 <div className="xl:mr-6 lg:mr-3 xs:mb-10">
-                <FlipCard
+                <FlipCard2
                     image="https://via.placeholder.com/150"
                     title="Título 5"
                     text="Texto adicional 5"
@@ -65,7 +66,7 @@
                 />
                 </div>
                 <div className="xl:mr-6 lg:mr-3 lg:ml-3 xs:mb-10">
-                <FlipCard
+                <FlipCard2
                     image="https://via.placeholder.com/150"
                     title="Título 1"
                     text="Texto adicional 6"
@@ -73,7 +74,7 @@
                 />
                 </div>
                 <div className="xl:mr-6 lg:mr-3 lg:ml-3 xs:mb-10">
-                <FlipCard
+                <FlipCard2
                     image="https://via.placeholder.com/150"
                     title="Título 1"
                     text="Texto adicional 7"
@@ -81,7 +82,7 @@
                 />
                 </div>
                 <div className="xl:mr-6 lg:mr-3 lg:ml-3 xs:mb-10">
-                <FlipCard
+                <FlipCard2
                     image="https://via.placeholder.com/150"
                     title="Título 1"
                     text="Texto adicional 8"

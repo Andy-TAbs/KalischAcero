@@ -7,6 +7,7 @@ import { useInView } from 'react-intersection-observer';
 import FlipCardSlider from "../Global/SliderCards";
 import { FaArrowRight } from "react-icons/fa";
 import NewsCarousel from "./NewsCarousel";
+import FlipCard2 from "../Global/FlipCard2";
 
 const newsData = [
     {
@@ -17,7 +18,7 @@ const newsData = [
     {
         title:"Sucursal Exprés: Mazatlán Delfín",
         text: "El Cuatro de Octubre inauguramos la primera sucursal exprés de Kalisch Acero en la ciudad de Mazatlán. En un terreno de 33m2 y con un total de 5 colaboradores damos inicio la operación de este nuevo modelo de negocio.",
-        image: "/Noticia_1.jpg"
+        image: "/definicion-de-la-educacion-sssssscontinua.jpg"
     },
     {
         title:"Sucursal Exprés: Mazatlán Delfín",
@@ -122,7 +123,7 @@ export const Hero = () => {
                 <div className="flex lg:flex-row xs:flex-col ">
 
                     <div className="xl:mr-8 lg:mr-3 lg:ml-3 xs:mb-10">
-                        <FlipCard
+                        <FlipCard2
                         image="https://via.placeholder.com/150"
                         title="Título 1"
                         text="Texto adicional 1"
@@ -130,7 +131,7 @@ export const Hero = () => {
                         />
                     </div>
                     <div className="xl:mr-8 lg:mr-3 xs:mb-10">
-                        <FlipCard
+                        <FlipCard2
                         image="https://via.placeholder.com/150"
                         title="Título 1"
                         text="Texto adicional 1"
@@ -138,7 +139,7 @@ export const Hero = () => {
                         />
                     </div>
                     <div className="xl:mr-8 lg:mr-3 xs:mb-10">
-                        <FlipCard
+                        <FlipCard2
                         image="https://via.placeholder.com/150"
                         title="Título 1"
                         text="Texto adicional 1"
@@ -146,7 +147,7 @@ export const Hero = () => {
                         />
                     </div>
                     <div className="xl:mr-8  xs:mb-10">
-                        <FlipCard
+                        <FlipCard2
                         image="https://via.placeholder.com/150"
                         title="Título 1"
                         text="Texto adicional 1"
