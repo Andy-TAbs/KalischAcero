@@ -8,6 +8,28 @@ import FlipCardSlider from "../Global/SliderCards";
 import { FaArrowRight } from "react-icons/fa";
 import NewsCarousel from "./NewsCarousel";
 
+const newsData = [
+    {
+        title:"Sucursal Exprés: Mazatlán Delfín",
+        text: "El Cuatro de Octubre inauguramos la primera sucursal exprés de Kalisch Acero en la ciudad de Mazatlán. En un terreno de 33m2 y con un total de 5 colaboradores damos inicio la operación de este nuevo modelo de negocio.",
+        image: "/definicion-de-la-educacion-sssssscontinua.jpg"
+    },
+    {
+        title:"Sucursal Exprés: Mazatlán Delfín",
+        text: "El Cuatro de Octubre inauguramos la primera sucursal exprés de Kalisch Acero en la ciudad de Mazatlán. En un terreno de 33m2 y con un total de 5 colaboradores damos inicio la operación de este nuevo modelo de negocio.",
+        image: "/Noticia_1.jpg"
+    },
+    {
+        title:"Sucursal Exprés: Mazatlán Delfín",
+        text: "El Cuatro de Octubre inauguramos la primera sucursal exprés de Kalisch Acero en la ciudad de Mazatlán. En un terreno de 33m2 y con un total de 5 colaboradores damos inicio la operación de este nuevo modelo de negocio.",
+        image: "/definicion-de-la-educacion-sssssscontinua.jpg"
+    },
+    {
+        title:"Sucursal Exprés: Mazatlán Delfín",
+        text: "El Cuatro de Octubre inauguramos la primera sucursal exprés de Kalisch Acero en la ciudad de Mazatlán. En un terreno de 33m2 y con un total de 5 colaboradores damos inicio la operación de este nuevo modelo de negocio.",
+        image: "/definicion-de-la-educacion-sssssscontinua.jpg"
+    }
+];
 
 const Counter: React.FC<{ value: string }> = ({ value }) => {
     const [count, setCount] = useState(0);
@@ -46,7 +68,7 @@ export const Hero = () => {
 
         setTimeout(() => {
             setShowCounters(true);
-        }, 1500); // Retraso de 2 segundos para mostrar los contadores
+        }, 500); // Retraso de 2 segundos para mostrar los contadores
     }, []);
 
     return (
@@ -144,8 +166,8 @@ export const Hero = () => {
                     <div className="">
                         <img src="/Recurso-2.png" className="h-116 w-128" alt="Recurso-2" />
                     </div>
-                    <div className="flex flex-col">
-                        <div className="flex flex-row  hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-5 pr-72 pl-5 ">
+                    <div className="flex flex-col  lg:ml-10">
+                        <div className="flex flex-row  hover:bg-green-900 xs:w-auto  hover:text-white transition ease-in-out duration-300 py-6 sm:pr-72 pl-5 ">
                             <div className="">
                                 <FaArrowRight className=" w-7 h-7"/>
                             </div>
@@ -153,7 +175,7 @@ export const Hero = () => {
                                 <p className="text-2xl">Aguascalientes</p>
                             </div>
                         </div>
-                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-5 pr-72 pl-5 ">
+                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-5 sm:pr-72 pl-5 ">
                             <div className="">
                                 <FaArrowRight className=" w-7 h-7"/>
                             </div>
@@ -161,7 +183,7 @@ export const Hero = () => {
                                 <p className="text-2xl">Chihuahua</p>
                             </div>
                         </div>
-                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-5 pr-72 pl-5 ">
+                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-5 sm:pr-72 pl-5 ">
                             <div className="">
                                 <FaArrowRight className=" w-7 h-7"/>
                             </div>
@@ -169,7 +191,7 @@ export const Hero = () => {
                                 <p className="text-2xl">Durango</p>
                             </div>
                         </div>
-                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-5 pr-72 pl-5 ">
+                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-5 sm:pr-72 pl-5 ">
                             <div className="">
                                 <FaArrowRight className=" w-7 h-7"/>
                             </div>
@@ -177,7 +199,7 @@ export const Hero = () => {
                                 <p className="text-2xl">Guanajuato</p>
                             </div>
                         </div>
-                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-5 pr-72 pl-5 ">
+                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-5 sm:pr-72 pl-5 ">
                             <div className="">
                                 <FaArrowRight className=" w-7 h-7"/>
                             </div>
@@ -185,7 +207,7 @@ export const Hero = () => {
                                 <p className="text-2xl">Sinaloa</p>
                             </div>
                         </div>
-                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-5 pr-72 pl-5 ">
+                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-5 sm:pr-72 pl-5 ">
                             <div className="">
                                 <FaArrowRight className=" w-7 h-7"/>
                             </div>
@@ -193,7 +215,7 @@ export const Hero = () => {
                                 <p className="text-2xl">Sonora</p>
                             </div>
                         </div>
-                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-5 pr-72 pl-5 ">
+                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-5 sm:pr-72 pl-5 ">
                             <div className="">
                                 <FaArrowRight className=" w-7 h-7"/>
                             </div>
@@ -201,7 +223,7 @@ export const Hero = () => {
                                 <p className="text-2xl">Texas</p>
                             </div>
                         </div>
-                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-5 pr-72 pl-5 ">
+                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-5 sm:pr-72 pl-5 ">
                             <div className="">
                                 <FaArrowRight className=" w-7 h-7"/>
                             </div>
@@ -212,13 +234,16 @@ export const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col mb-16 mx-36 items-center">
+            <div className="flex flex-col mb-16 lg:mx-36 items-center">
                 <div className="">
                     <p className=" font-normal my-14 text-3xl">Noticias</p>
                 </div>
-                <div>
-                    <NewsCarousel />
+                <div className=" w-screen">
+                    <NewsCarousel news={newsData} />
                 </div>
+            </div>
+            <div>
+
             </div>
         </div>
     );
