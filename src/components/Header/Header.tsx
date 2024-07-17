@@ -64,9 +64,8 @@ export const Header: React.FC<HeaderProps> = ({ title }) => {
                             <div className="hidden lg:flex flex-col lg:flex-row lg:items-center lg:ml-auto 2xl:mr-52 ">
                                 <ul className="flex flex-wrap list-none justify-center lg:justify-start lg:space-x-4 space-y-4 lg:space-y-0 ">
                                 <li className="">
-                                    <button className="block w-24 h-14 mt-2  bg-green-700 text-white text-sm border-green-700 border-b transition-colors duration-300 ease-in-out hover:bg-green-500 lg:border-0 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
-                                        Cotizar
-                                    </button>
+                                <button className="btnHeader">Cotizar</button>
+
                                 </li>
                                     <li className="lg:mr-10 pt-5">
                                         <DropdownMenu title="Nosotros" options={headerOptionsNosotros}/>
