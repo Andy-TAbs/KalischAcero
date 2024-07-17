@@ -50,7 +50,7 @@ export const Header: React.FC<HeaderProps> = ({ title }) => {
             <div className="hidden lg:block h-10">
                 <SecHeader title="Header" />
             </div>
-            <div className="h-28 ">
+            <div className=" ">
                 <header className="w-full">
                     <nav className="bg-white px-2  lg:px-4 dark:bg-gray-800 border-b-2 shadow-md ">
                         <div className="flex items-center justify-between w-full lg:justify-start lg:flex-grow-0 lg:order-2">

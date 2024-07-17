@@ -89,6 +89,7 @@ export const Hero = () => {
                 <Carousel />
             </div>
             {/* Seccion de Años*/}
+            
             <div className="xl:h-80 lg:h-auto bg-slate-900 xs:py-16 items-center justify-center lg:flex lg:flex-row">
                 {showCounters && (
                     <>
@@ -114,7 +115,9 @@ export const Hero = () => {
                         </div>
                     </>
                 )}
-            </div>
+                </div>
+            <div>
+                </div>
             {/* Seccion de Sucursales*/}
             <div className="flex flex-col mb-16 mx-36 items-center">
                 <div className="">
@@ -165,7 +168,7 @@ export const Hero = () => {
                 </div>
                 <div className="lg:flex lg:flex-row">
                     <div className="">
-                        <img src="/Recurso-2.png" className="h-116 w-128" alt="Recurso-2" />
+                        <img src="/Recurso-2.png" className="xs:h-116 xs:w-128" alt="Recurso-2" />
                     </div>
                     <div className="flex flex-col  lg:ml-10">
                         <div className="flex flex-row  hover:bg-green-900 xs:w-auto  hover:text-white transition ease-in-out duration-300 py-6 sm:pr-72 pl-5 ">
@@ -243,9 +246,7 @@ export const Hero = () => {
                     <NewsCarousel news={newsData} />
                 </div>
             </div>
-            <div>
-
-            </div>
+            
         </div>
     );
 }

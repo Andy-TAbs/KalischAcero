@@ -107,6 +107,8 @@ body {
 }
 /*End of News Button in Hero.tsx*/
 
+
+
 /* FlipCards Style in Hero.tsx */
 .card {
   width: 16rem;
@@ -159,3 +161,7 @@ body {
   font-size: 24px;
   transform: rotateY(180deg);
 }
+/* End of FlipCards Style in Hero.tsx */
+
+
+
