@@ -1,9 +1,19 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
+import DropdownMenuPlaces from './DropDownMenuPlaces';
 
 interface HeaderProps {
     title: string;
 }
+
+const headerOptionsPlaces = [
+    { label: 'Acerca de nosotros', link: '/' },
+    { label: 'Misión y Visión', link: '/about' },
+    { label: 'Código de ética', link: '/services' },
+    { label: 'Cultura', link: '/contact' },
+    { label: 'Talento', link: '/blog' },
+    { label: 'Noticias', link: '/blog' }
+  ];
 
 export const SecHeader: React.FC<HeaderProps> = ({ title }) => {
     return (
@@ -11,24 +21,8 @@ export const SecHeader: React.FC<HeaderProps> = ({ title }) => {
     <header className='w-screen '>
         <nav className="bg-white border-gray-200 px-6 lg:px-6 py-1 dark:bg-gray-800">
             <div className="flex flex-wrap justify-between items-end mx-auto max-w-screen-xl">
-                    <div className="flex flex-row lg:pl-0 2xl:pl-20" >
-                        <div className="">
-                            <img src="/placeholder_kalisch.svg" className="mr-2 h-4 w-4 sm:h-9" alt="Flowbite Logo" />
-                        </div>
-                        <div className="flex flex-col  ">
-                            <div className="">
-                                <span className="self-center text-sm font-semibold whitespace-nowrap dark:text-white">Kalisch Acero</span>
-                            </div>
-                            <div>
-                                <a className="text-xs">8:00AM - 5:30PM</a>
-                            </div>
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="mt-3" viewBox="0 0 24 24" width="24" height="24">
-                            <path d="M12 16.5l-8-8 1.5-1.5L12 13.5l6.5-6.5 1.5 1.5z"  fill="currentColor"/>
-                            </svg>
-                        </div>
-                    </div>
+                    
+                    <DropdownMenuPlaces title="Holacomo estas" options={headerOptionsPlaces}/>
                 <div className="hidden xl:pr-32 pb-5 justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                     <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                         <li className='flex flex-row'>
