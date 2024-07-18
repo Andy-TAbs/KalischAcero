@@ -11,7 +11,7 @@ interface HeaderProps {
 }
 
 const headerOptionsNosotros = [
-    { label: 'Acerca de nosotros', link: '/' },
+    { label: 'Acerca de nosotros', link: '/AboutUs' },
     { label: 'Misión y Visión', link: '/about' },
     { label: 'Código de ética', link: '/services' },
     { label: 'Cultura', link: '/contact' },
@@ -68,7 +68,7 @@ export const Header: React.FC<HeaderProps> = ({ title }) => {
 
                                 </li>
                                     <li className="lg:mr-10 pt-5">
-                                        <DropdownMenu title="Nosotros" options={headerOptionsNosotros}/>
+                                     <DropdownMenu title="Nosotros" options={headerOptionsNosotros}/>
                                     </li>
                                     <li className="lg:mr-10 pt-5">
                                         <DropdownMenu title="Sostenibilidad" options={headerOptionsSostenibilidad}/>

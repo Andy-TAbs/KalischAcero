@@ -2,12 +2,12 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
 import Carousel from "./Carousel";
-import FlipCard from "../../Global/FlipCard";
 import { useInView } from 'react-intersection-observer';
 import FlipCardSlider from "../../Global/SliderCards";
 import { FaArrowRight } from "react-icons/fa";
 import NewsCarousel from "./NewsCarousel";
 import FlipCard2 from "../../Global/FlipCard2";
+import ScrollTopButton from "@/components/Global/ScrollTopButton";
 
 const newsData = [
     {
@@ -86,13 +86,7 @@ export const Hero = () => {
                 </div>
                 <div className="fixed z-50 items-end bottom-5 right-8">
                     <div className="sticky-position xs:hidden md:block">
-                        <button className="button" title="Button">
-                            <svg className="svgIcon" viewBox="0 0 384 512">
-                                <path
-                                    d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
-                                ></path>
-                            </svg>
-                        </button>
+                        <ScrollTopButton />
                     </div>
                 </div>
             </div>
