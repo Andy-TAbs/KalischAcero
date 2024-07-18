@@ -216,3 +216,43 @@ body {
   transition-delay: 0.4s;
   color: #207133;
 }
+
+
+/* End Button Header */
+
+
+/*Scrollbar style*/
+
+/* Para asegurar que las esquinas de la barra de scroll estén redondeadas */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-rounded::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollbar-rounded::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.scrollbar-rounded::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+/* End of Scrollbar Style */
+
+/* Div transition */
+.dropdown-container {
+  opacity: 0;
+}
+
+.dropdown-container.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
