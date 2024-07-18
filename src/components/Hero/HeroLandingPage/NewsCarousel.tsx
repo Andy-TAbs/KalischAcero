@@ -49,7 +49,7 @@ import React, { useEffect, useState } from 'react';
                         <div className="flex lg:mr-96 mt-7">
                         <button className="cta flex flex-row items-center">
                             <span>Ver Noticia</span>
-                            <svg width="15px" height="10px" viewBox="0 0 13 10">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="10px" viewBox="0 0 13 10">
                             <path d="M1,5 L11,5"></path>
                             <polyline points="8 1 12 5 8 9"></polyline>
                             </svg>

@@ -31,7 +31,7 @@ body {
     text-wrap: balance;
   }
 }
-
+/* Rotate object 180*/
 .rotate-y-180 {
   transform: rotateY(180deg);
 }
@@ -39,6 +39,7 @@ body {
 .backface-hidden {
   backface-visibility: hidden;
 }
+/* End of Rotate object */
 
 
 /*News Button in Hero.tsx*/
@@ -107,6 +108,8 @@ body {
 }
 /*End of News Button in Hero.tsx*/
 
+
+
 /* FlipCards Style in Hero.tsx */
 .card {
   width: 16rem;
@@ -159,3 +162,149 @@ body {
   font-size: 24px;
   transform: rotateY(180deg);
 }
+/* End of FlipCards Style in Hero.tsx */
+
+
+
+/* Btton Header */
+.btnHeader {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #207133;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.btnHeader::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #207133;
+  transition: 0.5s ease;
+}
+
+.btnHeader:hover {
+  color: #ffffff;
+  transition-delay: 0.5s;
+  background-color: #207133;
+}
+
+.btnHeader:hover::before {
+  width: 100%;
+}
+
+.btnHeader::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #207133;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.btnHeader:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: #207133;
+}
+/* End Button Header */
+
+
+/*Scrollbar style*/
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-rounded::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollbar-rounded::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.scrollbar-rounded::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+/* End of Scrollbar Style */
+
+/*Button top*/
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: #207133;
+  align-items: center;
+}
+
+.button:hover .svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Back to Top";
+  color: white;
+  /* transition-duration: .3s; */
+  font-size: 0px;
+}
+
+.button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.3s;
+}
+
+/* Sticky position */
+
+.sticky-position {
+  position: sticky;
+  top: 64px;
+  z-index: 50;
+}
+
+

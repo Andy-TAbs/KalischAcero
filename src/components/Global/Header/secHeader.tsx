@@ -1,9 +1,24 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
+import DropdownMenuPlaces from './DropDownMenuPlaces';
 
 interface HeaderProps {
     title: string;
 }
+
+const headerOptionsPlaces = [
+    { label: 'Colegio Militar', text: "Av. H. Colegio Militar #265, Col. Nombre de Dios C.P. 31150, Chihuahua, Chihuahua, Mex.", phone: "614-xxx-xxxx" },
+    { label: 'Chuviscar',  text: "Av. Teófilo Borunda 3903 Col. Santo Niño C.P. 31200, Chihuahua, Chihuahua, Mex.", phone: "614-xxx-xxxx"  },
+    { label: 'Flores Magón', text: "Av. Flores Magón #5810 Col. Inalambrica,  C.P. 31460, Chihuahua, Chihuahua, Mex.", phone: "614-xxx-xxxx"  },
+    { label: 'La curva', text: "Av. Tecnológico 10711 Col. Deportistas C.P. 31125, Chihuahua, Chihuahua, Mex.", phone: "614-xxx-xxxx"  },
+    { label: 'Esmeralda', text: "Vialidad CH-P #2301-A Col. Mármol, C.P. 31063Chihuahua, Chihuahua, Mex.", phone: "614-xxx-xxxx"  },
+    { label: 'Los Nogales', text: "Vialidad Los Nogales 3105 Col. Rodolfo Fierro C.P. 31137, Chihuahua, Chihuahua, Mex.", phone: "614-xxx-xxxx"  },
+    { label: 'R. Almada',  text: "Periférico R. Almada #9602 Col. 3 de Mayo C.P. 31065, Chihuahua, Chihuahua, Mex.", phone: "614-xxx-xxxx"  },
+    { label: 'Oficinas Corporativas', text: "Av. H. Colegio Militar #265, Col. Nombre de Dios C.P. 31150, Chihuahua, Chihuahua, Mex.", phone: "614-xxx-xxxx"  },
+    { label: 'Delicias', text: "Av. 7ª Oriente #609, Col. Centro C.P. 33000, Delicias, Chihuahua, Mex.", phone: "614-xxx-xxxx"  },
+    { label: 'Nvo. Casas Grandes', text: "Av. Tulipán #4506 Parque Industrial Paquimé C.P. 31755, Casas Grandes, Chihuahua, Mex.", phone: "614-xxx-xxxx"  },
+    { label: 'Cuauhtémoc', text: "Corredor Comercial #543, Col. Fernando Baeza C.P. 31510, Cuauhtémoc, Chihuahua, Mex.", phone: "614-xxx-xxxx"  }
+];
 
 export const SecHeader: React.FC<HeaderProps> = ({ title }) => {
     return (
@@ -11,24 +26,7 @@ export const SecHeader: React.FC<HeaderProps> = ({ title }) => {
     <header className='w-screen '>
         <nav className="bg-white border-gray-200 px-6 lg:px-6 py-1 dark:bg-gray-800">
             <div className="flex flex-wrap justify-between items-end mx-auto max-w-screen-xl">
-                    <div className="flex flex-row lg:pl-0 2xl:pl-20" >
-                        <div className="">
-                            <img src="/placeholder_kalisch.svg" className="mr-2 h-4 w-4 sm:h-9" alt="Flowbite Logo" />
-                        </div>
-                        <div className="flex flex-col  ">
-                            <div className="">
-                                <span className="self-center text-sm font-semibold whitespace-nowrap dark:text-white">Kalisch Acero</span>
-                            </div>
-                            <div>
-                                <a className="text-xs">8:00AM - 5:30PM</a>
-                            </div>
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="mt-3" viewBox="0 0 24 24" width="24" height="24">
-                            <path d="M12 16.5l-8-8 1.5-1.5L12 13.5l6.5-6.5 1.5 1.5z"  fill="currentColor"/>
-                            </svg>
-                        </div>
-                    </div>
+                    <DropdownMenuPlaces title="Colegio Militar" options={headerOptionsPlaces}/>
                 <div className="hidden xl:pr-32 pb-5 justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                     <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                         <li className='flex flex-row'>

@@ -1,9 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import { Header } from "../components/Global/Header/Header";
-import { Footer } from "../components/Global/Footer/Footer";
-import { Hero }  from "../components/Hero/HeroLandingPage/Hero";
-import dynamic from 'next/dynamic';
+import { Header } from "@/components/Global/Header/Header";
+import { Footer } from "@/components/Global/Footer/Footer";
+import Hero from "@/components/Hero/HeroAboutUs/Hero";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {

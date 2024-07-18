@@ -1,10 +1,10 @@
 import React from 'react';
 
 interface Props {
-   image: string;
-   title: string;
-   text: string;
-   link: string;
+    image: string;
+    title: string;
+    text: string;
+    link: string;
 }
 
 const FlipCard2: React.FC<Props> = ({ link, text, title, image }) => {

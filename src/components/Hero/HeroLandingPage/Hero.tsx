@@ -2,12 +2,12 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
 import Carousel from "./Carousel";
-import FlipCard from "../Global/FlipCard";
 import { useInView } from 'react-intersection-observer';
-import FlipCardSlider from "../Global/SliderCards";
+import FlipCardSlider from "../../Global/SliderCards";
 import { FaArrowRight } from "react-icons/fa";
 import NewsCarousel from "./NewsCarousel";
-import FlipCard2 from "../Global/FlipCard2";
+import FlipCard2 from "../../Global/FlipCard2";
+import ScrollTopButton from "@/components/Global/ScrollTopButton";
 
 const newsData = [
     {
@@ -84,6 +84,11 @@ export const Hero = () => {
                         <img src="/Logotipo_KA2022_v19.png" className="absolute top-60 left-80 h-44 w-112 max-w-full max-h-full ml-8" alt="Logotipo_KA2022_v19" />
                     </div>
                 </div>
+                <div className="fixed z-50 items-end bottom-5 right-8">
+                    <div className="sticky-position xs:hidden md:block">
+                        <ScrollTopButton />
+                    </div>
+                </div>
             </div>
             <div className="w-full">
                 <Carousel />
@@ -114,7 +119,9 @@ export const Hero = () => {
                         </div>
                     </>
                 )}
-            </div>
+                </div>
+            <div>
+                </div>
             {/* Seccion de Sucursales*/}
             <div className="flex flex-col mb-16 mx-36 items-center">
                 <div className="">
@@ -165,7 +172,7 @@ export const Hero = () => {
                 </div>
                 <div className="lg:flex lg:flex-row">
                     <div className="">
-                        <img src="/Recurso-2.png" className="h-116 w-128" alt="Recurso-2" />
+                        <img src="/Recurso-2.png" className="xs:h-116 xs:w-128" alt="Recurso-2" />
                     </div>
                     <div className="flex flex-col  lg:ml-10">
                         <div className="flex flex-row  hover:bg-green-900 xs:w-auto  hover:text-white transition ease-in-out duration-300 py-6 sm:pr-72 pl-5 ">
@@ -243,9 +250,7 @@ export const Hero = () => {
                     <NewsCarousel news={newsData} />
                 </div>
             </div>
-            <div>
-
-            </div>
+            
         </div>
     );
 }
