@@ -26,7 +26,7 @@ export const SecHeader: React.FC<HeaderProps> = ({ title }) => {
     <header className='w-screen '>
         <nav className="bg-white border-gray-200 px-6 lg:px-6 py-1 dark:bg-gray-800">
             <div className="flex flex-wrap justify-between items-end mx-auto max-w-screen-xl">
-                    <DropdownMenuPlaces title="Holacomo estas" options={headerOptionsPlaces}/>
+                    <DropdownMenuPlaces title="Colegio Militar" options={headerOptionsPlaces}/>
                 <div className="hidden xl:pr-32 pb-5 justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                     <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                         <li className='flex flex-row'>
