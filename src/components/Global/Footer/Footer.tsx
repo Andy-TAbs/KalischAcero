@@ -63,7 +63,7 @@ export const Footer: React.FC<FooterProps> = () => {
     </p>
     <div className='flex flex-col lg:w-72 md:w-auto pt-3'>
         <div className="xs:ml-7 xs:mr-60  lg:ml-7 lg:mt-2 lg:mr-32">
-            <a className="flex items-center h-10 justify-center xs:w-auto lg:w-auto py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold tracking-wide rounded-md shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+            <a className="flex items-center h-10 justify-center xs:w-32 lg:w-auto py-2 bg-gray-300 hover:bg-green-800 text-gray-700 hover:text-white text-xs font-semibold tracking-wide rounded-md shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
                 Suscríbete
             </a>
         </div>
@@ -78,7 +78,7 @@ export const Footer: React.FC<FooterProps> = () => {
     </div>
 </footer>
 
-    <footer className="lg:flex flex-col md:flex-row  items-center justify-between w-full h-20 lg:max-h-20 bg-gray-500">
+    <footer className="lg:flex flex-col md:flex-row  items-center justify-between w-full h-20 lg:max-h-20 bg-zinc-700">
         <div className='w-screen flex xs:flex-col sm:flex-row  lg:flex-row items-center'>
             <div className="lg:flex  lg:ml-16 lg:pl-16">
                 <a className="text-gray-300 text-xs">© 2022 Todos los derechos reservados.</a>
