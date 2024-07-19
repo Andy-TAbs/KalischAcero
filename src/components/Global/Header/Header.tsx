@@ -12,11 +12,11 @@ interface HeaderProps {
 
 const headerOptionsNosotros = [
     { label: 'Acerca de nosotros', link: '/AboutUs' },
-    { label: 'Misión y Visión', link: '/about' },
-    { label: 'Código de ética', link: '/services' },
-    { label: 'Cultura', link: '/contact' },
-    { label: 'Talento', link: '/blog' },
-    { label: 'Noticias', link: '/blog' }
+    { label: 'Misión y Visión', link: '/MisionVision' },
+    { label: 'Código de ética', link: '/EthicalCode' },
+    { label: 'Cultura', link: '/Culture' },
+    { label: 'Talento', link: '/Talent' },
+    { label: 'Noticias', link: '/News' }
   ];
   const headerOptionsSostenibilidad = [
     { label: 'Filantropía', link: '/' },
@@ -47,12 +47,12 @@ const headerOptionsPromociones = [
 export const Header: React.FC<HeaderProps> = ({ title }) => {
     return (
         <div className=''>
-            <div className="hidden lg:block h-10">
+            <div className="hidden lg:block ">
                 <SecHeader title="Header" />
             </div>
             <div className=" ">
                 <header className="w-full">
-                    <nav className="bg-white px-2  lg:px-4 dark:bg-gray-800 border-b-2 shadow-md ">
+                    <nav className="bg-white px-2 bg-opacity-90 backdrop-blur-md  lg:px-4 dark:bg-gray-800 border-b-2 dark:shadow-gray-800 shadow-gray-200 shadow-md ">
                         <div className="flex items-center justify-between w-full lg:justify-start lg:flex-grow-0 lg:order-2">
                             <div className="lg:hidden">
                                 <DropdownMenuMobile />
@@ -68,7 +68,7 @@ export const Header: React.FC<HeaderProps> = ({ title }) => {
 
                                 </li>
                                     <li className="lg:mr-10 pt-5">
-                                     <DropdownMenu title="Nosotros" options={headerOptionsNosotros}/>
+                                        <DropdownMenu title="Nosotros" options={headerOptionsNosotros}/>
                                     </li>
                                     <li className="lg:mr-10 pt-5">
                                         <DropdownMenu title="Sostenibilidad" options={headerOptionsSostenibilidad}/>
