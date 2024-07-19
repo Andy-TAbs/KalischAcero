@@ -31,8 +31,8 @@ const DropdownMenu: React.FC<buttonText> = ({ title, options }) => {
             onMouseLeave={handleMouseLeave}
         >
           {options.map((option, index) => (
-            <li key={index} className="block py-2 px-4 text-gray-700 hover:bg-gray-100">
-              <a href={option.link}>{option.label}</a>
+            <li key={index} className="">
+              <a className='block py-2 my-3 px-4 text-gray-700 hover:bg-gray-100' href={option.link}>{option.label}</a>
             </li>
           ))}
         </ul>
