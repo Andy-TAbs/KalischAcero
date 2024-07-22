@@ -52,13 +52,13 @@ export const Header: React.FC<HeaderProps> = ({ title }) => {
             </div>
             <div className=" ">
                 <header className="w-full">
-                    <nav className="bg-white px-2 bg-opacity-90 backdrop-blur-md  lg:px-4 dark:bg-gray-800 border-b-2 dark:shadow-gray-800 shadow-gray-200 shadow-md ">
+                    <nav className="bg-white px-2 bg-opacity-100 backdrop-blur-md  lg:px-4 dark:bg-gray-800 border-b-2 dark:shadow-gray-800  shadow-md ">
                         <div className="flex items-center justify-between w-full lg:justify-start lg:flex-grow-0 lg:order-2">
                             <div className="lg:hidden">
                                 <DropdownMenuMobile />
                             </div>
                             <a href="/" className="mx-auto lg:mx-0 xl::ml-12">
-                                <img src="/kfa_movil_50.png" className="lg:h-9 sm:h-9 xs:h-14 2xl:pl-20 2xl:ml-28" alt="Kalisch_Logo"/>
+                                <img src="/kfa_movil_50.png" className="lg:h-9 sm:h-9 xs:h-10 2xl:pl-20 2xl:ml-28" alt="Kalisch_Logo"/>
                             </a>
                             <img src="/search.png" className="w-6 h-6 lg:hidden" alt="Search" />
                             <div className="hidden lg:flex flex-col lg:flex-row lg:items-center lg:ml-auto 2xl:mr-52 ">

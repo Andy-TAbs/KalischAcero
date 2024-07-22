@@ -22,10 +22,10 @@ const headerOptionsPlaces = [
 
 export const SecHeader: React.FC<HeaderProps> = ({ title }) => {
     return (
-<div className="hidden lg:block">
+<div className="hidden lg:block z-40">
     <header className='w-screen '>
-        <nav className="bg-white bg-opacity-90 backdrop-blur-md px-6 lg:px-6 py-1 dark:bg-gray-800">
-            <div className="flex flex-wrap justify-between items-end mx-auto max-w-screen-xl">
+        <nav className="bg-white bg-opacity-100 backdrop-blur-md px-6 lg:px-6 py-1 dark:bg-gray-800">
+            <div className="flex flex-wrap justify-between items-end mx-auto max-w-screen-xl z-50 ">
                     <DropdownMenuPlaces title="Colegio Militar" options={headerOptionsPlaces}/>
                 <div className="hidden xl:pr-32 pb-5 justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                     <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">

@@ -16,7 +16,7 @@
     return (
         <div className="flex flex-col mb-16  items-center">
         <div className="">
-            <p className="font-normal my-14 text-3xl">Divisiones</p>
+            <p className="font-normal my-14 text-3xl">Industrias</p>
         </div>
         <div className="flex lg:flex-row xs:flex-col ">
             {cardsToShow === "firstSet" ? (

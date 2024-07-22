@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <div className="flex-col flex w-full overflow-hidden">
             <div className="fixed w-full z-50">
-                <Header title="Kalisch Ac0ero" />
+                <Header title="Kalisch Acero" />
             </div>
             <div className=" overflow-hidden lg:mt-11 md:mt-5 sm:mt-2">
                 <Hero />
