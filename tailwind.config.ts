@@ -1,3 +1,4 @@
+import { Linefont } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -55,6 +56,9 @@ const config: Config = {
         '252': '63rem',
         '254': '63.5rem',
         '256': '64rem'
+      },
+      fontSize:{
+        "xxs" : '0.60rem',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
