@@ -175,7 +175,7 @@ export const Hero = () => {
                         <img src="/Recurso-2.png" className="xs:h-116 xs:w-128" alt="Recurso-2" />
                     </div>
                     <div className="flex flex-col  lg:ml-10">
-                        <div className="flex flex-row  hover:bg-green-900 xs:w-auto  hover:text-white transition ease-in-out duration-300 py-6 sm:pr-72 pl-5 ">
+                        <div className="flex flex-row  hover:bg-green-900 xs:w-auto  hover:text-white transition ease-in-out duration-300 py-4 sm:pr-72 pl-5 ">
                             <div className="">
                                 <FaArrowRight className=" w-7 h-7"/>
                             </div>
@@ -183,7 +183,7 @@ export const Hero = () => {
                                 <p className="text-2xl">Aguascalientes</p>
                             </div>
                         </div>
-                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-5 sm:pr-72 pl-5 ">
+                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-4 sm:pr-72 pl-5 ">
                             <div className="">
                                 <FaArrowRight className=" w-7 h-7"/>
                             </div>
@@ -191,7 +191,7 @@ export const Hero = () => {
                                 <p className="text-2xl">Chihuahua</p>
                             </div>
                         </div>
-                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-5 sm:pr-72 pl-5 ">
+                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-4 sm:pr-72 pl-5 ">
                             <div className="">
                                 <FaArrowRight className=" w-7 h-7"/>
                             </div>
@@ -199,7 +199,7 @@ export const Hero = () => {
                                 <p className="text-2xl">Durango</p>
                             </div>
                         </div>
-                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-5 sm:pr-72 pl-5 ">
+                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-4 sm:pr-72 pl-5 ">
                             <div className="">
                                 <FaArrowRight className=" w-7 h-7"/>
                             </div>
@@ -207,7 +207,7 @@ export const Hero = () => {
                                 <p className="text-2xl">Guanajuato</p>
                             </div>
                         </div>
-                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-5 sm:pr-72 pl-5 ">
+                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-4 sm:pr-72 pl-5 ">
                             <div className="">
                                 <FaArrowRight className=" w-7 h-7"/>
                             </div>
@@ -215,7 +215,7 @@ export const Hero = () => {
                                 <p className="text-2xl">Sinaloa</p>
                             </div>
                         </div>
-                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-5 sm:pr-72 pl-5 ">
+                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-4 sm:pr-72 pl-5 ">
                             <div className="">
                                 <FaArrowRight className=" w-7 h-7"/>
                             </div>
@@ -223,7 +223,7 @@ export const Hero = () => {
                                 <p className="text-2xl">Sonora</p>
                             </div>
                         </div>
-                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-5 sm:pr-72 pl-5 ">
+                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-4 sm:pr-72 pl-5 ">
                             <div className="">
                                 <FaArrowRight className=" w-7 h-7"/>
                             </div>
@@ -231,7 +231,7 @@ export const Hero = () => {
                                 <p className="text-2xl">Texas</p>
                             </div>
                         </div>
-                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-5 sm:pr-72 pl-5 ">
+                        <div className="flex flex-row border-t border-opacity-50 hover:border-transparent hover:bg-green-900  hover:text-white transition ease-in-out duration-300 py-4 sm:pr-72 pl-5 ">
                             <div className="">
                                 <FaArrowRight className=" w-7 h-7"/>
                             </div>
