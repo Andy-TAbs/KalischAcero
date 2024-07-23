@@ -23,26 +23,7 @@ const Hero: React.FC<HeroProps> = () => {
                     </div>
 
                     <div className='mx-32 md:mx-12 my-12 items-center '>
-                        <div className='sm:ml-5'>
-                            <p className='text-2xl '>Conoce Nuestra Historia</p>
-                        </div>
-                        <div className=' rounded-full  '>
-                            <Image
-                                src="/definicion-de-la-educacion-sssssscontinua.jpg"
-                                alt="Descripción de la imagen"
-                                width={500}
-                                height={300}
-                                className="object-cover rounded-full xs:h-32 sm:h-80 sm:w-80 mt-16"
-                            />
-                        </div>
-                    </div>
-                    <div>
-                        <div className='sm:ml-5'>
-                            <p className='w-214'>Así Iniciamos</p>
-                        </div>
-                        <div className='sm:ml-5 '>
-                            <p className='w-214 '>En la Cd. de Chihuahua, el Ing. Samuel Kalisch comienza esta historia con la venta de lámina negra. Gracias a su esfuerzo, determinación y enfoque, este proyecto se materializó y fue el punto de partida para Kalisch Acero.</p>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

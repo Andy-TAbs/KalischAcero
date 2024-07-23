@@ -35,7 +35,7 @@ const DropdownMenuPlaces: React.FC<buttonTextPlaces> = ({ title, options }) => {
                             </span>
                         </div>
                         <div>
-                            <a className="text-xxs">8:00 AM - 5:30 PM</a>
+                            <p className="text-xxs">8:00 AM - 5:30 PM</p>
                         </div>
                     </div>
                     <div>
@@ -62,7 +62,7 @@ const DropdownMenuPlaces: React.FC<buttonTextPlaces> = ({ title, options }) => {
                                             <span className="self-center text-sm font-semibold whitespace-nowrap dark:text-white">{option.label}</span>
                                         </div>
                                         <div>
-                                            <a className="text-xs">8:00AM - 5:30PM</a>
+                                            <p className="text-xs">8:00AM - 5:30PM</p>
                                         </div>
                                         <div>
                                             <p className="text-xs">{option.text}</p>
