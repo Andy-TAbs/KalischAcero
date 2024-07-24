@@ -69,8 +69,8 @@ export const Footer: React.FC<FooterProps> = () => {
                             </a>
                         </div>
                         <div>
-                            <p className='pl-7 pt-2 text-xs md:w-auto text-zinc-400 text-justify'>
-                                Al suscribirse, usted, está de acuerdo con nuestro <a className='text-xs text-zinc-500 hover:text-white hover:transition'>Aviso de privacidad</a> y proporciona su consentimiento para recibir actualizaciones de Kalisch Acero.
+                            <p className='pl-7 pt-2 text-xs md:w-auto text-zinc-300 text-justify'>
+                                Al suscribirse, usted, está de acuerdo con nuestro <a className='text-xs text-zinc-400 hover:text-white hover:transition'>Aviso de privacidad</a> y proporciona su consentimiento para recibir actualizaciones de Kalisch Acero.
                             </p>
                         </div>
                     </div>

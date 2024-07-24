@@ -36,7 +36,7 @@ const Hero: React.FC<HeroProps> = () => {
                             <p className='w-auto text-justify font-medium'>¡Conócela!</p>
                         </div>
                         <div className='mt-5'>
-                        <button className="cursor-pointer transition-all flex flex-row items center justify-center bg-zinc-100 text-zinc-400 hover:text-white  px-6 py-2 rounded-lg
+                        <button className="cursor-pointer transition-all flex flex-row items-center justify-center bg-zinc-100 text-zinc-400 hover:text-white  px-6 py-2 rounded-lg
                             border-zinc-300
                             border-b-[4px] hover:bg-green-700 hover:border-green-800 hover:-translate-y-[1px] hover:border-b-[6px]
                             active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
