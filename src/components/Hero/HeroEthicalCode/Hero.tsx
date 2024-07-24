@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { FaDownload } from "react-icons/fa6";
 
 interface HeroProps {
 }
@@ -11,37 +12,41 @@ const Hero: React.FC<HeroProps> = () => {
             <div className='bg-white h-auto pb-24'>
                 <div className='flex flex-col mx-20 h-full items-center'>
                     <div className='lg:mx-32 md:mx-12 my-12 items-center'>
-                        <div className=''>
-                            <p className='text-2xl'>Nuestros Inicios</p>
-                        </div>
-                        <div className='mt-5 w-auto'>
-                            <p className='w-auto text-justify font-light'>En el año 1979 nació <b>Kalisch Acero</b> en la ciudad de Chihuahua, Chihuahua. Iniciamos con el proyecto de comercialización del acero y posteriormente añadimos una amplia gama de herramienta y ferretería, además, del habilitado de acero. En México contamos con sucursales en los estados de Chihuahua, Sonora, Sinaloa, Durango, Aguascalientes, Guanajuato y Zacatecas, además, en 2009 iniciamos nuestras operaciones en El Paso, Texas con la apertura de Kalisch Steel.</p>
+                        <div className='w-auto'>
+                            <p className='w-auto text-justify font-light'>Nuestro código de ética es la expresión del compromiso de todos los colaboradores de <strong>Kalisch Acero</strong> por mantener los más altos niveles de desempeño y un comportamiento óptimo, que oriente la forma de hacer negocios con honestidad, ética, profesionalismo y los valores de la empresa.</p>
                         </div>
                         <div className='mt-7 w-auto '>
-                            <p className='w-auto text-justify font-light'>En <b>Kalisch Acero</b> contamos con maquinaria de vanguardia, equipo innovador y desarrollo de talento que nos ayuda a fortalecer la relación con nuestros clientes y brindarles el mejor servicio. Nuestro código de conducta y normas están basados en nuestros valores, además, constantemente nos esforzamos por ser una empresa sostenible y comprometida con nuestra comunidad.</p>
+                            <p className='w-auto text-justify font-light'>Nuestros grupos de interés son: <strong>clientes, colaboradores, proveedores, accionistas, competidores, autoridades, acreedores y comunidad.</strong></p>
                         </div>
                     </div>
+                </div>
 
-                    <div className='mx-32 md:mx-12 my-12 items-center '>
-                        <div className='sm:ml-5'>
-                            <p className='text-2xl '>Conoce Nuestra Historia</p>
+                <div className='flex flex-col mx-20 h-full items-center'>
+                    <div className='lg:mx-32 md:mx-12 my-12 items-center'>
+                        <div className=''>
+                            <p className='text-2xl'>Construyendo un Entorno Organizacional Favorable</p>
                         </div>
-                        <div className=' rounded-full  '>
-                            <Image
-                                src="/definicion-de-la-educacion-sssssscontinua.jpg"
-                                alt="Descripción de la imagen"
-                                width={500}
-                                height={300}
-                                className="object-cover rounded-full xs:h-32 sm:h-80 sm:w-80 mt-16"
-                            />
+                        <div className='mt-5 w-auto'>
+                            <p className='w-auto text-justify font-light'>En <strong>Kalisch Acero</strong> nos preocupamos y ocupamos por construir un Entorno Organizacional Favorable, promover el sentido de pertenencia en la compañía, además de identificar, analizar y prevenir Factores de Riesgo Psicosocial entre nuestros colaboradores.</p>
                         </div>
-                    </div>
-                    <div>
-                        <div className='sm:ml-5'>
-                            <p className='w-214'>Así Iniciamos</p>
+                        <div className='mt-7 w-auto '>
+                            <p className='w-auto text-justify font-light'>Asumimos este compromiso con nuestra Política de Bienestar, la cual fomentamos activamente en nuestra compañía.</p>
                         </div>
-                        <div className='sm:ml-5 '>
-                            <p className='w-214 '>En la Cd. de Chihuahua, el Ing. Samuel Kalisch comienza esta historia con la venta de lámina negra. Gracias a su esfuerzo, determinación y enfoque, este proyecto se materializó y fue el punto de partida para Kalisch Acero.</p>
+                        <div className='mt-7 w-auto '>
+                            <p className='w-auto text-justify font-medium'>¡Conócela!</p>
+                        </div>
+                        <div className='mt-5'>
+                        <button className="cursor-pointer transition-all flex flex-row items-center justify-center bg-zinc-100 text-zinc-400 hover:text-white  px-6 py-2 rounded-lg
+                            border-zinc-300
+                            border-b-[4px] hover:bg-green-700 hover:border-green-800 hover:-translate-y-[1px] hover:border-b-[6px]
+                            active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
+                            <div>
+                                <p>Politica de Bienestar</p>
+                            </div>
+                            <div>
+                                <FaDownload className="inline-block text-sm text-zinc-400 hover:text-white  ml-2" />
+                            </div>
+                        </button>
                         </div>
                     </div>
                 </div>

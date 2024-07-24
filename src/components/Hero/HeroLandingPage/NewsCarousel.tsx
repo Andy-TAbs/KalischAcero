@@ -41,7 +41,7 @@ import React, { useEffect, useState } from 'react';
                         </div>
                         <div className="flex flex-row  lg:ml-0">
                             <div className="lg:ml-5 lg:w-144 xs:w-96 md:w-128">
-                                <p className="text-base text-gray-500 xs:mx-5 lg:mx-0">
+                                <p className="text-base text-gray-500 xs:mx-5 lg:mx-0 text-justify">
                                 {item.text}
                                 </p>
                             </div>
