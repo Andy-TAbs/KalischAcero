@@ -1,5 +1,9 @@
 import React from 'react';
 import { FaFacebookF } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { IoLogoYoutube } from "react-icons/io";
+import { FaTiktok } from "react-icons/fa6";
 
 interface Props {
     // Define las propiedades del componente aquí
@@ -10,15 +14,42 @@ const SocialButtons: React.FC<Props> = () => {
 
     return (
         // JSX del componente aquí
-        <div className='w-screen items-end justify-end '>
-            <div className='fixed '>
-            <button className="md:block w-10 h-10 relative mt-28 bg-blue-500 " role="button" title="Button" >
-                <div className='w-3 h-3 items-center justify-center text-white'>
-                    <FaFacebookF />
-                </div>
-            </button>
+        <div className='w-screen items-end justify-end'>
+            <div className='fixed right-0 top-60'>
+                <button className="md:block w-10 h-10 relative  bg-blue-500 hover:bg-blue-300 transition-all ease-in hover:-translate-x-3 flex items-center justify-center" role="button" title="Facebook">
+                    <div className='w-full h-full flex items-center justify-center text-white'>
+                        <FaFacebookF className='w-5 h-5'/>
+                    </div>
+                </button>
             </div>
-
+            <div className='fixed right-0 top-70'>
+                <button className="md:block w-10 h-10 relative  bg-neutral-950 hover:bg-neutral-500 transition-all ease-in hover:-translate-x-3 flex items-center justify-center" role="button" title="Twitter">
+                    <div className='w-full h-full flex items-center justify-center text-white'>
+                        <FaXTwitter className='w-5 h-5'/>
+                    </div>
+                </button>
+            </div>
+            <div className='fixed right-0 top-80'>
+                <button className="md:block w-10 h-10 relative  bg-rose-600 hover:bg-rose-300 transition-all ease-in hover:-translate-x-3 flex items-center justify-center" role="button" title="Facebook">
+                    <div className='w-full h-full flex items-center justify-center text-white'>
+                        <FaInstagram className='w-5 h-5'/>
+                    </div>
+                </button>
+            </div>
+            <div className='fixed right-0 top-90'>
+                <button className="md:block w-10 h-10 relative  bg-red-500 hover:bg-red-300 transition-all ease-in hover:-translate-x-3 flex items-center justify-center" role="button" title="Facebook">
+                    <div className='w-full h-full flex items-center justify-center text-white'>
+                        <IoLogoYoutube className='w-5 h-5'/>
+                    </div>
+                </button>
+            </div>
+            <div className='fixed right-0 top-101'>
+                <button className="md:block w-10 h-10 relative  bg-neutral-950 hover:bg-neutral-500 transition-all ease-in hover:-translate-x-3 flex items-center justify-center" role="button" title="Facebook">
+                    <div className='w-full h-full flex items-center justify-center text-white'>
+                        <FaTiktok className='w-5 h-5'/>
+                    </div>
+                </button>
+            </div>
         </div>
     );
 };
