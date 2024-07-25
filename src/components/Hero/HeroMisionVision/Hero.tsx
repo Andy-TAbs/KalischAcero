@@ -3,13 +3,21 @@ import React from 'react';
 import Image from 'next/image';
 import { Accordion } from 'react-bootstrap';
 import ScrollTopButton from '@/components/Global/ScrollTopButton';
+import SocialButtons from '@/components/Global/SocialButtons';
 interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = () => {
     return (
     <div className="w-screen">
-        <div className='bg-black h-204'></div>
+        <div className='flex flex-row h-auto w-auto bg-black'>
+            <div className='bg-black h-204'>
+
+            </div>
+            <div>
+                <SocialButtons />
+            </div>
+        </div>
             <div className='bg-white h-auto pb-24 w-auto'>
             <div className="fixed z-50 items-end bottom-5 right-8">
                         <div className="sticky-position xs:hidden md:block">

@@ -18,7 +18,7 @@ import React, { useEffect, useState } from 'react';
     }, [newsLength]);
 
     return (
-        <div className="overflow-hidden w-full xl:ml-60">
+        <div className="overflow-hidden w-full xl:ml-60 xs:pb-80">
         <div
             className="flex transition-transform duration-700 ease-in-out"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
