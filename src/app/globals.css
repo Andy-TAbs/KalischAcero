@@ -322,7 +322,6 @@ body {
   position: relative;
   width: 13rem;
   height: 13rem;
-  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -379,6 +378,34 @@ body {
   transform: rotate(-45deg);
 }
 
+/*CardSecond Colors*/
 
+.CardSecondOne{
+  background: linear-gradient(-45deg, #f87829 0%, #ff0f0f 100% );
+}
+.CardSecondTwo{
+  background: linear-gradient(-45deg, #9429f8 0%, #ff0ffb 100% );
+}
+.CardSecondThree{
+  background: linear-gradient(-45deg, #fdff6c 0%, #ffe30f 100% );
+}
+.CardSecondFour{
+  background: linear-gradient(-45deg, #ceff5c 0%, #0fff23 100% );
+}
+.CardSecondFive{
+  background: linear-gradient(-45deg, #ffd862 0%, #ff8f0f 100% );
+}
+.CardSecondSix{
+  background: linear-gradient(-45deg, #72ffff 0%, #0fe3ff 100% );
+}
+.CardSecondSeven{
+  background: linear-gradient(-45deg, #f829d6 0%, #ae0b88 100% );
+}
+.CardSecondEight{
+  background: linear-gradient(-45deg, #52b9fd 0%, #0d8fd0 100% );
+}
+.CardSecondNine{
+  background: linear-gradient(-45deg, #29b0f8 0%, #0f17ff 100% );
+}
 
 
