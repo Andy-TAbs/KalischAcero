@@ -30,7 +30,7 @@ const SocialButtons: React.FC<Props> = () => {
                 </button>
             </div>
             <div className='fixed right-0 top-80 xs:hidden md:block'>
-                <button className="md:block w-10 h-10 relative  bg-rose-600 hover:bg-rose-300 transition-all ease-in hover:-translate-x-3 flex items-center justify-center" role="button" title="Instagram">
+                <button className="md:block w-10 h-10 relative  InstagramButton hover:bg-rose-300 transition-all ease-in hover:-translate-x-3 flex items-center justify-center" role="button" title="Instagram">
                     <div className='w-full h-full flex items-center justify-center text-white'>
                         <FaInstagram className='w-5 h-5'/>
                     </div>

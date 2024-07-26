@@ -308,5 +308,77 @@ body {
 }
 
 
+/* SocialButtons Gradient*/
+.InstagramButton{
+  background: linear-gradient(45deg,  #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D,#FFDC80);
+}
+.InstagramButton:hover{
+  background: linear-gradient(45deg, #6b65df, #904fbc, #bf5390, #e66c95, #fb5757,#fbe09b );
+}
+
+/*Second card type in Nosotros/Talent page*/
+
+.cardSecond {
+  position: relative;
+  width: 13rem;
+  height: 13rem;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.cardSecond svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.cardSecond:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cardSecond__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.cardSecond:hover .cardSecond__content {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+.cardSecond__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.cardSecond__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.cardSecond:hover svg {
+  scale: 0;
+  transform: rotate(-45deg);
+}
+
+
 
 
