@@ -22,7 +22,7 @@ const headerOptionsPlaces = [
 
 export const SecHeader: React.FC<HeaderProps> = ({ title }) => {
     return (
-<div className="hidden lg:block z-40">
+<div className="hidden lg:block z-50">
     <div className='w-screen'>
         <nav className="bg-white bg-opacity-100 backdrop-blur-md px-6 lg:px-6 py-1 dark:bg-gray-800  z-50 h-14">
             <div className="flex flex-wrap justify-between items-start mx-auto max-w-screen-xl z-50">

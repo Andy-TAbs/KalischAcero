@@ -8,6 +8,7 @@ import { FaArrowRight } from "react-icons/fa";
 import NewsCarousel from "./NewsCarousel";
 import FlipCard2 from "../../Global/FlipCard2";
 import ScrollTopButton from "@/components/Global/ScrollTopButton";
+import SocialButtons from "@/components/Global/SocialButtons";
 
 const newsData = [
     {
@@ -83,6 +84,9 @@ export const Hero = () => {
                         <div className="relative flex-shrink-0 z-10 overflow-x-hidden">
                             <img src="/Portada_K_2.png" className="object-cover overflow-x-clip w-full h-full" alt="Portada_K_2" />
                             <img src="/Logotipo_KA2022_v19.png" className="absolute top-60 left-80 h-44 w-112 max-w-full max-h-full ml-8" alt="Logotipo_KA2022_v19" />
+                        </div>
+                        <div className="z-50">
+                            <SocialButtons />
                         </div>
                     </div>
                     <div className="fixed z-50 items-end bottom-5 right-8">

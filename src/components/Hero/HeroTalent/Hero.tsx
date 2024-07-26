@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import SocialButtons from '@/components/Global/SocialButtons';
 
 interface HeroProps {
 }
@@ -8,6 +9,9 @@ const Hero: React.FC<HeroProps> = () => {
     return (
         <div className="w-screen">
             <div className='bg-black h-204'></div>
+            <div>
+                <SocialButtons />
+            </div>
             <div className='bg-white h-auto pb-24'>
                 <div className='flex flex-col mx-20 h-full items-center'>
                     <div className='lg:mx-32 md:mx-12 my-12 items-center'>
