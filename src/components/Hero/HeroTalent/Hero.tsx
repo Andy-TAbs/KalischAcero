@@ -1,9 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React from 'react';
 import Image from 'next/image';
 import { Accordion } from 'react-bootstrap';
 import SocialButtons from '@/components/Global/SocialButtons';
 import { REM } from 'next/font/google';
+import CarouselTalent from './CarouselTalent';
 
 interface HeroProps {
 }
@@ -192,6 +194,12 @@ const Hero: React.FC<HeroProps> = () => {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div className='flex items-center justify-center mt-60'>
+                            <p className='text-2xl'>Testimonios</p>
+                        </div>
+                        <div className='mb-40'>
+                        <CarouselTalent />
                         </div>
                     </div>
             </div>
