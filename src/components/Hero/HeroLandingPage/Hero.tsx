@@ -77,13 +77,13 @@ export const Hero = () => {
         <main role="main">
             <div className="bg-white">
                 <div>
-                    <div className="flex flex-row w-full max-h-full overflow-x-hidden">
-                        <div className="flex-shrink-0 relative z-0 overflow-x-hidden">
-                            <img src="/Portada_K_1.png" className="object-contain " alt="Portada_K_1" />
+                    <div className="flex flex-row w-full min-h-full overflow-x-hidden">
+                        <div className="flex-shrink-0 relative z-0  overflow-x-hidden">
+                            <img src="/Portada_K_1.png" className="object-contain 3xl:h-220" alt="Portada_K_1" />
                         </div>
                         <div className="relative flex-shrink-0 z-10 overflow-x-hidden">
-                            <img src="/Portada_K_2.png" className="object-cover overflow-x-clip w-full h-full" alt="Portada_K_2" />
-                            <img src="/Logotipo_KA2022_v19.png" className="absolute top-60 left-80 h-44 w-112 max-w-full max-h-full ml-8" alt="Logotipo_KA2022_v19" />
+                            <img src="/Portada_K_2.png" className="object-cover overflow-visible w-full h-full 3xl:ml-52" alt="Portada_K_2" />
+                            <img src="/Logotipo_KA2022_v19.png" className="absolute top-60 3xl:top-90 left-80 3xl:left-144 h-44 w-112 max-w-full max-h-full ml-8" alt="Logotipo_KA2022_v19" />
                         </div>
                         <div className="z-50">
                             <SocialButtons />
@@ -251,7 +251,7 @@ export const Hero = () => {
                     <div className="">
                         <p className=" font-normal my-14 text-3xl">Noticias</p>
                     </div>
-                    <div className=" w-screen">
+                    <div className=" w-screen flex items-center justify-center">
                         <NewsCarousel news={newsData} />
                     </div>
                 </div>
