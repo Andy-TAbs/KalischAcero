@@ -115,6 +115,7 @@ body {
   width: 16rem;
   height: 16rem;
   perspective: 1000px;
+  border: none;
 }
 
 .card-inner {
