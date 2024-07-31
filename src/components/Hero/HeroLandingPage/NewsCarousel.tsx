@@ -22,7 +22,7 @@ import Carousel from 'react-bootstrap/Carousel';
     return (
 
         <Carousel>
-        <Carousel.Item interval={10000}>
+        <Carousel.Item interval={5000}>
         <div className="overflow-hidden w-full ">
             <div className="flex transition-transform duration-700 ease-in-out flex-shrink-0 w-full items-center">
                     <div className="lg:flex lg:flex-row  items-center">
@@ -60,7 +60,7 @@ import Carousel from 'react-bootstrap/Carousel';
                 </div>
             </div>
         </Carousel.Item>
-        <Carousel.Item interval={10000}>
+        <Carousel.Item interval={5000}>
         <div className="overflow-hidden w-full ">
             <div className="flex  w-full items-center">
                     <div className="lg:flex lg:flex-row md:flex-col items-center justify-center">
