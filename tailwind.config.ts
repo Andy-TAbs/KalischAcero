@@ -11,11 +11,21 @@ const config: Config = {
     extend: {
       screens: {
         'xs': '300px',
+        "xsm": '500px',
+        "mdl": '900px',
+        "lgx": '1180px',
+        '3xl': '1920px',
+        '4xl': '2560px',
       },
       spacing: {
         '41': '10.25rem',
         '42': '10.5rem',
         '43': '10.75rem',
+        '70': '17.50rem',
+        '76': '19rem',
+        '88': '22rem',
+        '90':'22.50rem',
+        '101': '25rem',
         '104': '26rem',
         '112': '28rem',
         '116': '29rem',

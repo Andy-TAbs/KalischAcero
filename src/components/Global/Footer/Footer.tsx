@@ -14,8 +14,8 @@ export interface FooterProps {
 export const Footer: React.FC<FooterProps> = () => {
     return (
 <div className='w-full'>
-<footer>
-    <div  className="flex flex-col items-start justify-between w-full lg:h-80 xs:h-auto sm:h-auto bg-black">
+<footer role='contentinfo'>
+    <div  className="flex flex-col items-start justify-between w-full lg:h-80 2xl:items-center xs:h-auto sm:h-auto bg-black">
         <div className='xl:mt-7 xl:ml-48 sm:ml-10 sm:flex-col md:flex'>
             <div className='flex flex-col lg:flex-row'>
                     {/* Sección de redes sociales */}
