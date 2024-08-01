@@ -13,7 +13,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
     return (
 
-        <Carousel>
+        <Carousel prevIcon nextIcon>
         <Carousel.Item interval={5000}>
         <div className=" w-screen ">
             <div className="flex  w-full  items-center justify-center">

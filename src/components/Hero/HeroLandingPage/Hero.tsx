@@ -7,6 +7,7 @@ import FlipCardSlider from "../../Global/SliderCards";
 import { FaArrowRight } from "react-icons/fa";
 import NewsCarousel from "./NewsCarousel";
 import FlipCard2 from "../../Global/FlipCard2";
+import SliderAlliance from "./SliderAlliance";
 import ScrollTopButton from "@/components/Global/ScrollTopButton";
 import SocialButtons from "@/components/Global/SocialButtons";
 
@@ -230,11 +231,13 @@ export const Hero = () => {
                     <div className="">
                         <p className=" font-normal my-14 text-3xl">Noticias</p>
                     </div>
-                    <div className=" w-screen flex items-center justify-center">
+                    <div className=" w-screen flex items-center justify-center pb-10">
                         <NewsCarousel />
                     </div>
                 </div>
-                
+                <div>
+                    
+                </div>
             </div>
         </main>
     );

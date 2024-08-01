@@ -13,6 +13,7 @@ const config: Config = {
         'xs': '300px',
         "xsm": '500px',
         "mdl": '900px',
+        "lgx": '1180px',
         '3xl': '1920px',
         '4xl': '2560px',
       },
