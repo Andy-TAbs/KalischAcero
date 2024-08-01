@@ -10,28 +10,7 @@ import FlipCard2 from "../../Global/FlipCard2";
 import ScrollTopButton from "@/components/Global/ScrollTopButton";
 import SocialButtons from "@/components/Global/SocialButtons";
 
-const newsData = [
-    {
-        title:"Sucursal Exprés: Mazatlán Delfín",
-        text: "El Cuatro de Octubre inauguramos la primera sucursal exprés de Kalisch Acero en la ciudad de Mazatlán. En un terreno de 33m2 y con un total de 5 colaboradores damos inicio la operación de este nuevo modelo de negocio.",
-        image: "/definicion-de-la-educacion-sssssscontinua.jpg"
-    },
-    {
-        title:"Sucursal Exprés: Mazatlán Delfín",
-        text: "El Cuatro de Octubre inauguramos la primera sucursal exprés de Kalisch Acero en la ciudad de Mazatlán. En un terreno de 33m2 y con un total de 5 colaboradores damos inicio la operación de este nuevo modelo de negocio.",
-        image: "/definicion-de-la-educacion-sssssscontinua.jpg"
-    },
-    {
-        title:"Sucursal Exprés: Mazatlán Delfín",
-        text: "El Cuatro de Octubre inauguramos la primera sucursal exprés de Kalisch Acero en la ciudad de Mazatlán. En un terreno de 33m2 y con un total de 5 colaboradores damos inicio la operación de este nuevo modelo de negocio.",
-        image: "/definicion-de-la-educacion-sssssscontinua.jpg"
-    },
-    {
-        title:"Sucursal Exprés: Mazatlán Delfín",
-        text: "El Cuatro de Octubre inauguramos la primera sucursal exprés de Kalisch Acero en la ciudad de Mazatlán. En un terreno de 33m2 y con un total de 5 colaboradores damos inicio la operación de este nuevo modelo de negocio.",
-        image: "/definicion-de-la-educacion-sssssscontinua.jpg"
-    }
-];
+
 
 const Counter: React.FC<{ value: string }> = ({ value }) => {
     const [count, setCount] = useState(0);
@@ -252,7 +231,7 @@ export const Hero = () => {
                         <p className=" font-normal my-14 text-3xl">Noticias</p>
                     </div>
                     <div className=" w-screen flex items-center justify-center">
-                        <NewsCarousel news={newsData} />
+                        <NewsCarousel />
                     </div>
                 </div>
                 

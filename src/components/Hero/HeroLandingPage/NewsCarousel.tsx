@@ -4,29 +4,21 @@ import React, { useEffect, useState } from 'react';
 
 import Carousel from 'react-bootstrap/Carousel';
 
-    interface NewsCarouselProps {
-        news: { title: string; text: string; image: string }[];
-    }
+    function NewsCarousel() {
+        const [index, setIndex] = useState(0);
 
-    const NewsCarousel: React.FC<NewsCarouselProps> = ({ news }) => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const newsLength = news.length;
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % newsLength);
-        }, 20000); // Cambia cada 20 segundos
-        return () => clearInterval(interval);
-    }, [newsLength]);
+        const handleSelect = (selectedIndex: React.SetStateAction<number>) => {
+          setIndex(selectedIndex);
+        };
 
     return (
 
         <Carousel>
         <Carousel.Item interval={5000}>
-        <div className="overflow-hidden w-full ">
-            <div className="flex transition-transform duration-700 ease-in-out flex-shrink-0 w-full items-center">
-                    <div className="lg:flex lg:flex-row  items-center">
-                        <div className="lg:ml-0 lg:mx-0 flex flex-col items-center h-80 xs:mx-5">
+        <div className=" w-screen ">
+            <div className="flex  w-full  items-center justify-center">
+                    <div className="lg:flex lg:flex-row  items-center justify-center">
+                        <div className="lg:ml-0 lg:mx-0 flex flex-col items-center justify-center h-80 xs:mx-5">
                             <img
                             src="/definicion-de-la-educacion-sssssscontinua.jpg"
                             className="md:h-72 md:w-128 lg:mx-0"
@@ -61,8 +53,8 @@ import Carousel from 'react-bootstrap/Carousel';
             </div>
         </Carousel.Item>
         <Carousel.Item interval={5000}>
-        <div className="overflow-hidden w-full ">
-            <div className="flex  w-full items-center">
+        <div className="w-screen">
+            <div className="flex  w-full items-center justify-center">
                     <div className="lg:flex lg:flex-row md:flex-col items-center justify-center">
                         <div className=" lg:ml-0 lg:mx-0">
                             <img
