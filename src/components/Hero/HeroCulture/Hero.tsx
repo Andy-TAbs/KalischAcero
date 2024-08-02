@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import SocialButtons from '@/components/Global/SocialButtons';
+import ScrollTopButton from '@/components/Global/ScrollTopButton';
 
 interface HeroProps {
 }
@@ -13,6 +14,11 @@ const Hero: React.FC<HeroProps> = () => {
                 <SocialButtons />
             </div>
             <div className='bg-white min-h-screen h-auto pb-24'>
+            <div className="fixed z-50 items-end bottom-5 right-8">
+                <div className="sticky-position xs:hidden md:block">
+                    <ScrollTopButton />
+                </div>
+            </div>
                 <div className='flex flex-col xs:mx-5 md:mx-20 '>
                     <div className='lg:mx-32 md:mx-12 my-12 items-center'>
                         <div className=''>

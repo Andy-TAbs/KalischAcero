@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { FaDownload } from "react-icons/fa6";
 import SocialButtons from '@/components/Global/SocialButtons';
+import ScrollTopButton from '@/components/Global/ScrollTopButton';
 
 interface HeroProps {
 }
@@ -14,6 +15,11 @@ const Hero: React.FC<HeroProps> = () => {
                 <SocialButtons />
             </div>
             <div className='bg-white h-auto pb-24'>
+                <div className="fixed z-50 items-end bottom-5 right-8">
+                    <div className="sticky-position xs:hidden md:block">
+                        <ScrollTopButton />
+                    </div>
+                </div>
                 <div className='flex flex-col mx-20 h-full items-center'>
                     <div className='lg:mx-32 md:mx-12 my-12 items-center'>
                         <div className='w-auto'>

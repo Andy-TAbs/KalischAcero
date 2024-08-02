@@ -20,10 +20,10 @@ const Hero: React.FC<HeroProps> = () => {
         </div>
             <div className='bg-white h-auto pb-24 w-auto'>
             <div className="fixed z-50 items-end bottom-5 right-8">
-                        <div className="sticky-position xs:hidden md:block">
-                            <ScrollTopButton />
-                        </div>
-                    </div>
+                <div className="sticky-position xs:hidden md:block">
+                    <ScrollTopButton />
+                </div>
+            </div>
                 <div className='flex flex-col mx-20 h-full items-center'>
                     <div className='mx-32 md:mx-12  mt-20 h-auto w-auto items-center justify-start flex flex-row '>
                         <div>

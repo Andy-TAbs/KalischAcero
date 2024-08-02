@@ -6,6 +6,7 @@ import { Accordion } from 'react-bootstrap';
 import SocialButtons from '@/components/Global/SocialButtons';
 import { REM } from 'next/font/google';
 import CarouselTalent from './CarouselTalent';
+import ScrollTopButton from '@/components/Global/ScrollTopButton';
 
 interface HeroProps {
 }
@@ -18,6 +19,11 @@ const Hero: React.FC<HeroProps> = () => {
                 <SocialButtons />
             </div>
             <div className='bg-white h-auto pb-24 items-center justify-center'>
+            <div className="fixed z-50 items-end bottom-5 right-8">
+                <div className="sticky-position xs:hidden md:block">
+                    <ScrollTopButton />
+                </div>
+            </div>
                 <div className='flex flex-col h-full items-center'>
                     <div className='lg:mx-52 md:mx-12 my-12 items-center'>
                         <div className=''>
@@ -65,7 +71,7 @@ const Hero: React.FC<HeroProps> = () => {
                         <div className="flex items-center justify-center mt-5 mb-2">
                             <Image
                                 src="/postulate1.png"
-                                alt="Descripción de la imagen"
+                                alt="Postulate"
                                 width={300}
                                 height={100}
                                 className=""
