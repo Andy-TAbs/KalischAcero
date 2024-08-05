@@ -14,7 +14,7 @@
                     <p className="font-normal my-14 text-3xl">Industrias</p>
                 </div>
                 <div className='flex justify-center items-center '>
-                <Carousel activeIndex={index} onSelect={handleSelect} className='w-5/6'>
+                <Carousel activeIndex={index} onSelect={handleSelect} className='w-screen'>
                     <Carousel.Item className='pt-3'>
                     <div className="flex flex-col mb-16  items-center">
                         <div className="flex lg:flex-row xs:flex-col ">
