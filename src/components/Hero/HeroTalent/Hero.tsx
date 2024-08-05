@@ -7,9 +7,20 @@ import SocialButtons from '@/components/Global/SocialButtons';
 import { REM } from 'next/font/google';
 import CarouselTalent from './CarouselTalent';
 import ScrollTopButton from '@/components/Global/ScrollTopButton';
+import AccordionItem from '@/components/Global/AccordionItem';
 
 interface HeroProps {
 }
+const accordionItems = [
+    {
+      header: 'Accordion Item #1',
+      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+    {
+      header: 'Accordion Item #2',
+      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+  ];
 
 const Hero: React.FC<HeroProps> = () => {
     return (
@@ -39,32 +50,9 @@ const Hero: React.FC<HeroProps> = () => {
                             <div className='mb-5'>
                                 <p className='text-2xl'>¿Cúales son nuestras  competencias de liderazgo?</p>
                             </div>
-                            <Accordion defaultActiveKey="0" className=' justify-center items-center w-256 h-80 '>
-                                <Accordion.Item eventKey="0">
-                                    <Accordion.Header className='min-w-full'>Misión</Accordion.Header>
-                                        <Accordion.Body className='h-auto min-w-full'>
-                                            <p className='text-sm text-justify'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis amet eius voluptatibus ab magnam quisquam facilis illum doloribus repellat odio similique minima nobis aperiam vitae, esse voluptate dolorum doloremque quae in recusandae neque laborum reiciendis dolores! Voluptate magnam, molestias harum sapiente eligendi optio voluptatibus corporis consequuntur quos accusamus modi architecto fugit commodi, facere laboriosam! Non sequi, sunt labore excepturi dolorem ex. Eveniet consectetur, voluptas et laudantium hic unde laboriosam modi suscipit, nihil magni animi possimus ea eius. Ipsa cum ad vel, placeat culpa, voluptatibus, omnis libero laboriosam repellendus similique esse?</p>
-                                        </Accordion.Body>
-                                </Accordion.Item>
-                                <Accordion.Item eventKey="1">
-                                    <Accordion.Header>Visión</Accordion.Header>
-                                        <Accordion.Body>
-                                            <p className='text-sm text-justify'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos inventore, tenetur pariatur delectus maxime assumenda reprehenderit, autem dolor possimus cum velit quidem nobis repellendus eos quos, voluptatibus est suscipit deleniti perferendis officiis nisi veniam quasi veritatis. Laborum quibusdam quia explicabo ad dolores. Temporibus ut in, eligendi inventore quo beatae libero id obcaecati eos doloribus voluptates possimus non explicabo blanditiis voluptatum nemo ab soluta? Perferendis cumque vel impedit placeat provident, doloremque dolorem illum deserunt voluptatum veniam, ex ut nisi fugit officiis laborum odit officia non dolore. Repellendus odit quas laboriosam voluptatum.</p>
-                                        </Accordion.Body>
-                                </Accordion.Item>
-                                <Accordion.Item eventKey="2">
-                                    <Accordion.Header>Valores</Accordion.Header>
-                                        <Accordion.Body>
-                                            <p className='text-sm text-justify'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, recusandae, non earum aperiam veniam beatae adipisci architecto at, error ab ea doloremque? Doloribus, aut quasi! Odio fuga, quas nostrum odit mollitia quia? Ducimus doloremque totam consequatur placeat fugit hic dicta enim quibusdam aliquid asperiores modi, aliquam sed beatae? Doloribus tempore aut assumenda nam accusamus expedita, voluptates voluptatibus quisquam minus rem aperiam similique repudiandae quod quibusdam ex labore iusto quas eos eligendi sunt a? Nisi, veritatis vero rem repellendus ut voluptatum atque earum excepturi laudantium iste ullam similique! Commodi, dolorum harum.</p>
-                                        </Accordion.Body>
-                                </Accordion.Item>
-                                <Accordion.Item eventKey="3">
-                                    <Accordion.Header>Politica de calidad</Accordion.Header>
-                                        <Accordion.Body>
-                                            <p className='text-sm text-justify'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti neque, beatae exercitationem natus quia quaerat molestias harum possimus, inventore tempore vitae ratione distinctio ea impedit, amet eius excepturi at similique nostrum assumenda? Facere dolore iusto vero quae aliquid minima iste, modi veritatis accusantium tenetur placeat ducimus recusandae iure sint expedita inventore quo sit maiores! Sunt eius optio quas voluptatum dolorem sequi id expedita? Ducimus porro quae perferendis consequatur consequuntur iure eius ullam harum omnis tenetur, voluptas exercitationem optio labore explicabo, deserunt ad inventore aperiam. Sequi sapiente animi dolores voluptates voluptas?</p>
-                                        </Accordion.Body>
-                                </Accordion.Item>
-                            </Accordion>
+                            <div className="p-4 w-256">
+                                <AccordionItem items={accordionItems} />
+                            </div>
                         </div>
                     </div>
                     <div className='flex flex-col'>
