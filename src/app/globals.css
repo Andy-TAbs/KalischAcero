@@ -484,3 +484,59 @@ body {
 .ButtonCultureFive{
   background: linear-gradient(-45deg, #ff6262 0%, #ff1515 100% );
 }
+
+
+/* FlipCards Style in HeroCulture */
+.cardCulture {
+  width: 13rem;
+  height: 16rem;
+  perspective: 1000px;
+  border: none;
+}
+
+.cardCulture-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.cardCulture:hover .cardCulture-inner {
+  transform: rotateY(180deg);
+}
+
+.cardCulture-front,
+.cardCulture-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.cardCulture-front {
+  background-color: #207133;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 1px transparent #207133;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(0deg);
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+}
+
+.cardCulture-back {
+  background-color: #e7e7e7;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  border: 10px solid #e7e7e7;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
+}
+/* End of FlipCards Style in Hero.tsx */

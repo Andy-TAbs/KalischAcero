@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Carousel } from 'react-bootstrap';
 import SocialButtons from '@/components/Global/SocialButtons';
 import ScrollTopButton from '@/components/Global/ScrollTopButton';
-import FlipCard2 from '@/components/Global/FlipCard2';
+import FlipCardsCulture from './FlipcardsCulture';
 
 interface HeroProps {
 }
@@ -36,7 +36,7 @@ const Hero: React.FC<HeroProps> = () => {
                     </div>
                 </div>
 
-                <div className='flex flex-col h-auto items-start'>
+                <div className='flex flex-col items-start xs:min-h-screen md:min-h-32'>
                     <div className='flex xs:flex-col md:flex-row md:mx-20 mdl:mx-28 lg:mx-40 lgx:mx-48 xl:mx-48 2xl:mx-72 3xl:mx-101 h-52 w-60 '>
                         <div className='md:w-60 xs:h-80 md:h-56'>
                             <button className="buttonCulture xs:h-60 md:h-32 lg:h-40 xl:h-48 3xl:h-60 xs:w-60 md:w-32 lg:w-40 xl:w-48 3xl:w-60 ButtonCultureOne">
@@ -80,14 +80,13 @@ const Hero: React.FC<HeroProps> = () => {
                         </div>
                     </div>
                 </div>
-                
                 <div className='flex flex-col xs:mx-5 md:mx-20 '>
                     <div className='h-auto mt-60 mx-32'>
                         <Image src='/konecta_logo.svg' alt='Culture' width={360} height={144} />
                     </div>
-                        <div className='lg:mx-32 md:mx-12 my-12 items-center'>
-                            <div className='flex flex-row'>
-                                <div className='felx-flex-col w-3/5 mr-16'>
+                        <div className='xl:mx-32 lg:mx-16 md:mx-12 my-12 items-center'>
+                            <div className='flex lg:flex-row xs:flex-col'>
+                                <div className='flex flex-col lg:w-3/5 md:w-fit '>
                                     <div className=''>
                                         <p className='text-2xl'>Cultura Kalisch</p>
                                     </div>
@@ -96,20 +95,20 @@ const Hero: React.FC<HeroProps> = () => {
                                         <p className='w-auto text-justify font-light'>En Kalisch Acero queremos que nuestros colaboradores sean partícipes del esfuerzo que invierten en sus actividades, además, el involucramiento que realizamos con nuestra gente en este tipo de actividades es fundamental para fomentar la participación, comunicación y sentido de pertenencia.</p>
                                     </div>
                                 </div>
-                                <div className='mt-7 flex w-2/5'>
+                                <div className='mt-7 flex 2xl:w-2/5 xs:w-full items-center justify-center'>
                                     <Carousel  fade className='flex flex-col w-5/6'>
                                         <Carousel.Item>
-                                            <Image src='/saul.png' alt='Culture' width={360} height={144} />
+                                            <Image src='/saul.png' alt='Culture' width={360} height={144} className='w-full h-auto' />
                                             <Carousel.Caption>
                                             </Carousel.Caption>
                                         </Carousel.Item>
                                         <Carousel.Item>
-                                        <Image src='/Alberto.png' alt='Culture' width={360} height={144} />
+                                        <Image src='/Alberto.png' alt='Culture' width={360} height={144} className='w-full h-auto'/>
                                             <Carousel.Caption>
                                             </Carousel.Caption>
                                         </Carousel.Item>
                                         <Carousel.Item>
-                                        <Image src='/elizabeth.png' alt='Culture' width={360} height={144} />
+                                        <Image src='/elizabeth.png' alt='Culture' width={360} height={144} className='w-full h-auto'/>
                                             <Carousel.Caption>
                                             </Carousel.Caption>
                                         </Carousel.Item>
@@ -118,47 +117,55 @@ const Hero: React.FC<HeroProps> = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col xs:mx-5 md:mx-20 '>
-                    <div className='lg:mx-32 md:mx-12 my-12 items-center'>
-                        <div className=''>
+                    <div className='flex flex-col xs:mx-5  '>
+                    <div className=' my-12 items-center'>
+                        <div className='md:mx-32'>
                             <p className='text-2xl'>Reconocimiento</p>
                         </div>
-                        <div className='mt-5 w-auto'>
+                        <div className='mt-5 w-auto md:mx-32'>
                             <p className='w-auto text-justify font-light mb-10'>Somos un equipo que constantemente se esfuerza por lograr los objetivos que nos proponemos, en Kalisch Acero reconocemos la excelencia de nuestros colaboradores a través de los siguientes premios:</p>
                         </div>
-                        <div className="flex lg:flex-row xs:flex-col ">
+                        <div className="flex lg:flex-row xs:flex-col  xl:mx-32 xs:mb-10">
 
-                        <div className="xl:mr-8 lg:mr-3 lg:ml-3 xs:mb-10">
-                            <FlipCard2
-                            image="https://via.placeholder.com/150"
-                            title="Título 1"
-                            text="Texto adicional 1"
-                            link="#link1"
-                            />
-                        </div>
-                        <div className="xl:mr-8 lg:mr-3 xs:mb-10">
-                            <FlipCard2
-                            image="https://via.placeholder.com/150"
-                            title="Título 1"
-                            text="Texto adicional 1"
-                            link="#link1"
-                            />
-                        </div>
-                        <div className="xl:mr-8 lg:mr-3 xs:mb-10">
-                            <FlipCard2
-                            image="https://via.placeholder.com/150"
-                            title="Título 1"
-                            text="Texto adicional 1"
-                            link="#link1"
-                            />
-                        </div>
-                        <div className="xl:mr-8  xs:mb-10">
-                            <FlipCard2
-                            image="https://via.placeholder.com/150"
-                            title="Título 1"
-                            text="Texto adicional 1"
-                            link="#link1"
-                            />
+                            <div className="xl:mr-8 lg:mr-3 lg:ml-3">
+                                <FlipCardsCulture
+                                image="/servicio.jpg"
+                                title="Título 1"
+                                text="Texto adicional 1"
+                                link="#link1"
+                                />
+                            </div>
+                            <div className="xl:mr-8 lg:mr-3 ">
+                                <FlipCardsCulture
+                                image="/creatividad.jpg"
+                                title="Título 1"
+                                text="Texto adicional 1"
+                                link="#link1"
+                                />
+                            </div>
+                            <div className="xl:mr-8 lg:mr-3 ">
+                                <FlipCardsCulture
+                                image="/motivacion.jpg"
+                                title="Título 1"
+                                text="Texto adicional 1"
+                                link="#link1"
+                                />
+                            </div>
+                            <div className="xl:mr-8 lg:mr-3">
+                                <FlipCardsCulture
+                                image="/desempenoextraordinario.jpg"
+                                title="Título 1"
+                                text="Texto adicional 1"
+                                link="#link1"
+                                />
+                            </div>
+                            <div className="  ">
+                                <FlipCardsCulture
+                                image="/dejandohuella.jpg"
+                                title="Título 1"
+                                text="Texto adicional 1"
+                                link="#link1"
+                                />
                         </div>
                     </div>
                     </div>
