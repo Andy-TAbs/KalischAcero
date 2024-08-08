@@ -12,7 +12,6 @@ const FlipCardsCulture: React.FC<Props> = ({ link, text, title, image }) => {
         <div className="cardCulture">
             <div className="cardCulture-inner" >
                 <div className="cardCulture-front" style={{ backgroundImage: `url(${image})` }}>
-                    
                 </div>
                 <div className="cardCulture-back flex flex-col">
                     <p className=''>{title}</p>

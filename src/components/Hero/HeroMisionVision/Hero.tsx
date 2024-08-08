@@ -10,22 +10,22 @@ interface HeroProps {
 
 const accordionItems = [
     {
-      header: 'Accordion Item #1',
-      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-    },
-    {
-      header: 'Accordion Item #2',
-      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        header: 'Accordion Item #1',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
         header: 'Accordion Item #2',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-      },
-      {
+    },
+    {
+        header: 'Accordion Item #2',
+        body: 'Lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+    {
         header: 'Accordion Item #2',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-      },
-  ];
+    },
+];
 
 const Hero: React.FC<HeroProps> = () => {
     return (
@@ -50,7 +50,7 @@ const Hero: React.FC<HeroProps> = () => {
                                 <AccordionItem items={accordionItems} />
                             </div>
                         <div className="h-auto w-auto mx-7 mb-8">
-                            <img src="/mision-valores-etc.png" className="h-72 w-auto" alt="Kalisch_Logo"/>
+                            <Image width={1200} height={500} src="/mision-valores-etc.png" className="h-64 w-auto" alt="Kalisch_Logo"/>
                         </div>
                     </div>
                 </div>

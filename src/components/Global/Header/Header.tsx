@@ -5,6 +5,7 @@ import DropdownMenu from './dropdownMenu';
 import { SecHeader } from './secHeader';
 import DropdownMenuMobile from './dropdownMenuMobile';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface HeaderProps {
     title: string;
@@ -58,7 +59,7 @@ export const Header: React.FC<HeaderProps> = ({ title }) => {
                                 <DropdownMenuMobile />
                             </div>
                             <a href="/" className="mx-auto lg:mx-0 ">
-                                <img src="/kfa_movil_50.png" className="lg:h-9 sm:h-9 xs:h-10 2xl:pl-20 2xl:ml-20 z-40 " alt="Kalisch_Logo"/>
+                                <Image width={200} height={100} src="/kfa_movil_50.png" className="lg:h-9 w-auto sm:h-9 xs:h-10 2xl:pl-16 2xl:ml-20 z-40 " alt="Kalisch_Logo"/>
                             </a>
                             <img src="/search.png" className="w-6 h-6 lg:hidden" alt="Search" />
                             <div className="hidden lg:flex flex-col lg:flex-row lg:items-center lg:ml-auto 2xl:mr-52 ">

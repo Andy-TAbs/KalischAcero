@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 type FlipCardProps = {
@@ -35,7 +36,7 @@ const FlipCard = ({ image, title, text, link }: FlipCardProps) => {
                             </div>
                         </div>
                     ) : (
-                        <img src={image} alt="Imagen frontal" className="w-full h-full object-cover rounded backface-hidden" />
+                        <Image src={image} width={520} height={520} alt="Imagen frontal" className="w-full h-full object-cover rounded backface-hidden" />
                     )}
                 </div>
             </div>
