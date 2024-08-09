@@ -18,7 +18,7 @@ const FlipCard2: React.FC<Props> = ({ link, text, title, image }) => {
                     <p className=''>{title}</p>
                     <p className='text-sm'>{text}</p>
                     <div className=''>
-                        <a href={link} className="text-blue-500  hover:underline transform text-sm">Enlace</a>
+                        <a href={link} className="text-blue-500  hover:underline transform text-sm">Ver más Información</a>
                     </div>
                 </div>
             </div>

@@ -70,6 +70,12 @@ const config: Config = {
       fontSize:{
         "xxs" : '0.60rem',
       },
+      transitionDuration: {
+        '800': '800ms',
+        '850': '850ms',
+        '890': '890ms',
+        '900': '900ms',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

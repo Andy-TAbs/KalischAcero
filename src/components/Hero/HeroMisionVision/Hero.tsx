@@ -10,12 +10,12 @@ interface HeroProps {
 
 const accordionItems = [
     {
-        header: 'Accordion Item #1',
-        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        header: 'Misión',
+        body: 'Crear un valor superior para nuestros clientes y colaboradores, proporcionando el mejor servicio en la comercialización de productos y soluciones innovadoras de acero a través de nuestra filosofía “Experiencia ÚniKa”.'
     },
     {
-        header: 'Accordion Item #2',
-        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        header: 'Visión',
+        body: 'Ser líder en el servicio y comercialización de acero en el noroeste y centro de México.  Continuar con la apertura de sucursales en México y optimizar la logística de distribución conforme al crecimiento planeado. Operar con procesos y sistemas ágiles, innovadores y efectivos. Fortalecer el negocio de habilitación y otros servicios integrales de acero. Consolidar la filosofía experiencia ÚniKa, que busca mantener la calidez en el trato, el cumplimiento de promesas, calidad y agilidad en el servicio, colaboradores capacitados y disponibilidad en el producto. Conservar la certificación Great Place to Work, manteniendo un equipo de colaboradores competente, motivado y comprometido. Conservar el distintivo de Empresa Socialmente Responsable. Incrementar la calidad de vida de los colaboradores. Emplear la comercialización de acero y accesorios por internet.'
     },
     {
         header: 'Accordion Item #2',
@@ -44,12 +44,12 @@ const Hero: React.FC<HeroProps> = () => {
                     <ScrollTopButton />
                 </div>
             </div>
-                <div className='flex flex-col mx-20 h-full items-center'>
-                    <div className='mx-32 md:mx-12  mt-20 h-auto w-auto items-center justify-start flex flex-row '>
-                    <div className="p-4 w-256">
+                <div className='flex flex-col xl:mx-20 3xl:mx-90 h-full items-center justify-center'>
+                    <div className='  mt-20 h-auto w-auto items-center justify-center lg:flex lg:flex-row '>
+                    <div className="p-4 w-2/4">
                                 <AccordionItem items={accordionItems} />
                             </div>
-                        <div className="h-auto w-auto mx-7 mb-8">
+                        <div className="h-auto w-2/4 items-center  justify-center">
                             <Image width={1200} height={500} src="/mision-valores-etc.png" className="h-64 w-auto" alt="Kalisch_Logo"/>
                         </div>
                     </div>
