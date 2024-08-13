@@ -34,7 +34,7 @@ const DropdownMenu: React.FC<buttonText> = ({ title, options }) => {
         >
           {options.map((option, index) => (
             <li key={index} className="">
-              <a className='block py-3 px-4 text-gray-700 hover:bg-gray-100' href={option.link}>{option.label}</a>
+              <a className='block py-3 px-4 text-gray-700 hover:text-green-700 transition-all ease-in hover:bg-gray-100' href={option.link}>{option.label}</a>
             </li>
           ))}
         </ul>

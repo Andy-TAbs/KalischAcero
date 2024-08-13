@@ -1,6 +1,8 @@
+"use client";
 import React from 'react';
 import Image from 'next/image';
-import SocialButtons from '@/components/Global/SocialButtons';
+import SocialButtons from '@/components/Global/SocialButtons'
+import ScrollTopButton from '@/components/Global/ScrollTopButton';
 
 interface HeroProps {
 }
@@ -13,6 +15,11 @@ const Hero: React.FC<HeroProps> = () => {
                 <SocialButtons />
             </div>
             <div className='bg-white h-auto pb-52 flex flex-col  items-start '>
+                <div className="fixed z-50 items-end bottom-5 right-8">
+                    <div className="sticky-position xs:hidden md:block">
+                        <ScrollTopButton />
+                    </div>
+                </div>
                 <div className='flex xs:flex-col lg:flex-row xs:mx-5 xsm:mx-32 sm:mx-52 md:mx-72 mdl:mx-90 lg:mx-16 xl:mx-32 2xl:mx-52 3xl:mx-101'>
                     <div>
                         <a href=''>
