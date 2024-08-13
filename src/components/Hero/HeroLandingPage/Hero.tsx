@@ -165,18 +165,17 @@ export const Hero = () => {
                             <img src="/Recurso-2.png" className="xs:h-80 xs:w-80 sm:h-116 sm:w-128" alt="Recurso-2" />
                         </div>
                         <div>
-                            <MapAccordion 
+                            <MapAccordion
                             items={[
                                 { stateName: "Aguascalientes", cities: ["Aguascalientes", "Calvillo", "Jesús María", "Pabellón de Arteaga"] },
-                                { stateName: "Chihuahua", cities: ["Chihuahua", "Delicias", "Cuahutémoc", "Nvo. Casas Grandes", "Cd. Juárez"] },
-                                { stateName: "Durango", cities: ["Durango"] },
-                                { stateName: "Guanajuato", cities: ["León"] },
-                                { stateName: "Sinaloa", cities: ["Mazatlán", "Guasave", "Mochis"] },
-                                { stateName: "Sonora", cities: ["Agua Prieta", "Caborca", "Empalme", "Huatabampo", "Navojoa", "Nogales", "Hermosillo", "Guaymas", "Obregón"] },
-                                { stateName: "Texas", cities: ["El Paso"] },
-                                { stateName: "Zacatecas", cities: ["Fresnillo"] },
-                                
-                              ]}/>
+                                { stateName: "Chihuahua     ", cities: ["Chihuahua", "Delicias", "Cuahutémoc", "Nvo. Casas Grandes", "Cd. Juárez"] },
+                                { stateName: "Durango       ", cities: ["Durango"] },
+                                { stateName: "Guanajuato    ", cities: ["León"] },
+                                { stateName: "Sinaloa       ", cities: ["Mazatlán", "Guasave", "Mochis"] },
+                                { stateName: "Sonora        ", cities: ["Agua Prieta", "Caborca", "Empalme", "Huatabampo", "Navojoa", "Nogales", "Hermosillo", "Guaymas", "Obregón"] },
+                                { stateName: "Texas         ", cities: ["El Paso"] },
+                                { stateName: "Zacatecas     ", cities: ["Fresnillo"] },
+                            ]}/>
                         </div>
                     </div>
                 </div>
