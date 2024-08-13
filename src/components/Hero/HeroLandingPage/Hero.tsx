@@ -117,34 +117,38 @@ export const Hero = () => {
 
                         <div className="xl:mr-8 lg:mr-3 lg:ml-3 xs:mb-10">
                             <FlipCard2
-                            image="https://via.placeholder.com/150"
-                            title="Título 1"
+                            image="/steel_logo_2022.png"
+                            title="Kalisch Steel"
                             text="Texto adicional 1"
                             link="#link1"
+                            textlink="Ver más Información"
                             />
                         </div>
                         <div className="xl:mr-8 lg:mr-3 xs:mb-10">
                             <FlipCard2
-                            image="https://via.placeholder.com/150"
+                            image="/besthal_logo_2022.png"
                             title="Título 1"
                             text="Texto adicional 1"
                             link="#link1"
+                            textlink="Ver más Información"
                             />
                         </div>
                         <div className="xl:mr-8 lg:mr-3 xs:mb-10">
                             <FlipCard2
-                            image="https://via.placeholder.com/150"
+                            image="/BOXTOOL512.png"
                             title="Título 1"
                             text="Texto adicional 1"
                             link="#link1"
+                            textlink="Ver más Información"
                             />
                         </div>
                         <div className="xl:mr-8  xs:mb-10">
                             <FlipCard2
-                            image="https://via.placeholder.com/150"
+                            image="/faber_banner.png"
                             title="Título 1"
                             text="Texto adicional 1"
                             link="#link1"
+                            textlink="Ver más Información"
                             />
                         </div>
                     </div>

@@ -5,20 +5,20 @@ interface Props {
     title: string;
     text: string;
     link: string;
+    textlink: string;
 }
 
-const FlipCard2: React.FC<Props> = ({ link, text, title, image }) => {
+const FlipCard2: React.FC<Props> = ({ link, text, title, image, textlink }) => {
     return (
         <div className="card">
             <div className="card-inner" >
                 <div className="card-front" style={{ backgroundImage: `url(${image})` }}>
-                    <p>Front Side</p>
                 </div>
                 <div className="card-back flex flex-col">
                     <p className=''>{title}</p>
                     <p className='text-sm'>{text}</p>
-                    <div className=''>
-                        <a href={link} className="text-blue-500  hover:underline transform text-sm">Ver más Información</a>
+                    <div className=' justify-center'>
+                        <a href={link} className="text-blue-500 text-center hover:underline transform text-sm font-light">{textlink}</a>
                     </div>
                 </div>
             </div>
