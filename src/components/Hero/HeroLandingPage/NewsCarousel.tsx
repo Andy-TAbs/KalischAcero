@@ -56,7 +56,7 @@ import Carousel from 'react-bootstrap/Carousel';
         <div className="w-screen">
             <div className="flex  w-full items-center justify-center">
                     <div className="lg:flex lg:flex-row md:flex-col items-center justify-center">
-                        <div className=" lg:ml-0 lg:mx-0">
+                        <div className="lg:ml-0 lg:mx-0 flex flex-col items-center justify-center h-80 xs:mx-5">
                             <img
                             src="/definicion-de-la-educacion-sssssscontinua.jpg"
                             className="md:h-72 md:w-128 lg:mx-0"
