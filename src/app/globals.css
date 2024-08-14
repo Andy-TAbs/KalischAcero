@@ -540,3 +540,16 @@ body {
   transform: rotateY(180deg);
 }
 /* End of FlipCards Style in Hero.tsx */
+
+/* image im counter LandingPage*/
+.image-background {
+  width: 100%; /* Ancho del div */
+  height: 100%; /* Altura del div */
+  background-image: url('/kalisch-1.jpg'); /* Ruta del video */
+  background-size: cover;
+  background-position: center; /* Centra el GIF en el div */
+}
+
+#background-video {
+  object-fit: cover; /* Asegura que el video cubra todo el área del div */
+}

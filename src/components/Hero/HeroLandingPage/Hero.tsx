@@ -58,7 +58,11 @@ export const Hero = () => {
         <main role="main">
             <div className="bg-white">
                 <div>
-                    <div className="flex flex-row w-full min-h-full overflow-x-hidden">
+                    <div className="flex flex-row w-full min-h-full overflow-x-hidden relative">
+                    <video autoPlay muted loop id="background-video" className="absolute inset-0 z-0 w-full h-full object-cover">
+                        <source src="/Kalisch-Acero_CONSTRUYAMOS-EL-FUTURO.mp4" type="video/mp4" />
+                        Tu navegador no soporta el video.
+                    </video>
                         <div className="flex-shrink-0 relative z-0  overflow-x-hidden">
                             <img src="/Portada_K_1.png" className="relative object-contain overflow-visible 3xl:h-220 md:right-44 lg:right-32" alt="Portada_K_1" />
                         </div>
@@ -80,7 +84,7 @@ export const Hero = () => {
                     <Carousel />
                 </div>
                 {/* Seccion de Años*/}
-                <div className="xl:h-80 lg:h-auto bg-slate-900 xs:py-16 items-center justify-center lg:flex lg:flex-row">
+                <div className=" image-background xl:h-80 lg:h-auto bg-slate-900 xs:py-16 items-center justify-center lg:flex lg:flex-row">
                     {showCounters && (
                         <>
                             <div className="flex flex-col items-center lg:mr-32">
@@ -118,8 +122,8 @@ export const Hero = () => {
                         <div className="xl:mr-8 lg:mr-3 lg:ml-3 xs:mb-10">
                             <FlipCard2
                             image="/steel_logo_2022.png"
-                            title="Kalisch Steel"
-                            text="Texto adicional 1"
+                            title="Steel Fabricator"
+                            text=""
                             link="#link1"
                             textlink="Ver más Información"
                             />
@@ -127,8 +131,8 @@ export const Hero = () => {
                         <div className="xl:mr-8 lg:mr-3 xs:mb-10">
                             <FlipCard2
                             image="/besthal_logo_2022.png"
-                            title="Título 1"
-                            text="Texto adicional 1"
+                            title="Acero a tu forma"
+                            text=""
                             link="#link1"
                             textlink="Ver más Información"
                             />
@@ -136,8 +140,8 @@ export const Hero = () => {
                         <div className="xl:mr-8 lg:mr-3 xs:mb-10">
                             <FlipCard2
                             image="/BOXTOOL512.png"
-                            title="Título 1"
-                            text="Texto adicional 1"
+                            title="La capital de la herramienta"
+                            text=""
                             link="#link1"
                             textlink="Ver más Información"
                             />
@@ -145,8 +149,8 @@ export const Hero = () => {
                         <div className="xl:mr-8  xs:mb-10">
                             <FlipCard2
                             image="/faber_banner.png"
-                            title="Título 1"
-                            text="Texto adicional 1"
+                            title="Fabricación de estructuras de acero"
+                            text=""
                             link="#link1"
                             textlink="Ver más Información"
                             />
