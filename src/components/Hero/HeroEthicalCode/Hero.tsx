@@ -13,17 +13,17 @@ const Hero: React.FC<HeroProps> = () => {
         <div className="w-screen">
             <div className='h-204 relative '>
                 <video autoPlay muted loop id="background-video" className="absolute inset-0 z-0 w-full h-full object-cover">
-                    <source src="/nosotrostitulos.mp4" type="video/mp4" />
+                    <source src="/Codigo_Etica.mp4" type="video/mp4" />
                     Tu navegador no soporta el video.
                 </video>
-                <div className='absolute inset-0 flex lg:top-56 md:top-56 sm:top-56 xs:top-56 xsm:top-56 lg:left-42 md:left-32 mdl:left-48 sm:left-36 xsm:left-28 xs:left-10 z-10'>
+                <div className='absolute inset-0 flex lg:top-48 md:top-48 sm:top-48 xs:top-48 xsm:top-48 lg:left-42 md:left-32 mdl:left-48 sm:left-36 xsm:left-28 xs:left-10 z-10'>
                     <p className='sm:text-sm xs:text-xxs font-Bebas_Neue text-white'>I N I C I O  /  N O S O T R O S</p>
                 </div>
                 <div className='absolute inset-0 flex lg:top-56 md:top-56 sm:top-60 xs:top-60 xsm:top-60 lg:left-42 md:left-32 mdl:left-48 sm:left-36 xsm:left-28 xs:left-10 z-10'>
-                    <p className='md:text-11xl xs:text-7xl sm:text-9xl font-Bebas_Neue text-white font-extrabold'>ACERCA DE</p>
+                    <p className='md:text-11xl xs:text-7xl sm:text-9xl font-Bebas_Neue text-white font-extrabold'>CÓDIGO DE</p>
                 </div>
                 <div className='absolute inset-0 flex lg:top-88 md:top-88 sm:top-88 xs:top-76 xsm:top-76 lg:left-42 md:left-32 mdl:left-48 sm:left-36 xsm:left-28 xs:left-10  z-10'>
-                    <p className='md:text-11xl xs:text-7xl sm:text-9xl font-Bebas_Neue text-white font-extrabold'>NOSOTROS</p>
+                    <p className='md:text-11xl xs:text-7xl sm:text-9xl font-Bebas_Neue text-white font-extrabold'>ÉTICA</p>
                 </div>
             </div>
             <div>

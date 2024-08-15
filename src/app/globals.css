@@ -560,3 +560,12 @@ body {
 #background-video {
   object-fit: cover; /* Asegura que el video cubra todo el área del div */
 }
+
+
+.image-background-News {
+  width: 100%;
+  height: 100%;
+  background-image: url('/noticias-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
