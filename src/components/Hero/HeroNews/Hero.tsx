@@ -37,7 +37,7 @@ const Hero: React.FC<HeroProps> = () => {
                                         alt="Descripción de la imagen"
                                         width={350}
                                         height={120}
-                                        className="  h-auto mt-16"
+                                        className="h-auto mt-16"
                                     />
                             <div className='w-fit'>
                                 <p className='text-center font-semibold text-xl'>¡TRES AÑOS COMO EMPRESA SOCIALMENTE RESPONSABLE!</p>

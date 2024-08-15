@@ -155,8 +155,8 @@ body {
   justify-content: center;
   font-size: 24px;
   transform: rotateY(0deg);
-  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-  background-position: center; /* Centra la imagen en el contenedor */
+  background-size: cover;
+  background-position: center;
 }
 
 .card-back {

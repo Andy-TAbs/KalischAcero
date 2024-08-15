@@ -1,5 +1,6 @@
 "use client";
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import { IoIosArrowForward } from "react-icons/io";
 
 interface DropdownMenuMobileProps {
     // Agrega las propiedades necesarias aquí
@@ -7,26 +8,81 @@ interface DropdownMenuMobileProps {
 
 const DropdownMenuMobile: React.FC<DropdownMenuMobileProps> = (props) => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
+    const [isSubSubMenuOpen, setIsSubSubMenuOpen] = useState(false);
 
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
 
     return (
-        <div>
-        <button
-        data-collapse-toggle="mobile-menu-2"
-        type="button"
-        className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        aria-controls="mobile-menu-2"
-        aria-expanded="false"
-    >
-        <span className="sr-only">Open main menu</span>
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path>
-        </svg>
-        <svg className="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd"></path>
-        </svg>
-    </button>
-    </div>
+        <div className="relative">
+            <div
+                onClick={toggleMenu}
+                className="w-9 h-10 cursor-pointer flex flex-col items-center justify-center space-y-1.5"
+            >
+                <div
+                    className={`w-3/4 h-1.5 bg-green-900 rounded-lg transition-all duration-300 origin-right ${isOpen ? 'w-full rotate-[-40deg] translate-y-[-3px]' : ''}`}
+                ></div>
+                <div
+                    className={`w-full h-1.5 bg-green-900 rounded-lg transition-all duration-300 origin-center ${isOpen ? 'rotate-90 -translate-x-3' : ''}`}
+                ></div>
+                <div
+                    className={`w-3/4 h-1.5 bg-green-900 rounded-lg transition-all duration-300 origin-right ${isOpen ? 'w-full rotate-[40deg] translate-y-[3px]' : ''}`}
+                ></div>
+            </div>
+
+            {isOpen && (
+                <div
+                    id="mobile-menu-2"
+                    className="absolute top-full -left-2 w-screen bg-white dark:bg-gray-700 z-50"
+                >
+                    <ul className="flex w-full flex-col pl-5 items-start">
+                        <li className="py-3 hover:bg-gray-200">
+                            <a href="#" className="text-gray-700 dark:text-gray-200 text-2xl">Home</a>
+                        </li>
+                        <li className=" relative ">
+                            <button
+                                onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}
+                                className={`h-12 text-left  text-2xl flex flex-row w-112 items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 ${isSubMenuOpen ? '' : ''}`}
+                            >
+                                Hola
+                                <IoIosArrowForward className={`${isSubMenuOpen ? 'rotate-90 transition-all ease-in duration-100' : 'rotate-0'}`} />
+                            </button>
+                            {isSubMenuOpen && (
+                                <ul className="">
+                                    <li className="relative">
+                                        <button
+                                            onClick={() => setIsSubSubMenuOpen(!isSubSubMenuOpen)}
+                                            className="w-full pl-4 text-left text-2xl flex flex-row items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600"
+                                        >
+                                            Hola2
+                                            <IoIosArrowForward className={`${isSubSubMenuOpen ? 'rotate-90 transition-all ease-in duration-100' : 'rotate-0'}`} />
+                                        </button>
+                                        {isSubSubMenuOpen && (
+                                            <ul className="pl-4">
+                                                <li className="pt-3">
+                                                    <a href="#" className="text-gray-700 text-2xl dark:text-gray-200">Hola3</a>
+                                                </li>
+                                            </ul>
+                                        )}
+                                    </li>
+                                </ul>
+                            )}
+                        </li>
+                        <li className="pb-2">
+                            <a href="#" className="text-gray-700 text-2xl dark:text-gray-200">About</a>
+                        </li>
+                        <li className="py-2">
+                            <a href="#" className="text-gray-700 text-2xl dark:text-gray-200">Services</a>
+                        </li>
+                        <li className="py-2">
+                            <a href="#" className="text-gray-700 text-2xl dark:text-gray-200">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            )}
+        </div>
     );
 };
 
