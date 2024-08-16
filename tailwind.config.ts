@@ -76,6 +76,9 @@ const config: Config = {
         '14xl': ['13rem', { lineHeight: '1.2' }],
         '15xl': ['14rem', { lineHeight: '1.2' }],
       },
+      borderWidth: {
+        '1': '1px',
+      },
       transitionDuration: {
         '800': '800ms',
         '850': '850ms',

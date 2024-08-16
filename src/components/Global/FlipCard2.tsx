@@ -16,7 +16,7 @@ const FlipCard2: React.FC<Props> = ({ link, text, title, image, textlink }) => {
                 </div>
                 <div className="card-back flex flex-col items-center">
                     <p className='text-center'>{title}</p>
-                    <p className='text-sm'>{text}</p>
+                    <p className='text-sm text-center'>{text}</p>
                     <div className=' justify-center'>
                         <a href={link} className="text-blue-500 text-center hover:underline transform text-sm font-light">{textlink}</a>
                     </div>
