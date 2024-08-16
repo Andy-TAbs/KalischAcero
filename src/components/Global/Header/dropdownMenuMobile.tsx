@@ -43,21 +43,36 @@ const DropdownMenuMobile: React.FC<DropdownMenuMobileProps> = (props) => {
                 >
                     <ul className="flex w-full flex-col  items-start">
                         <li className=" w-full">
-                            <a href="#" className="h-12 text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Home</a>
+                            <a href="#" className="h-12 pl-4 font-semibold text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Cotizar</a>
                         </li>
 
-                        <li className="relative w-full border-y-2 border-neutral-200">
+                        <li className="relative w-full border-y-1 border-neutral-200">
                             <button
                                 onClick={() => setIsSubMenuOpenNosotros(!isSubMenuOpenNosotros)}
-                                className={`h-12 text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600`}
+                                className={`h-12 pl-4 text-left font-semibold text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600`}
                             >
-                                Hola
+                                Nosotros
                                 <IoIosArrowForward className={`${isSubMenuOpenNosotros ? 'rotate-90' : 'rotate-0'} ml-auto mr-7 transition-all ease-in duration-100`} />
                             </button>
                             {isSubMenuOpenNosotros && (
                                 <ul className="w-full">
-                                    <li className="relative w-full border-t-2 border-neutral-200">
-                                    <a href="#" className="pl-2 h-12 text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Home</a>
+                                    <li className="relative w-full border-t-1 border-neutral-200">
+                                    <a href="AboutUs" className="pl-8 h-12 text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Acerca de Nosotros</a>
+                                    </li>
+                                    <li className="relative w-full border-t-1 border-neutral-200">
+                                    <a href="/MisionVision" className="pl-8 h-12 text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Misión y Visión</a>
+                                    </li>
+                                    <li className="relative w-full border-t-1 border-neutral-200">
+                                    <a href="/EthicalCode" className="pl-8 h-12 text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Código de Ética</a>
+                                    </li>
+                                    <li className="relative w-full border-t-1 border-neutral-200">
+                                    <a href="/Culture" className="pl-8 h-12 text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Cultura</a>
+                                    </li>
+                                    <li className="relative w-full border-t-1 border-neutral-200">
+                                    <a href="/Talent" className="pl-8 h-12 text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Talento</a>
+                                    </li>
+                                    <li className="relative w-full border-t-1 border-neutral-200">
+                                    <a href="/News" className="pl-8 h-12 text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Noticias</a>
                                     </li>
                                 </ul>
                             )}
@@ -65,48 +80,131 @@ const DropdownMenuMobile: React.FC<DropdownMenuMobileProps> = (props) => {
 
 
 
-                        <li className="relative border-b-2 w-full">
+                        <li className="relative border-b-1 w-full">
                             <button
                                 onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}
-                                className={`h-12 text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600`}
+                                className={`h-12 pl-4 text-left font-semibold text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600`}
                             >
-                                Hola
+                                Sostenibilidad
                                 <IoIosArrowForward className={`${isSubMenuOpen ? 'rotate-90' : 'rotate-0'} ml-auto mr-7 transition-all ease-in duration-100`} />
                             </button>
                             {isSubMenuOpen && (
                                 <ul className="w-full">
-                                    <li className="relative border-t-1 w-full">
+                                    <li className="relative border-y-1 w-full">
                                         <button
                                             onClick={() => setIsSubSubMenuOpen(!isSubSubMenuOpen)}
-                                            className=" h-12 w-full pl-2 text-left text-2xl flex flex-row items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600"
+                                            className=" h-12 w-full pl-8 text-left  text-2xl flex flex-row items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600"
                                         >
-                                            Hola2
+                                            Filantropía
                                             <IoIosArrowForward className={`${isSubSubMenuOpen ? 'rotate-90' : 'rotate-0'} ml-auto mr-7 transition-all ease-in duration-100`} />
                                         </button>
                                         {isSubSubMenuOpen && (
                                             <ul className=" items-center">
+                                                <li className="border-y-1">
+                                                    <a href="#" className= " pl-12 h-12 w-full text-left  font-light text-2xl flex flex-row items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 ">Contigo</a>
+                                                </li>
                                                 <li className="">
-                                                    <a href="#" className= " pl-4 h-12 w-full text-left text-2xl flex flex-row items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 ">Hola3</a>
+                                                    <a href="#" className= " pl-12 h-12 w-full text-left font-light text-2xl flex flex-row items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 ">Juguetiza</a>
                                                 </li>
                                             </ul>
                                         )}
                                     </li>
+                                    <li className="">
+                                        <a href="#" className= " pl-8 h-12 w-full border-b-1 text-left  text-2xl flex flex-row items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 ">Empresa Socialmente Responsable</a>
+                                    </li>
+                                    <li className="border-b-1">
+                                        <a href="#" className= " pl-8 h-12 w-full text-left  text-2xl flex flex-row items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 ">Politica de Medio Ambiente</a>
+                                    </li>
                                 </ul>
                             )}
                         </li>
-                        
 
-                        <li className="">
-                            <a href="#" className= " h-12 w-full text-left text-2xl flex flex-row items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 ">Hola4</a>
+
+
+
+                        <li className="relative w-full border-y-1 border-neutral-200">
+                            <button
+                                onClick={() => setIsSubMenuOpenDivisiones(!isSubMenuOpenDivisiones)}
+                                className={`h-12 pl-4 text-left font-semibold text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600`}
+                            >
+                                Divisiones
+                                <IoIosArrowForward className={`${isSubMenuOpenDivisiones ? 'rotate-90' : 'rotate-0'} ml-auto mr-7 transition-all ease-in duration-100`} />
+                            </button>
+                            {isSubMenuOpenDivisiones && (
+                                <ul className="w-full">
+                                    <li className="relative w-full border-t-1 border-neutral-200">
+                                    <a href="#" className="pl-8 h-12 text-left  text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Besthal</a>
+                                    </li>
+                                    <li className="relative w-full border-t-1 border-neutral-200">
+                                    <a href="#" className="pl-8 h-12 text-left  text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Faber</a>
+                                    </li>
+                                    <li className="relative w-full border-t-1 border-neutral-200">
+                                    <a href="#" className="pl-8 h-12 text-left  text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Kalisch Steel</a>
+                                    </li>
+                                    <li className="relative w-full border-t-1 border-neutral-200">
+                                    <a href="#" className="pl-8 h-12 text-left  text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Tienda en linea</a>
+                                    </li>
+                                </ul>
+                            )}
                         </li>
-                        <li className="pb-2">
-                            <a href="#" className="text-gray-700 text-2xl dark:text-gray-200">About</a>
+
+
+
+                        <li className="relative w-full border-y-1 border-neutral-200">
+                            <button
+                                onClick={() => setIsSubMenuOpenProductos(!isSubMenuOpenProductos)}
+                                className={`h-12 pl-4 text-left font-semibold text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600`}
+                            >
+                                Productos
+                                <IoIosArrowForward className={`${isSubMenuOpenProductos ? 'rotate-90' : 'rotate-0'} ml-auto mr-7 transition-all ease-in duration-100`} />
+                            </button>
+                            {isSubMenuOpenProductos && (
+                                <ul className="w-full">
+                                    <li className="relative w-full border-t-1 border-neutral-200">
+                                    <a href="#" className="pl-8 h-12 text-left  text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Productos</a>
+                                    </li>
+                                    <li className="relative w-full border-t-1 border-neutral-200">
+                                    <a href="#" className="pl-8 h-12 text-left  text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Catálogo</a>
+                                    </li>
+                                </ul>
+                            )}
                         </li>
-                        <li className="py-2">
-                            <a href="#" className="text-gray-700 text-2xl dark:text-gray-200">Services</a>
+
+
+
+                        <li className="relative w-full border-y-1 border-neutral-200">
+                            <button
+                                onClick={() => setIsSubMenuOpenPromociones(!isSubMenuOpenPromociones)}
+                                className={`h-12 pl-4 text-left font-semibold text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600`}
+                            >
+                                Promociones
+                                <IoIosArrowForward className={`${isSubMenuOpenPromociones ? 'rotate-90' : 'rotate-0'} ml-auto mr-7 transition-all ease-in duration-100`} />
+                            </button>
+                            {isSubMenuOpenPromociones && (
+                                <ul className="w-full">
+                                    <li className="relative w-full border-t-1 border-neutral-200">
+                                    <a href="#" className="pl-8 h-12 text-left  text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Promociones</a>
+                                    </li>
+                                    <li className="relative w-full border-t-1 border-neutral-200">
+                                    <a href="#" className="pl-8 h-12 text-left  text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">La hora del Herrero</a>
+                                    </li>
+                                </ul>
+                            )}
                         </li>
-                        <li className="py-2">
-                            <a href="#" className="text-gray-700 text-2xl dark:text-gray-200">Contact</a>
+
+
+
+                        <li className=" w-full">
+                            <a href="#" className="h-12 pl-4 font-semibold text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Cliente Consentido</a>
+                        </li>
+                        <li className=" w-full">
+                            <a href="#" className="h-12 pl-4 font-semibold text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Sucursales</a>
+                        </li>
+                        <li className=" w-full">
+                            <a href="#" className="h-12 pl-4 font-semibold text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Contáctanos</a>
+                        </li>
+                        <li className=" w-full">
+                            <a href="#" className="h-12 pl-4 font-semibold text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Tienda en Línea</a>
                         </li>
                     </ul>
                 </div>
