@@ -1,4 +1,4 @@
-import { Linefont } from "next/font/google";
+import { Bebas_Neue, Linefont } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -69,12 +69,24 @@ const config: Config = {
       },
       fontSize:{
         "xxs" : '0.60rem',
+        '10xl': ['9rem', { lineHeight: '1.2' }],
+        '11xl': ['10rem', { lineHeight: '1.2' }],
+        '12xl': ['11rem', { lineHeight: '1.2' }],
+        '13xl': ['12rem', { lineHeight: '1.2' }],
+        '14xl': ['13rem', { lineHeight: '1.2' }],
+        '15xl': ['14rem', { lineHeight: '1.2' }],
+      },
+      borderWidth: {
+        '1': '1px',
       },
       transitionDuration: {
         '800': '800ms',
         '850': '850ms',
         '890': '890ms',
         '900': '900ms',
+      },
+      fontFamily: {
+        Bebas_Neue: ['Bebas Neue', 'sans-serif'],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

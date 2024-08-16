@@ -16,6 +16,13 @@
   }
 }
 
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('/Fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -148,8 +155,8 @@ body {
   justify-content: center;
   font-size: 24px;
   transform: rotateY(0deg);
-  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-  background-position: center; /* Centra la imagen en el contenedor */
+  background-size: cover;
+  background-position: center;
 }
 
 .card-back {
@@ -524,8 +531,8 @@ body {
   justify-content: center;
   font-size: 24px;
   transform: rotateY(0deg);
-  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-  background-position: center; /* Centra la imagen en el contenedor */
+  background-size: cover;
+  background-position: center;
 }
 
 .cardCulture-back {
@@ -540,3 +547,25 @@ body {
   transform: rotateY(180deg);
 }
 /* End of FlipCards Style in Hero.tsx */
+
+/* image im counter LandingPage*/
+.image-background {
+  width: 100%; /* Ancho del div */
+  height: 100%; /* Altura del div */
+  background-image: url('/kalisch-1.jpg'); /* Ruta del video */
+  background-size: cover;
+  background-position: center; /* Centra el GIF en el div */
+}
+
+#background-video {
+  object-fit: cover; /* Asegura que el video cubra todo el área del div */
+}
+
+
+.image-background-News {
+  width: 100%;
+  height: 100%;
+  background-image: url('/noticias-1.jpg');
+  background-size: cover;
+  background-position: center;
+}

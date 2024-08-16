@@ -92,7 +92,7 @@
                     <div className="xl:mr-6 lg:mr-3 lg:ml-3 xs:mb-10">
                     <FlipCard2
                         image="/Hojalateria.jpg"
-                        title="Holalateria"
+                        title="Hojalateria"
                         text="Presentes en el ramo de la hojalatería con acero inoxidable y láminas de distintos tipos para la fabricación de canales para naves industriales, plataformas, entre otros."
                         link=""
                         textlink=''

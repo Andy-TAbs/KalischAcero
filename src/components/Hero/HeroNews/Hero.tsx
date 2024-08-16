@@ -10,7 +10,15 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = () => {
     return (
         <div className="w-screen">
-            <div className='bg-black h-204'></div>
+            <div className='h-204 xs:h-screen relative'>
+                <div className='image-background-News'></div>
+                <div className='absolute inset-0 flex right-144 lg:top-56 md:top-56 sm:top-56 xs:top-56 xsm:top-56 lg:left-42 md:left-32 mdl:left-48 sm:left-36 xsm:left-16 xs:left-10 z-10'>
+                    <p className='sm:text-sm xs:text-xxs font-Bebas_Neue text-white'>L&nbsp; O &nbsp;&nbsp;&nbsp;&nbsp; M&nbsp; A&nbsp; S &nbsp;&nbsp;&nbsp;&nbsp; A&nbsp; C&nbsp; T&nbsp; U&nbsp; A&nbsp; L &nbsp;&nbsp;&nbsp;&nbsp; D&nbsp; E &nbsp;&nbsp;&nbsp;&nbsp; K&nbsp; A&nbsp; L&nbsp; I&nbsp; S&nbsp; C&nbsp; H &nbsp;&nbsp;&nbsp;&nbsp; A&nbsp; C&nbsp; E&nbsp; R&nbsp; O&nbsp;</p>
+                </div>
+                <div className='absolute inset-0 flex right-144 lg:top-56 md:top-56 sm:top-60 xs:top-60 xsm:top-60 lg:left-42 md:left-32 mdl:left-48 sm:left-36 xsm:left-16 xs:left-10 z-10'>
+                    <p className='md:text-11xl xs:text-9xl sm:text-9xl font-Bebas_Neue text-white font-extrabold'>NOTICIAS</p>
+                </div>
+            </div>
             <div>
                 <SocialButtons />
             </div>
@@ -29,7 +37,7 @@ const Hero: React.FC<HeroProps> = () => {
                                         alt="Descripción de la imagen"
                                         width={350}
                                         height={120}
-                                        className="  h-auto mt-16"
+                                        className="h-auto mt-16"
                                     />
                             <div className='w-fit'>
                                 <p className='text-center font-semibold text-xl'>¡TRES AÑOS COMO EMPRESA SOCIALMENTE RESPONSABLE!</p>

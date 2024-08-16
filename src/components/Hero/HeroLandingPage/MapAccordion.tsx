@@ -21,7 +21,7 @@ export const MapAccordion = ({ items }: { items: AccordionItem[] }) => {
     return (
         <div className="flex flex-col lg:ml-10 xs:w-screen lg:w-160">
             {items.map((item, index) => (
-                <div key={index} className="mb-2 w-120">
+                <div key={index} className="w-120">
                     <button
                         onClick={() => toggleAccordion(index)}
                         className={`flex flex-row before:text-black pr-8 w-full hover:bg-green-900 transition ease-in-out duration-300 py-4 pl-5 ${
