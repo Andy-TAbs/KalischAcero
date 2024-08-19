@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import SocialButtons from '@/components/Global/SocialButtons';
 import ScrollTopButton from '@/components/Global/ScrollTopButton';
+import { Timeline } from "./Timeline";
 
 interface HeroProps {
 }
@@ -69,6 +70,9 @@ const Hero: React.FC<HeroProps> = () => {
                             <p className='w-214 '>En la Cd. de Chihuahua, el Ing. Samuel Kalisch comienza esta historia con la venta de lámina negra. Gracias a su esfuerzo, determinación y enfoque, este proyecto se materializó y fue el punto de partida para Kalisch Acero.</p>
                         </div>
                     </div>
+                </div>
+                <div className='flex justify-center items-center mt-10'>
+                    <Timeline />
                 </div>
             </div>
         </div>
