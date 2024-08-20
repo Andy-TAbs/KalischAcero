@@ -12,7 +12,7 @@
 
                 <div className="flex flex-row-reverse md:contents">
                     <div
-                        className="image-background-times1967 col-start-1 col-end-5 px-4 py-10 rounded-xl my-4 ml-auto shadow-md"
+                        className="image-background-times1967 col-start-1 col-end-5 px-4 py-16 rounded-xl my-4 ml-auto shadow-md"
                     >
                         <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
                         <p className="leading-tight text-justify">
@@ -41,7 +41,7 @@
                         ></div>
                     </div>
                     <div
-                        className="image-background-times1979 col-start-6 col-end-10 px-4 py-12 rounded-xl my-4 mr-auto shadow-md"
+                        className="image-background-times1979 col-start-6 col-end-10 px-4 py-16 rounded-xl my-4 mr-auto shadow-md"
                     >
                         <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
                         <p className="leading-tight text-justify">
@@ -54,7 +54,7 @@
 
                 <div className="flex flex-row-reverse md:contents ">
                     <div
-                        className="image-background-times1983 pb- col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
+                        className="image-background-times1983 pb- col-start-1 col-end-5 px-4 py-16 rounded-xl my-4 ml-auto shadow-md"
                     >
                         <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
                         <p className="leading-tight text-justify">
@@ -83,7 +83,7 @@
                         ></div>
                     </div>
                     <div
-                        className="image-background-times1993 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md"
+                        className="image-background-times1993 col-start-6 col-end-10 px-4 py-16 rounded-xl my-4 mr-auto shadow-md"
                     >
                         <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
                         <p className="leading-tight text-justify">
@@ -125,7 +125,7 @@
                         ></div>
                     </div>
                     <div
-                        className="image-background-times2005 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md"
+                        className="image-background-times2005 col-start-6 col-end-10 px-4 py-16 rounded-xl my-4 mr-auto shadow-md"
                     >
                         <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
                         <p className="leading-tight text-justify">
@@ -168,7 +168,7 @@
                         ></div>
                     </div>
                     <div
-                        className="image-background-times2009 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md"
+                        className="image-background-times2009 col-start-6 col-end-10 px-4 py-16 rounded-xl my-4 mr-auto shadow-md"
                     >
                         <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
                         <p className="leading-tight text-justify">
@@ -210,7 +210,7 @@
                         ></div>
                     </div>
                     <div
-                        className="image-background-times2017 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md"
+                        className="image-background-times2017 col-start-6 col-end-10 px-4 py-16 rounded-xl my-4 mr-auto shadow-md"
                     >
                         <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
                         <p className="leading-tight text-justify">
@@ -252,7 +252,7 @@
                         ></div>
                     </div>
                     <div
-                        className="image-background-times2023 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md"
+                        className="image-background-times2023 col-start-6 col-end-10 px-4 py-16 rounded-xl my-4 mr-auto shadow-md"
                     >
                         <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
                         <p className="leading-tight text-justify">
