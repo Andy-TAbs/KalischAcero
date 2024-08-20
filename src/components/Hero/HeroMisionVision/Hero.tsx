@@ -56,9 +56,9 @@ const Hero: React.FC<HeroProps> = () => {
             </div>
                 <div className='flex flex-col xl:mx-20 3xl:mx-90 h-full items-center justify-center'>
                     <div className='  mt-20 h-auto w-auto items-center justify-center lg:flex lg:flex-row '>
-                    <div className="p-4 w-2/4">
-                                <AccordionItem items={accordionItems} />
-                            </div>
+                        <div className="p-4 w-2/4">
+                            <AccordionItem items={accordionItems} />
+                        </div>
                         <div className="h-auto w-2/4 items-center  justify-center">
                             <Image width={1200} height={500} src="/mision-valores-etc.png" className="h-64 w-auto" alt="Kalisch_Logo"/>
                         </div>
