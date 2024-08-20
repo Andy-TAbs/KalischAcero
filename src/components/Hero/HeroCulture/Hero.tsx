@@ -5,7 +5,7 @@ import { Carousel } from 'react-bootstrap';
 import SocialButtons from '@/components/Global/SocialButtons';
 import ScrollTopButton from '@/components/Global/ScrollTopButton';
 import FlipCardsCulture from './FlipcardsCulture';
-
+import { TimelineCulture } from './TimelineCulture';
 interface HeroProps {
 }
 
@@ -36,7 +36,7 @@ const Hero: React.FC<HeroProps> = () => {
                     <ScrollTopButton />
                 </div>
             </div>
-                <div className='flex flex-col xs:mx-5 md:mx-20 '>
+                <div className='flex flex-col xs:mx-5 md:mx-20  justify-center'>
                     <div className='lg:mx-32 md:mx-12 my-12 items-center'>
                         <div className=''>
                             <p className='text-2xl'>Cultura Kalisch</p>
@@ -144,44 +144,67 @@ const Hero: React.FC<HeroProps> = () => {
                             <div className="xl:mr-8 lg:mr-3 lg:ml-3">
                                 <FlipCardsCulture
                                 image="/servicio.jpg"
-                                title="Título 1"
-                                text="Texto adicional 1"
-                                link="#link1"
+                                title=""
+                                text={<> <strong>Servicio:</strong> consiste en demostrar una actitud permanente de atención y colaboración hacia los demás en busca de su satisfacción.</>}
+                                link=""
+                                linktext=''
                                 />
                             </div>
                             <div className="xl:mr-8 lg:mr-3 ">
                                 <FlipCardsCulture
                                 image="/creatividad.jpg"
-                                title="Título 1"
-                                text="Texto adicional 1"
-                                link="#link1"
+                                title=""
+                                text={<> <strong>Creatividad:</strong> radica en resolver problemas en la organización, ofreciendo soluciones novedosas.</>}
+                                link=""
+                                linktext=''
                                 />
                             </div>
                             <div className="xl:mr-8 lg:mr-3 ">
                                 <FlipCardsCulture
                                 image="/motivacion.jpg"
-                                title="Título 1"
-                                text="Texto adicional 1"
-                                link="#link1"
+                                title=""
+                                text={<> <strong>Motivación:</strong> capacidad para impulsar a los demás al logro de resultados extraordinarios</>}
+                                link=""
+                                linktext=''
                                 />
                             </div>
                             <div className="xl:mr-8 lg:mr-3">
                                 <FlipCardsCulture
                                 image="/desempenoextraordinario.jpg"
-                                title="Título 1"
-                                text="Texto adicional 1"
-                                link="#link1"
+                                title=""
+                                text={<> <strong>Desempeño Extraordinario:</strong> asumir responsabilidad más allá de lo esperado, con entrega y disposición, mostrando un desempeño general sobresaliente. </>}
+                                link=""
+                                linktext=''
                                 />
                             </div>
                             <div className="  ">
                                 <FlipCardsCulture
                                 image="/dejandohuella.jpg"
-                                title="Título 1"
-                                text="Texto adicional 1"
-                                link="#link1"
+                                title=""
+                                text={<> <strong>Dejando Huella:</strong> premio especial para aquellos colaboradores que demuestren consistentemente vivir las cuatro actitudes premiadas.</>}
+                                link=""
+                                linktext=''
                                 />
                         </div>
                     </div>
+                    </div>
+                </div>
+
+                <div className='flex flex-col xs:mx-5 md:mx-20 items-center justify-center '>
+                    <div className='flex justify-center lg:mx-32 md:mx-12 my-12 items-center'>
+                        <div className='flex md:flex-row xs:flex-col'>
+                            <div className='flex flex-col'>
+                                <div className=''>
+                                    <p className='text-2xl'>Cultura Kalisch</p>
+                                </div>
+                                <div className='w-10/12'>
+                                    <p className='w-auto text-justify font-light'>En Kalisch Acero reconocemos que nuestro equipo de trabajo es lo más importante y un pilar fundamental para lograr el crecimiento de nuestra compañía, por eso nuestros esfuerzos están enfocados en el desarrollo de nuestra gente, buscamos siempre contar con óptimas condiciones para trabajar, en un ambiente basado en la confianza y el respeto.</p>
+                                </div>
+                            </div>
+                            <div className='h-auto w-6/12'>
+                                <Image src='/gptk_kalisch_acero.jpg' alt='gptk_kalisch_acero' width={150} height={150} />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
