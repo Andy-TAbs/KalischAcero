@@ -7,6 +7,7 @@ import ScrollTopButton from '@/components/Global/ScrollTopButton';
 import FlipCardsCulture from './FlipcardsCulture';
 import { TimelineCulture } from './TimelineCulture';
 import AccordionItem from '@/components/Global/AccordionItem';
+import  HealthAccordion  from './HealthAccordion';
 interface HeroProps {
 }
 
@@ -49,10 +50,7 @@ const Hero: React.FC<HeroProps> = () => {
                     <p className='sm:text-sm xs:text-xxs font-Bebas_Neue text-white'>I N I C I O  /  N O S O T R O S</p>
                 </div>
                 <div className='absolute inset-0 flex right-10 lg:top-56 md:top-56 sm:top-60 xs:top-60 xsm:top-60 lg:left-42 md:left-32 mdl:left-48 sm:left-36 xsm:left-28 xs:left-10 z-10'>
-                    <p className='md:text-11xl xs:text-7xl sm:text-9xl font-Bebas_Neue text-white font-extrabold'>ACERCA DE</p>
-                </div>
-                <div className='absolute inset-0 flex right-144 lg:top-88 md:top-88 sm:top-88 xs:top-76 xsm:top-76 lg:left-42 md:left-32 mdl:left-48 sm:left-36 xsm:left-28 xs:left-10  z-10'>
-                    <p className='md:text-11xl xs:text-7xl sm:text-9xl font-Bebas_Neue text-white font-extrabold'>NOSOTROS</p>
+                    <p className='md:text-11xl xs:text-7xl sm:text-9xl font-Bebas_Neue text-white font-extrabold'>CULTURA</p>
                 </div>
             </div>
             <div>
@@ -250,10 +248,18 @@ const Hero: React.FC<HeroProps> = () => {
                 </div>
                 <div className='  mt-20 h-auto w-auto items-center justify-center lg:flex lg:flex-row '>
                         <div className="h-auto w-2/4 items-center  justify-center">
-                            <Image width={1200} height={500} src="/Pilares-de-la-salud.png" className="h-72 w-auto" alt="Kalisch_Logo"/>
+                            <Image width={1200} height={500} src="/Pilares-de-la-salud.png" className="h-64 w-auto" alt="Kalisch_Logo"/>
                         </div>
                         <div className="p-4 w-2/4">
-                            <AccordionItem items={accordionItems} />
+                            <HealthAccordion
+                            items={[
+                                { titleHealth: "Nutrición", textHealth: "Promovemos buenos hábitos alimenticios y estilos de vida saludable." },
+                                { titleHealth: "Mente Sana", textHealth: "Buscamos el bienestar emocional y psicológico en nuestros colaboradores." },
+                                { titleHealth: "Salud Física", textHealth: "Fomentamos la práctica regular y sistemática de actividad física en los colaboradores." },
+                                { titleHealth: "Libre de Adicciones", textHealth: "Fomentamos un autocuidado libre de cualquier tipo de adicción." },
+                                { titleHealth: "Conoce tus números", textHealth: "Diagnóstico de salud básico en los colaboradores en el que podamos identificar y prevenir enfermedades." },
+                                { titleHealth: "Salud Financiera", textHealth: "Promovemos buenas prácticas financieras para lograr una situación de tranquilidad en su futuro financiero." },
+                            ]}/>
                         </div>
                     </div>
                 </div>

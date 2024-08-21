@@ -48,8 +48,8 @@ const CustomAccordion: React.FC<CustomAccordionProps> = ({ items }) => {
                             activeIndex === index ? 'max-h-screen' : 'max-h-0'
                         }`}
                     >
-                        <div className="p-4 border-t border-t-green-700 text-black">
-                            {item.body}
+                        <div className="p-4 border-t border-t-green-700 text-black justify-center">
+                            <p className='text-justify'>{item.body}</p>
                         </div>
                     </div>
                 </div>
