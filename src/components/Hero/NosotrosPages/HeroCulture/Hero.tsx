@@ -6,7 +6,6 @@ import SocialButtons from '@/components/Global/SocialButtons';
 import ScrollTopButton from '@/components/Global/ScrollTopButton';
 import FlipCardsCulture from './FlipcardsCulture';
 import { TimelineCulture } from './TimelineCulture';
-import AccordionItem from '@/components/Global/AccordionItem';
 import  HealthAccordion  from './HealthAccordion';
 interface HeroProps {
 }
