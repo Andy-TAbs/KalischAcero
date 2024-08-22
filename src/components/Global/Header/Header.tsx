@@ -12,12 +12,12 @@ interface HeaderProps {
 }
 
 const headerOptionsNosotros = [
-    { label: 'Acerca de nosotros', link: '/AboutUs' },
-    { label: 'Misión y Visión', link: '/MisionVision' },
-    { label: 'Código de ética', link: '/EthicalCode' },
-    { label: 'Cultura', link: '/Culture' },
-    { label: 'Talento', link: '/Talent' },
-    { label: 'Noticias', link: '/News' }
+    { label: 'Acerca de nosotros', link: '/Nosotros/Acerca-de-Nosotros' },
+    { label: 'Misión y Visión', link: '/Nosotros/Mision-y-Vision' },
+    { label: 'Código de ética', link: '/Nosotros/Codigo-de-etica' },
+    { label: 'Cultura', link: '/Nosotros/Cultura' },
+    { label: 'Talento', link: '/Nosotros/Talento' },
+    { label: 'Noticias', link: '/Nosotros/Noticias' }
   ];
   const headerOptionsSostenibilidad = [
     { label: 'Filantropía', link: '/' },

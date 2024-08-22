@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Header } from "@/components/Global/Header/Header";
 import { Footer } from "@/components/Global/Footer/Footer";
-import Hero from "@/components/Hero/HeroNews/Hero";
+import Hero from "../../../components/Hero/NosotrosPages/HeroCulture/Hero";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
