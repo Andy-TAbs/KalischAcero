@@ -47,11 +47,25 @@ const Hero: React.FC<HeroProps> = () => {
                             </button>
                         </div>
 
-                        <div className='mt-5 w-auto'>
-                            <p className='w-auto text-justify font-light'>En el año 1979 nació <b>Kalisch Acero</b> en la ciudad de Chihuahua, Chihuahua. Iniciamos con el proyecto de comercialización del acero y posteriormente añadimos una amplia gama de herramienta y ferretería, además, del habilitado de acero. En México contamos con sucursales en los estados de Chihuahua, Sonora, Sinaloa, Durango, Aguascalientes, Guanajuato y Zacatecas, además, en 2009 iniciamos nuestras operaciones en El Paso, Texas con la apertura de Kalisch Steel.</p>
+                        <div className='mt-5 w-auto  flex flex-row items-center justify-between'>
+                            <Sucursales Lugar = {"COLEGIO MILITAR"} Direccion={"Av. H. Colegio Militar #265, Col. Nombre de Dios C.P. 31150, Chihuahua, Chihuahua, Mex."} Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"}/>
+                            <Sucursales Lugar = {"CHUVISCAR"} Direccion={"Av. Teófilo Borunda 3903, Col. Santo Niño C.P. 31200 Chihuahua, Chihuahua, Mex."} Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"}/>
+                            <Sucursales Lugar = {"FLORES MAGÓN"} Direccion={"Av. Flores Magón #5810,Col. Inalambrica,  C.P. 31460, Chihuahua, Chihuahua, Mex."} Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"}/>
+                            <Sucursales Lugar = {"LA CURVA"} Direccion={"Av. Tecnológico 10711 Col. Deportistas C.P. 31125 Chihuahua, Chihuahua, Mex."} Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"}/>
+                        </div>
+                        <div className='mt-5 w-auto  flex flex-row items-center justify-between'>
+                            <Sucursales Lugar = {"ESMERALDA"} Direccion={"Vialidad CH-P #2301-A, Col. Mármol, C.P. 31063, Chihuahua, Chihuahua, Mex."} Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"}/>
+                            <Sucursales Lugar = {"LOS NOGALES"} Direccion={"Vialidad Los Nogales 3105, Col. Rodolfo Fierro C.P. 31137, Chihuahua, Chihuahua, Mex."} Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"}/>
+                            <Sucursales Lugar = {"R. ALMADA"} Direccion={"Periférico R. Almada #9602, Col. 3 de Mayo C.P. 31065, Chihuahua, Chihuahua, Mex."} Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"}/>
+                            <Sucursales Lugar = {"OFICINAS CORPORATIVAS"} Direccion={"Av. H. Colegio Militar #265,, Col. Nombre de Dios C.P. 31150,, Chihuahua, Chihuahua, Mex."} Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"}/>
+                        </div>
+                        <div className='mt-5 w-auto  flex flex-row items-center justify-between'>
+                            <Sucursales Lugar = {"DELICIAS"} Direccion={"Av. 7ª Oriente #609, Col. Centro C.P. 33000, Delicias, Chihuahua, Mex."} Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"}/>
+                            <Sucursales Lugar = {"NVO. CASAS GRANDES"} Direccion={"Av. Tulipán #4506 Parque Industrial Paquimé C.P. 31755, Casas Grandes, Chihuahua, Mex."} Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"}/>
+                            <Sucursales Lugar = {"CUAUHTÉMOC"} Direccion={"Corredor Comercial #543, Col. Fernando Baeza C.P. 31510, Cuauhtémoc, Chihuahua, Mex."} Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"}/>
                         </div>
                         <div className='mt-7 w-auto '>
-                            <p className='w-auto text-justify font-light'>En <b>Kalisch Acero</b> contamos con maquinaria de vanguardia, equipo innovador y desarrollo de talento que nos ayuda a fortalecer la relación con nuestros clientes y brindarles el mejor servicio. Nuestro código de conducta y normas están basados en nuestros valores, además, constantemente nos esforzamos por ser una empresa sostenible y comprometida con nuestra comunidad.</p>
+                            <p className='w-auto text-justify font-light'></p>
                         </div>
                     </div>
                 </div>
