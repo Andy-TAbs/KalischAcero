@@ -16,8 +16,8 @@ const Hero: React.FC<HeroProps> = () => {
                     <source src="/Codigo_Etica.mp4" type="video/mp4" />
                     Tu navegador no soporta el video.
                 </video>
-                <div className='absolute inset-0 flex right-144 lg:top-48 md:top-48 sm:top-48 xs:top-48 xsm:top-48 lg:left-42 md:left-32 mdl:left-48 sm:left-36 xsm:left-28 xs:left-10 z-10'>
-                    <p className='sm:text-sm xs:text-xxs font-Bebas_Neue text-white'>I N I C I O  /  N O S O T R O S</p>
+                <div className='absolute inset-0 flex lg:right-144 md:right-80 sm:right-40 xs:right-32 lg:top-48 md:top-48 sm:top-48 xs:top-48 xsm:top-48 lg:left-42 md:left-32 mdl:left-48 sm:left-36 xsm:left-28 xs:left-10 z-10'>
+                    <p className='sm:text-sm xs:text-xxs font-Bebas_Neue text-white'>I &nbsp;N &nbsp;I &nbsp;C &nbsp;I &nbsp;O  &nbsp;&nbsp;/&nbsp;&nbsp;  N &nbsp;O &nbsp;S &nbsp;O &nbsp;T &nbsp;R &nbsp;O &nbsp;S</p>
                 </div>
                 <div className='absolute inset-0 flex right-144 lg:top-56 md:top-56 sm:top-60 xs:top-60 xsm:top-60 lg:left-42 md:left-32 mdl:left-48 sm:left-36 xsm:left-28 xs:left-10 z-10'>
                     <p className='md:text-11xl xs:text-7xl sm:text-9xl font-Bebas_Neue text-white font-extrabold'>CÓDIGO DE</p>
