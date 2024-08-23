@@ -11,7 +11,7 @@ interface Contenido{
 
 const Sucursales: React.FC<Contenido> = ({Lugar, Direccion, Telefono, Whatsapp}) => {
     return (
-        <div className='flex flex-col w-64 text-pretty'>
+        <div className='flex flex-col w-64 text-pretty mr-5 justify-center'>
             <div className='text-lg font-semibold pb-2'>
                 <h4>{Lugar}</h4>
             </div>
@@ -26,7 +26,7 @@ const Sucursales: React.FC<Contenido> = ({Lugar, Direccion, Telefono, Whatsapp})
                 <FaWhatsapp className='mr-2'/>
                 <p>{Whatsapp}</p>
             </div>
-            <button className='w-full bg-neutral-100 h-14 mt-4'>
+            <button className='w-full bg-neutral-100 hover:bg-green-900 hover:text-white ease-in transition-all duration-150 h-14 mt-4'>
                 Más Información
             </button>
         </div>
