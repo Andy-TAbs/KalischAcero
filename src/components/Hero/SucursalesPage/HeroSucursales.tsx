@@ -39,12 +39,10 @@ const Hero: React.FC<HeroProps> = () => {
                             <div className='md:mr-32 sm:mr-24 xs:mr-10'>
                                 <p className='text-3xl font-medium'>Chihuahua</p>
                             </div>
-                            <button className='bg-neutral-200 hover:bg-green-900 hover:text-white sm:hover:w-48 xs:hover:w-36 ease-in transition-all duration-150 rounded-md sm:w-40 xs:w-32 md:h-11 items-center justify-evenly flex md:flex-row xs:flex-col'>
-                            <div className='w-full flex items-center justify-center'>
-                                <p className='text-lg'>Cotizar aquí</p>
-                            </div>
-                            <IoIosMail className='md:h-7 w-auto xs:h-8' />
-                            </button>
+                            <button className='bg-neutral-200 hover:bg-green-900 hover:text-white hover:w-56 ease-in transition-all duration-150 rounded-md xs:h-14 sm:w-48  md:h-11 items-center justify-evenly flex md:flex-row xs:flex-col'>
+                        <p className='font-medium'>Cotizar Aquí</p>
+                        <IoIosMail className='h-8 w-auto' />
+                    </button>
                         </div>
 
                         <div className='items-center justify-center mt-5 xs:w-screen md:w-full grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 '>
