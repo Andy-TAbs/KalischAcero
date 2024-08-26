@@ -33,23 +33,26 @@ const Sucursales: React.FC<Contenido> = ({ Lugar, Direccion, Telefono, Whatsapp 
                 <FaWhatsapp className='mr-2' />
                 <p>{Whatsapp}</p>
             </div>
-            <button 
+            <button
                 className='sm:w-full xs:w-screen bg-neutral-200 font-semibold hover:bg-green-900 hover:text-white ease-in transition-all duration-150 h-14 mt-4'
                 onClick={toggleAccordion}
             >
                 Más Información
             </button>
-            {showAccordion && (
+            <div
+                className={`overflow-hidden transition-[max-height] duration-500 xs:w-screen sm:w-auto ease-in-out ${showAccordion ? 'max-h-screen' : 'max-h-0'}`}
+                style={{ maxHeight: showAccordion ? '1000px' : '0' }}
+            >
                 <div className='flex flex-col mt-4 p-4 bg-neutral-100 rounded-md xs:w-screen sm:w-full'>
-                    <button className='bg-neutral-200 hover:bg-green-900 hover:text-white hover:w-full ease-in transition-all duration-150 rounded-md xs:h-14 sm:w-48  md:h-11 items-center justify-evenly flex md:flex-row xs:flex-col'>
+                    <button className='bg-neutral-200 hover:bg-green-900 hover:text-white hover:w-full ease-in transition-all duration-150 rounded-md xs:h-14 sm:w-48 md:h-11 items-center justify-evenly flex md:flex-row xs:flex-col'>
                         <p className='font-medium'>Indicaciones</p>
                         <FaMapMarkerAlt />
                     </button>
-                    <button className='bg-neutral-200 hover:bg-green-900 hover:text-white hover:w-full ease-in transition-all duration-150 rounded-md xs:h-14 sm:w-48  md:h-11 items-center justify-evenly flex md:flex-row xs:flex-col mt-3'>
+                    <button className='bg-neutral-200 hover:bg-green-900 hover:text-white hover:w-full ease-in transition-all duration-150 rounded-md xs:h-14 sm:w-48 md:h-11 items-center justify-evenly flex md:flex-row xs:flex-col mt-3'>
                         <p className='font-medium'>Cotizar Aquí</p>
                         <IoIosMail />
                     </button>
-                    <div className='flex flex-row items-center w-full justify-around mt-5 mb-2'>
+                    <div className='flex flex-row items-center w-full justify-around mt-5 mb-2 border-b-3 border-neutral-300'>
                         <p className='font-medium'>Horarios</p>
                         <FaClock />
                     </div>
@@ -80,7 +83,7 @@ const Sucursales: React.FC<Contenido> = ({ Lugar, Direccion, Telefono, Whatsapp 
                         </div>
                     </div>
                 </div>
-            )}
+            </div>
         </div>
     );
 };

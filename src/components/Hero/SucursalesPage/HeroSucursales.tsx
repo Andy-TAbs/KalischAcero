@@ -33,19 +33,19 @@ const Hero: React.FC<HeroProps> = () => {
                         <ScrollTopButton />
                     </div>
                 </div>
-                <div className='flex flex-col sm:mx-20 h-full '>
+                <div className='flex flex-col xl:mx-20 h-full '>
                     <div className='lg:mx-16 md:mx-10 my-12 items-center'>
                         <div className='flex flex-row'>
                             <div className='md:mr-32 sm:mr-24 xs:mr-10'>
                                 <p className='text-3xl font-medium'>Chihuahua</p>
                             </div>
-                            <button className='bg-neutral-200 hover:bg-green-900 hover:text-white hover:w-56 ease-in transition-all duration-150 rounded-md xs:h-14 sm:w-48  md:h-11 items-center justify-evenly flex md:flex-row xs:flex-col'>
+                            <button className='bg-neutral-200 hover:bg-green-900 hover:text-white sm:hover:w-56 xs:hover:w-40 ease-in transition-all duration-150 rounded-md xs:h-14 sm:w-48 xs:w-32  md:h-11 items-center justify-evenly flex md:flex-row xs:flex-col'>
                         <p className='font-medium'>Cotizar Aquí</p>
                         <IoIosMail className='h-8 w-auto' />
                     </button>
                         </div>
 
-                        <div className='items-center justify-center mt-5 xs:w-screen md:w-full grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 '>
+                        <div className='items-start justify-center mt-5 xs:w-screen md:w-full grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 '>
                             <Sucursales Lugar={"COLEGIO MILITAR"}       Direccion={"Av. H. Colegio Militar #265, Col. Nombre de Dios C.P. 31150, Chihuahua, Chihuahua, Mex."}   Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
                             <Sucursales Lugar={"CHUVISCAR"}             Direccion={"Av. Teófilo Borunda 3903, Col. Santo Niño C.P. 31200 Chihuahua, Chihuahua, Mex."}           Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
                             <Sucursales Lugar={"FLORES MAGÓN"}          Direccion={"Av. Flores Magón #5810,Col. Inalambrica,  C.P. 31460, Chihuahua, Chihuahua, Mex."}          Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
