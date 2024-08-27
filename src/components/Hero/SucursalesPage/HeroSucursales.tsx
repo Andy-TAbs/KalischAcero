@@ -62,7 +62,7 @@ const Hero: React.FC<HeroProps> = () => {
 
                         <div className='flex flex-row mt-20'>
                             <div className='mr-32'>
-                                <p className='text-3xl font-medium'>Chihuahua</p>
+                                <p className='text-3xl font-medium'>Ciudad Juarez</p>
                             </div>
                             <button className='bg-neutral-200 hover:bg-green-900 hover:text-white hover:w-48 ease-in transition-all duration-150 rounded-md w-40 h-11 items-center justify-evenly flex flex-row'>
                             <div className='w-ful flex'>
@@ -72,18 +72,146 @@ const Hero: React.FC<HeroProps> = () => {
                             </button>
                         </div>
 
-                        <div className="mt-5 w-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                            <Sucursales Lugar = {"COLEGIO MILITAR"}         Direccion={"Av. H. Colegio Militar #265, Col. Nombre de Dios C.P. 31150, Chihuahua, Chihuahua, Mex."}   Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"}/>
-                            <Sucursales Lugar = {"CHUVISCAR"}               Direccion={"Av. Teófilo Borunda 3903, Col. Santo Niño C.P. 31200 Chihuahua, Chihuahua, Mex."}           Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"}/>
-                            <Sucursales Lugar = {"FLORES MAGÓN"}            Direccion={"Av. Flores Magón #5810,Col. Inalambrica,  C.P. 31460, Chihuahua, Chihuahua, Mex."}          Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"}/>
-                            <Sucursales Lugar = {"LA CURVA"}                Direccion={"Av. Tecnológico 10711 Col. Deportistas C.P. 31125 Chihuahua, Chihuahua, Mex."}              Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"}/>
-                            <Sucursales Lugar = {"ESMERALDA"}               Direccion={"Vialidad CH-P #2301-A, Col. Mármol, C.P. 31063, Chihuahua, Chihuahua, Mex."}                Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"}/>
-                            <Sucursales Lugar = {"LOS NOGALES"}             Direccion={"Vialidad Los Nogales 3105, Col. Rodolfo Fierro C.P. 31137, Chihuahua, Chihuahua, Mex."}     Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"}/>
-                            <Sucursales Lugar = {"R. ALMADA"}               Direccion={"Periférico R. Almada #9602, Col. 3 de Mayo C.P. 31065, Chihuahua, Chihuahua, Mex."}         Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"}/>
-                            <Sucursales Lugar = {"OFICINAS CORPORATIVAS"}   Direccion={"Av. H. Colegio Militar #265,, Col. Nombre de Dios C.P. 31150,, Chihuahua, Chihuahua, Mex."} Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"}/>
-                            <Sucursales Lugar = {"DELICIAS"}                Direccion={"Av. 7ª Oriente #609, Col. Centro C.P. 33000, Delicias, Chihuahua, Mex."}                    Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"}/>
-                            <Sucursales Lugar = {"NVO. CASAS GRANDES"}      Direccion={"Av. Tulipán #4506 Parque Industrial Paquimé C.P. 31755, Casas Grandes, Chihuahua, Mex."}    Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"}/>
-                            <Sucursales Lugar = {"CUAUHTÉMOC"}              Direccion={"Corredor Comercial #543, Col. Fernando Baeza C.P. 31510, Cuauhtémoc, Chihuahua, Mex."}      Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"}/>
+                        <div className='items-start justify-center mt-5 xs:w-screen md:w-full grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 '>
+                            <Sucursales Lugar={"COLEGIO MILITAR"}       Direccion={"Av. H. Colegio Militar #265, Col. Nombre de Dios C.P. 31150, Chihuahua, Chihuahua, Mex."}   Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"CHUVISCAR"}             Direccion={"Av. Teófilo Borunda 3903, Col. Santo Niño C.P. 31200 Chihuahua, Chihuahua, Mex."}           Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"FLORES MAGÓN"}          Direccion={"Av. Flores Magón #5810,Col. Inalambrica,  C.P. 31460, Chihuahua, Chihuahua, Mex."}          Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"LA CURVA"}              Direccion={"Av. Tecnológico 10711 Col. Deportistas C.P. 31125 Chihuahua, Chihuahua, Mex."}              Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"ESMERALDA"}             Direccion={"Vialidad CH-P #2301-A, Col. Mármol, C.P. 31063, Chihuahua, Chihuahua, Mex."}                Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"LOS NOGALES"}           Direccion={"Vialidad Los Nogales 3105, Col. Rodolfo Fierro C.P. 31137, Chihuahua, Chihuahua, Mex."}     Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"R. ALMADA"}             Direccion={"Periférico R. Almada #9602, Col. 3 de Mayo C.P. 31065, Chihuahua, Chihuahua, Mex."}         Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"OFICINAS CORPORATIVAS"} Direccion={"Av. H. Colegio Militar #265,, Col. Nombre de Dios C.P. 31150,, Chihuahua, Chihuahua, Mex."} Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"DELICIAS"}              Direccion={"Av. 7ª Oriente #609, Col. Centro C.P. 33000, Delicias, Chihuahua, Mex."}                    Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                        </div>
+
+                        <div className='flex flex-row mt-20'>
+                            <div className='mr-32'>
+                                <p className='text-3xl font-medium'>Sonora</p>
+                            </div>
+                            <button className='bg-neutral-200 hover:bg-green-900 hover:text-white hover:w-48 ease-in transition-all duration-150 rounded-md w-40 h-11 items-center justify-evenly flex flex-row'>
+                            <div className='w-ful flex'>
+                                <p className='text-lg'>Cotizar aquí</p>
+                            </div>
+                            <IoIosMail className='h-7 w-auto' />
+                            </button>
+                        </div>
+
+                        <div className='items-start justify-center mt-5 xs:w-screen md:w-full grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 '>
+                            <Sucursales Lugar={"COLEGIO MILITAR"}       Direccion={"Av. H. Colegio Militar #265, Col. Nombre de Dios C.P. 31150, Chihuahua, Chihuahua, Mex."}   Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"CHUVISCAR"}             Direccion={"Av. Teófilo Borunda 3903, Col. Santo Niño C.P. 31200 Chihuahua, Chihuahua, Mex."}           Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"FLORES MAGÓN"}          Direccion={"Av. Flores Magón #5810,Col. Inalambrica,  C.P. 31460, Chihuahua, Chihuahua, Mex."}          Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"LA CURVA"}              Direccion={"Av. Tecnológico 10711 Col. Deportistas C.P. 31125 Chihuahua, Chihuahua, Mex."}              Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"ESMERALDA"}             Direccion={"Vialidad CH-P #2301-A, Col. Mármol, C.P. 31063, Chihuahua, Chihuahua, Mex."}                Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"LOS NOGALES"}           Direccion={"Vialidad Los Nogales 3105, Col. Rodolfo Fierro C.P. 31137, Chihuahua, Chihuahua, Mex."}     Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"R. ALMADA"}             Direccion={"Periférico R. Almada #9602, Col. 3 de Mayo C.P. 31065, Chihuahua, Chihuahua, Mex."}         Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"OFICINAS CORPORATIVAS"} Direccion={"Av. H. Colegio Militar #265,, Col. Nombre de Dios C.P. 31150,, Chihuahua, Chihuahua, Mex."} Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"DELICIAS"}              Direccion={"Av. 7ª Oriente #609, Col. Centro C.P. 33000, Delicias, Chihuahua, Mex."}                    Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"NVO. CASAS GRANDES"}    Direccion={"Av. Tulipán #4506 Parque Industrial Paquimé C.P. 31755, Casas Grandes, Chihuahua, Mex."}    Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                        </div>
+
+                        <div className='flex flex-row mt-20'>
+                            <div className='mr-32'>
+                                <p className='text-3xl font-medium'>Durango</p>
+                            </div>
+                            <button className='bg-neutral-200 hover:bg-green-900 hover:text-white hover:w-48 ease-in transition-all duration-150 rounded-md w-40 h-11 items-center justify-evenly flex flex-row'>
+                            <div className='w-ful flex'>
+                                <p className='text-lg'>Cotizar aquí</p>
+                            </div>
+                            <IoIosMail className='h-7 w-auto' />
+                            </button>
+                        </div>
+
+                        <div className='items-start justify-center mt-5 xs:w-screen md:w-full grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 '>
+                            <Sucursales Lugar={"COLEGIO MILITAR"}       Direccion={"Av. H. Colegio Militar #265, Col. Nombre de Dios C.P. 31150, Chihuahua, Chihuahua, Mex."}   Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"CHUVISCAR"}             Direccion={"Av. Teófilo Borunda 3903, Col. Santo Niño C.P. 31200 Chihuahua, Chihuahua, Mex."}           Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                        </div>
+
+                        <div className='flex flex-row mt-20'>
+                            <div className='mr-32'>
+                                <p className='text-3xl font-medium'>Sinaloa</p>
+                            </div>
+                            <button className='bg-neutral-200 hover:bg-green-900 hover:text-white hover:w-48 ease-in transition-all duration-150 rounded-md w-40 h-11 items-center justify-evenly flex flex-row'>
+                            <div className='w-ful flex'>
+                                <p className='text-lg'>Cotizar aquí</p>
+                            </div>
+                            <IoIosMail className='h-7 w-auto' />
+                            </button>
+                        </div>
+
+                        <div className='items-start justify-center mt-5 xs:w-screen md:w-full grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 '>
+                            <Sucursales Lugar={"COLEGIO MILITAR"}       Direccion={"Av. H. Colegio Militar #265, Col. Nombre de Dios C.P. 31150, Chihuahua, Chihuahua, Mex."}   Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"CHUVISCAR"}             Direccion={"Av. Teófilo Borunda 3903, Col. Santo Niño C.P. 31200 Chihuahua, Chihuahua, Mex."}           Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"FLORES MAGÓN"}          Direccion={"Av. Flores Magón #5810,Col. Inalambrica,  C.P. 31460, Chihuahua, Chihuahua, Mex."}          Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"LA CURVA"}              Direccion={"Av. Tecnológico 10711 Col. Deportistas C.P. 31125 Chihuahua, Chihuahua, Mex."}              Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                        </div>
+
+                        <div className='flex flex-row mt-20'>
+                            <div className='mr-32'>
+                                <p className='text-3xl font-medium'>Aguascalientes</p>
+                            </div>
+                            <button className='bg-neutral-200 hover:bg-green-900 hover:text-white hover:w-48 ease-in transition-all duration-150 rounded-md w-40 h-11 items-center justify-evenly flex flex-row'>
+                            <div className='w-ful flex'>
+                                <p className='text-lg'>Cotizar aquí</p>
+                            </div>
+                            <IoIosMail className='h-7 w-auto' />
+                            </button>
+                        </div>
+
+                        <div className='items-start justify-center mt-5 xs:w-screen md:w-full grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 '>
+                            <Sucursales Lugar={"COLEGIO MILITAR"}       Direccion={"Av. H. Colegio Militar #265, Col. Nombre de Dios C.P. 31150, Chihuahua, Chihuahua, Mex."}   Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"CHUVISCAR"}             Direccion={"Av. Teófilo Borunda 3903, Col. Santo Niño C.P. 31200 Chihuahua, Chihuahua, Mex."}           Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"FLORES MAGÓN"}          Direccion={"Av. Flores Magón #5810,Col. Inalambrica,  C.P. 31460, Chihuahua, Chihuahua, Mex."}          Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"LA CURVA"}              Direccion={"Av. Tecnológico 10711 Col. Deportistas C.P. 31125 Chihuahua, Chihuahua, Mex."}              Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                        </div>
+
+                        <div className='flex flex-row mt-20'>
+                            <div className='mr-32'>
+                                <p className='text-3xl font-medium'>León Gto.</p>
+                            </div>
+                            <button className='bg-neutral-200 hover:bg-green-900 hover:text-white hover:w-48 ease-in transition-all duration-150 rounded-md w-40 h-11 items-center justify-evenly flex flex-row'>
+                            <div className='w-ful flex'>
+                                <p className='text-lg'>Cotizar aquí</p>
+                            </div>
+                            <IoIosMail className='h-7 w-auto' />
+                            </button>
+                        </div>
+
+                        <div className='items-start justify-center mt-5 xs:w-screen md:w-full grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 '>
+                            <Sucursales Lugar={"COLEGIO MILITAR"}       Direccion={"Av. H. Colegio Militar #265, Col. Nombre de Dios C.P. 31150, Chihuahua, Chihuahua, Mex."}   Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"CHUVISCAR"}             Direccion={"Av. Teófilo Borunda 3903, Col. Santo Niño C.P. 31200 Chihuahua, Chihuahua, Mex."}           Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                            <Sucursales Lugar={"FLORES MAGÓN"}          Direccion={"Av. Flores Magón #5810,Col. Inalambrica,  C.P. 31460, Chihuahua, Chihuahua, Mex."}          Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                        </div>
+
+                        <div className='flex flex-row mt-20'>
+                            <div className='mr-32'>
+                                <p className='text-3xl font-medium'>Fresnillo, Zacatecas</p>
+                            </div>
+                            <button className='bg-neutral-200 hover:bg-green-900 hover:text-white hover:w-48 ease-in transition-all duration-150 rounded-md w-40 h-11 items-center justify-evenly flex flex-row'>
+                            <div className='w-ful flex'>
+                                <p className='text-lg'>Cotizar aquí</p>
+                            </div>
+                            <IoIosMail className='h-7 w-auto' />
+                            </button>
+                        </div>
+
+                        <div className='items-start justify-center mt-5 xs:w-screen md:w-full grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 '>
+                            <Sucursales Lugar={"COLEGIO MILITAR"}       Direccion={"Av. H. Colegio Militar #265, Col. Nombre de Dios C.P. 31150, Chihuahua, Chihuahua, Mex."}   Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
+                        </div>
+
+                        <div className='flex flex-row mt-20'>
+                            <div className='mr-32'>
+                                <p className='text-3xl font-medium'>El Paso Texas, USA.</p>
+                            </div>
+                            <button className='bg-neutral-200 hover:bg-green-900 hover:text-white hover:w-48 ease-in transition-all duration-150 rounded-md w-40 h-11 items-center justify-evenly flex flex-row'>
+                            <div className='w-ful flex'>
+                                <p className='text-lg'>Cotizar aquí</p>
+                            </div>
+                            <IoIosMail className='h-7 w-auto' />
+                            </button>
+                        </div>
+
+                        <div className='items-start justify-center mt-5 xs:w-screen md:w-full grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 '>
+                            <Sucursales Lugar={"COLEGIO MILITAR"}       Direccion={"Av. H. Colegio Militar #265, Col. Nombre de Dios C.P. 31150, Chihuahua, Chihuahua, Mex."}   Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import dayjs from 'dayjs';
 import { FaWhatsapp, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { FaClock } from "react-icons/fa6";
@@ -15,6 +16,12 @@ const Sucursales: React.FC<Contenido> = ({ Lugar, Direccion, Telefono, Whatsapp 
 
     const toggleAccordion = () => {
         setShowAccordion(prevState => !prevState);
+
+        const currentHour = dayjs().hour();
+        const wordStyle = {
+          color: currentHour >= 12 && currentHour <= 18 ? 'red' : 'black'
+        };
+        
     };
 
     return (
