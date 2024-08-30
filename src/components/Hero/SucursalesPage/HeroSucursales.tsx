@@ -59,7 +59,6 @@ const Hero: React.FC<HeroProps> = () => {
                             <Sucursales Lugar={"CUAUHTÉMOC"}            Direccion={"Corredor Comercial #543, Col. Fernando Baeza C.P. 31510, Cuauhtémoc, Chihuahua, Mex."}      Telefono={"614-XXX-XXXX"} Whatsapp={"614-XXX-XXXX"} />
                         </div>
 
-
                         <div className='flex flex-row mt-20'>
                             <div className='mr-32'>
                                 <p className='text-3xl font-medium'>Ciudad Juarez</p>

@@ -701,3 +701,23 @@ body {
   background-blend-mode: overlay; /* Mezcla el color de fondo con la imagen */
 
 }
+
+.BackgroundCotizar{
+  background: linear-gradient(45deg, #38ff84, #2ef078, #2ad36b, #1b9249, #1b8343,#0d4623 );
+}
+
+/*Slide up from cotizar*/
+@keyframes slide-up {
+  from {
+    transform: translateX(-240px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 1s ease-out forwards;
+}
