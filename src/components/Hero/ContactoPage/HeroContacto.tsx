@@ -82,7 +82,7 @@ return (
                 <textarea className='bg-neutral-50 resize-none hover:bg-slate-100 h-32 border-1 w-full border-neutral-300 rounded-md' id="products" name="products" title="Products" placeholder="Ingrese su mensaje."></textarea>
             </div>
             <div className='flex flex-col mt-10 w-full'>
-                <button className='w-full h-10 rounded-lg bg-green-500 text-neutral-50 hover:bg-green-700 hover:text-white transition-all duration-150'>Enviar Cotización</button>
+                <button className='w-full h-10 rounded-lg bg-green-500 text-neutral-50 hover:bg-green-700 hover:text-white transition-all duration-150'>Enviar Mensaje</button>
             </div>
             </div>
         </div>
