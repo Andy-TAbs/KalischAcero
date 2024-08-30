@@ -6,7 +6,7 @@ interface DropdownMenuMobileProps {
     // Agrega las propiedades necesarias aquí
 }
 
-const DropdownMenuMobile: React.FC<DropdownMenuMobileProps> = (props) => {
+const DropdownMenuMobile: React.FC<DropdownMenuMobileProps> = (DropdownMenuMobileprops) => {
     const [isOpen, setIsOpen] = useState(false);
     const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
     const [isSubMenuOpenNosotros, setIsSubMenuOpenNosotros] = useState(false);
@@ -43,7 +43,7 @@ const DropdownMenuMobile: React.FC<DropdownMenuMobileProps> = (props) => {
                 >
                     <ul className="flex w-full flex-col  items-start">
                         <li className=" w-full">
-                            <a href="#" className="h-12 pl-4 font-semibold text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Cotizar</a>
+                            <a href="/Cotizar" className="h-12 pl-4 font-semibold text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Cotizar</a>
                         </li>
 
                         <li className="relative w-full border-y-1 border-neutral-200">
@@ -57,22 +57,22 @@ const DropdownMenuMobile: React.FC<DropdownMenuMobileProps> = (props) => {
                             {isSubMenuOpenNosotros && (
                                 <ul className="w-full">
                                     <li className="relative w-full border-t-1 border-neutral-200">
-                                    <a href="AboutUs" className="pl-8 h-12 text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Acerca de Nosotros</a>
+                                    <a href="/Nosotros/Acerca-de-Nosotros" className="pl-8 h-12 text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Acerca de Nosotros</a>
                                     </li>
                                     <li className="relative w-full border-t-1 border-neutral-200">
-                                    <a href="/MisionVision" className="pl-8 h-12 text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Misión y Visión</a>
+                                    <a href="/Nosotros/Mision-y-Vision" className="pl-8 h-12 text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Misión y Visión</a>
                                     </li>
                                     <li className="relative w-full border-t-1 border-neutral-200">
-                                    <a href="/EthicalCode" className="pl-8 h-12 text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Código de Ética</a>
+                                    <a href="/Nosotros/Codigo-de-etica" className="pl-8 h-12 text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Código de Ética</a>
                                     </li>
                                     <li className="relative w-full border-t-1 border-neutral-200">
-                                    <a href="/Culture" className="pl-8 h-12 text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Cultura</a>
+                                    <a href="/Nosotros/Cultura" className="pl-8 h-12 text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Cultura</a>
                                     </li>
                                     <li className="relative w-full border-t-1 border-neutral-200">
-                                    <a href="/Talent" className="pl-8 h-12 text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Talento</a>
+                                    <a href="/Nosotros/Talent0" className="pl-8 h-12 text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Talento</a>
                                     </li>
                                     <li className="relative w-full border-t-1 border-neutral-200">
-                                    <a href="/News" className="pl-8 h-12 text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Noticias</a>
+                                    <a href="/Nosotros/Noticias" className="pl-8 h-12 text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Noticias</a>
                                     </li>
                                 </ul>
                             )}
@@ -194,16 +194,16 @@ const DropdownMenuMobile: React.FC<DropdownMenuMobileProps> = (props) => {
 
 
 
-                        <li className=" w-full">
+                        <li className=" w-full  border-neutral-200">
                             <a href="#" className="h-12 pl-4 font-semibold text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Cliente Consentido</a>
                         </li>
-                        <li className=" w-full">
+                        <li className=" w-full border-t-1 border-neutral-200">
                             <a href="#" className="h-12 pl-4 font-semibold text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Sucursales</a>
                         </li>
-                        <li className=" w-full">
+                        <li className=" w-full border-t-1 border-neutral-200">
                             <a href="#" className="h-12 pl-4 font-semibold text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Contáctanos</a>
                         </li>
-                        <li className=" w-full">
+                        <li className=" w-full border-t-1 border-neutral-200">
                             <a href="#" className="h-12 pl-4 font-semibold text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Tienda en Línea</a>
                         </li>
                     </ul>

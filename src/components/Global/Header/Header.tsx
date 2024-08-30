@@ -65,7 +65,7 @@ export const Header: React.FC<HeaderProps> = ({ title }) => {
                             <div className="hidden lg:flex flex-col lg:flex-row lg:items-center lg:ml-auto 2xl:mr-52 ">
                                 <ul className="flex flex-wrap list-none justify-start lg:justify-start lg:space-x-4 space-y-4 lg:space-y-0 ">
                                 <li className="">
-                                <button className="btnHeader">Cotizar</button>
+                                <a href='/Cotizar'><button className="btnHeader">Cotizar</button></a>
                                 </li>
                                     <li className="lg:mr-10 pt-2">
                                         <DropdownMenu title="Nosotros" options={headerOptionsNosotros}/>
