@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Kalisch Acero",
-  description: "Pagina principal de Kalisch Acero",
+  description: "Pagina de Cotizaciones de Kalisch Acero",
 };
 
 export default function RootLayout({
