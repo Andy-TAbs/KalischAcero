@@ -201,7 +201,7 @@ const DropdownMenuMobile: React.FC<DropdownMenuMobileProps> = (DropdownMenuMobil
                             <a href="#" className="h-12 pl-4 font-semibold text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Sucursales</a>
                         </li>
                         <li className=" w-full border-t-1 border-neutral-200">
-                            <a href="#" className="h-12 pl-4 font-semibold text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Contáctanos</a>
+                            <a href="/Contacto" className="h-12 pl-4 font-semibold text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Contáctanos</a>
                         </li>
                         <li className=" w-full border-t-1 border-neutral-200">
                             <a href="#" className="h-12 pl-4 font-semibold text-left text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Tienda en Línea</a>
