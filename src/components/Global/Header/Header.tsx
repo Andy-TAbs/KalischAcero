@@ -6,6 +6,7 @@ import { SecHeader } from './secHeader';
 import DropdownMenuMobile from './dropdownMenuMobile';
 import Link from 'next/link';
 import Image from 'next/image';
+import DropdownMenuWSubMenu from './DropDownMenuWSubMenu';
 
 interface HeaderProps {
     title: string;
@@ -19,10 +20,24 @@ const headerOptionsNosotros = [
     { label: 'Talento', link: '/Nosotros/Talento' },
     { label: 'Noticias', link: '/Nosotros/Noticias' }
   ];
-  const headerOptionsSostenibilidad = [
-    { label: 'Filantropía', link: '/' },
-    { label: 'Empresa socialmente responsable', link: '/about' },
-    { label: 'Politica de medio ambiente', link: '/services' }
+const headerOptionsSostenibilidad = [
+    {
+        label: 'Filantropía',
+        link: '#',
+        submenu: [
+            { label: 'Contigo', link: '/Sostenibilidad/Filantropia/Contigo' },
+            { label: 'Juguetiza', link: '/Sostenibilidad/Filantropia/Juguetiza' },
+            { label: 'Tapatón', link: '/Sostenibilidad/Filantropia/Tapaton' },
+        ],
+    },
+    {
+        label: 'Empresa Socialmente Responsable',
+        link: '/Sostenibilidad/Empresa Socialmente Responsable',
+    },
+    {
+        label: 'Política de Medio Ambiente',
+        link: '/Sostenibilidad/Politica de Medio Ambiente',
+    },
 ];
 const headerOptionsDivisiones = [
     { label: 'Kalisch Steel', link: 'https://kalischsteel.com/' },
@@ -71,7 +86,7 @@ export const Header: React.FC<HeaderProps> = ({ title }) => {
                                         <DropdownMenu title="Nosotros" options={headerOptionsNosotros}/>
                                     </li>
                                     <li className="lg:mr-10 pt-2">
-                                        <DropdownMenu title="Sostenibilidad" options={headerOptionsSostenibilidad}/>
+                                        <DropdownMenuWSubMenu title="Sostenibilidad" options={headerOptionsSostenibilidad}/>
                                     </li>
                                     <li className="lg:mr-10 pt-2">
                                         <DropdownMenu title="Divisiones" options={headerOptionsDivisiones}/>
