@@ -32,11 +32,11 @@ const headerOptionsSostenibilidad = [
     },
     {
         label: 'Empresa Socialmente Responsable',
-        link: '/Sostenibilidad/Empresa Socialmente Responsable',
+        link: '/Sostenibilidad/Empresa-Socialmente-Responsable',
     },
     {
         label: 'Política de Medio Ambiente',
-        link: '/Sostenibilidad/Politica de Medio Ambiente',
+        link: '/Sostenibilidad/Politica-de-Medio-Ambiente',
     },
 ];
 const headerOptionsDivisiones = [
