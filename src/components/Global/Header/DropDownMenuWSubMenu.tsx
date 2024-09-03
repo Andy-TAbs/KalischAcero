@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import { IoIosArrowForward } from "react-icons/io";
 
 interface SubmenuOption {
     label: string;
@@ -49,14 +50,17 @@ const DropdownMenuWSubMenu: React.FC<ButtonText> = ({ title, options }) => {
                             onMouseEnter={() => option.submenu && handleSubmenuMouseEnter(index)}
                             onMouseLeave={() => option.submenu && handleSubmenuMouseLeave()}
                         >
-                            <a className='block py-3 px-4 text-gray-700 hover:text-green-700 transition-all ease-in hover:bg-gray-100' href={option.link}>
+                            <a className='block py-3 px-4 text-gray-700 hover:text-green-700 transition-all ease-in hover:bg-gray-100 relative' href={option.link}>
                                 {option.label}
+                                {option.submenu && (
+                                    <IoIosArrowForward className="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-500" />
+                                )}
                             </a>
                             {option.submenu && activeSubmenu === index && (
-                                <ul className="absolute left-full top-0 bg-white shadow-lg w-40 border border-gray-200 ">
+                                <ul className="absolute left-full top-0 bg-white shadow-lg w-40 border border-gray-200">
                                     {option.submenu.map((subOption, subIndex) => (
                                         <li key={subIndex} className='flex items-center justify-center'>
-                                            <a className='block py-3 px-3 w-full h-14  text-gray-700 hover:text-green-700 transition-all ease-in hover:bg-gray-100' href={subOption.link}>
+                                            <a className='block py-3 px-3 w-full h-14 text-gray-700 hover:text-green-700 transition-all ease-in hover:bg-gray-100' href={subOption.link}>
                                                 {subOption.label}
                                             </a>
                                         </li>
