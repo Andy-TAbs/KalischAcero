@@ -1,4 +1,5 @@
 // BackToTopButton.tsx
+"use client";
 import React, { useEffect, useState } from 'react';
 
 const ScrollTopButton: React.FC = () => {
