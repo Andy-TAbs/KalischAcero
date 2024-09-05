@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "^5.19.1",
     "@types/bootstrap": "^5.2.10",
     "@vercel/speed-insights": "^1.0.12",
     "bcryptjs": "^2.4.3",
     "bootstrap": "^5.3.3",
     "dayjs": "^1.11.13",
+    "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.8.0",
     "mongoose": "^8.6.1",
     "next": "^14.2.7",
