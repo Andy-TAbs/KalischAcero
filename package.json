@@ -9,7 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@prisma/client": "^5.19.1",
+    "@auth/mongodb-adapter": "^3.4.2",
+    "@types/bcryptjs": "^2.4.6",
     "@types/bootstrap": "^5.2.10",
     "@vercel/speed-insights": "^1.0.12",
     "bcryptjs": "^2.4.3",
