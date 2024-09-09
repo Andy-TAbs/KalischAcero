@@ -1,8 +1,9 @@
 "use client";
 import React, {useState} from 'react';
-import Image from 'next/image';
+import {signIn} from "next-auth/react";
 import { RiEyeFill } from "react-icons/ri";
 import { RiEyeCloseFill } from "react-icons/ri";
+import Image from 'next/image';
 
 
 interface Props {
@@ -11,13 +12,11 @@ interface Props {
 
 const HeroIniciarSesion: React.FC<Props> = () => {
     const [isEyeOpen, setIsEyeOpen] = useState(false);
-    const [Username, setUsername] = useState("");
-    const [Password, setPassword] = useState("");
-    const [Error, setError] = useState("");
 
     const toggleeye = () => {
-    setIsEyeOpen(!isEyeOpen);
-    };
+        setIsEyeOpen(!isEyeOpen);
+        };
+
 
     return (
         <div className='grid place-items-center h-screen w-screen bg-neutral-50'>
@@ -28,32 +27,40 @@ const HeroIniciarSesion: React.FC<Props> = () => {
                     </a>
                     <h1 className='px-3 pt-10 font-semibold text-2xl'>Inicio de Sesión</h1>
                 </div>
-                <div className='flex flex-col pt-4'>
-                    <label className='text-lg font-semibold pb-2'>Usuario: </label>
-                    <div>
-                        <input onChange={e => setUsername(e.target.value)} type="text" placeholder='Usuario' className='border-2 text-lg border-gray-300 rounded-md p-1' />
-                    </div>
-                    <label className='text-lg font-semibold pb-2'>Contraseña: </label>
-                    <div className='flex flex-row items-center'>
-                        <input type={isEyeOpen ? 'text' : 'password'} onChange={e => setPassword(e.target.value)}  placeholder='Contraseña' className='border-2 text-lg h-auto w-full border-gray-300 rounded-md p-1' />
+                <form  className='flex flex-col pt-4 ' >
+                    <label className='text-lg font-semibold pb-2' >Email:
+                        <div>
+                            <input  id="User" type="text" placeholder='Usuario' className='border-2 text-lg border-gray-300 rounded-md p-1' />
+                        </div>
+                    </label>
+                    <label className='text-lg font-semibold pb-2'>Contraseña:
+                    <div className='flex flex-row items-center justify-center'>
+                        <div className='flex flex-row items-center'>
+                            <input type={isEyeOpen ? "text" : "password"}   placeholder='Contraseña' id="password" className='border-2 text-lg h-auto w-full border-gray-300 rounded-md p-1' />
+                        </div>
                         <div onClick={toggleeye} style={{cursor: 'pointer'}} className='h-5 pl-3'>
                             {isEyeOpen ? <RiEyeFill /> : <RiEyeCloseFill  />}
                         </div>
                     </div>
-                    { Error && (
+                    </label>
                     <div className='bg-red-600 text-white w-fit text-sm py-1 px-3 rounded-md mt-3'>
-                        {Error}
                     </div>
-                    )
-                    }
-
                     <div className='w-full flex flex-col items-center justify-center pt-5'>
-                    <button className='bg-green-700 text-white p-3 w-full rounded-md'>Iniciar Sesión</button></div>
-
+                    <button  className='bg-green-700 text-white p-3 w-full rounded-md'>Iniciar Sesión</button>
+                        </div>
                     <div className='w-full flex flex-row justify-end items-center pt-7'>
                         <a href='#' className='text-blue-500'>¿Olvidaste tu Contraseña?</a>
                     </div>
-                </div>
+                    <div className='w-full flex flex-col items-center justify-center pt-5'>
+                    <button onClick={async (e) => {
+                        e.preventDefault();
+    const result = await signIn("github", {callbackUrl: "/dashboard"});
+    if (result?.error) {
+        console.error("Error al iniciar sesión:", result.error);
+    }
+}} className='bg-black hover:bg-neutral-400 transition-all text-white p-3 w-full rounded-md'>Iniciar Sesión con github</button>
+                        </div>
+                </form>
             </div>
         </div>
     );
