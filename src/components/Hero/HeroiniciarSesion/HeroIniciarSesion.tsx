@@ -52,13 +52,14 @@ const HeroIniciarSesion: React.FC<Props> = () => {
                         <a href='#' className='text-blue-500'>¿Olvidaste tu Contraseña?</a>
                     </div>
                     <div className='w-full flex flex-col items-center justify-center pt-5'>
-                    <button onClick={async (e) => {
-                        e.preventDefault();
-    const result = await signIn("github", {callbackUrl: "/dashboard"});
-    if (result?.error) {
-        console.error("Error al iniciar sesión:", result.error);
-    }
-}} className='bg-black hover:bg-neutral-400 transition-all text-white p-3 w-full rounded-md'>Iniciar Sesión con github</button>
+                        <button onClick={async (e) => {
+                            e.preventDefault();
+                                const result = await signIn("github", {callbackUrl: "/dashboard"});
+                                if (result?.error) {
+                                    console.error("Error al iniciar sesión:", result.error);
+                                }
+                            }} className='bg-black hover:bg-neutral-400 transition-all text-white p-3 w-full rounded-md'>Iniciar Sesión con github
+                        </button>
                         </div>
                 </form>
             </div>
