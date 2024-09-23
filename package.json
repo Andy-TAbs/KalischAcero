@@ -18,7 +18,7 @@
     "dayjs": "^1.11.13",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.8.0",
-    "mongoose": "^8.6.1",
+    "mongoose": "^8.6.3",
     "next": "^14.2.12",
     "next-auth": "^4.24.7",
     "react": "^18",
