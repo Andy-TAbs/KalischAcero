@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@auth/mongodb-adapter": "^3.4.2",
+    "@auth/mongodb-adapter": "^3.5.0",
     "@types/bcryptjs": "^2.4.6",
     "@types/bootstrap": "^5.2.10",
     "@vercel/speed-insights": "^1.0.12",
