@@ -1,19 +1,26 @@
 import { getServerSession } from "next-auth"
 import Image from 'next/image'
-import ButtonSignOut from './ButtonSignOut';
+import ButtonSignOut from '../../components/Dashboard/ButtonSignOut';
+import MainHeroDashboard from "@/components/Dashboard/HeroDashboard/MainHeroDashboard";
+import HeaderDashboard from "@/components/Dashboard/HeaderDashboard";
+import SideMenuDashboard from "@/components/Dashboard/SideMenuDashboard";
+import { Hero } from "@/components/Hero/HeroLandingPage/Hero";
 
 async function Home() {
 
     const session = await getServerSession();
     console.log(session);
-  return (
-    <div className='h-screen flex flex-col items-center justify-center'>
-      <div className="flex flex-col items-center justify-center bg-black p-4 rounded-xl">
-      <h1 className=" text-lg text-white font-semibold">Dashboard de {session?.user?.name}</h1>
-      <Image src={session?.user?.image || ""} alt={session?.user?.name || ""} width={200} height={200} />
-        <ButtonSignOut />
-      </div>
+return (
+<div>
+    <HeaderDashboard />
+
+    <div className="flex flex-col md:flex-row">
+        <SideMenuDashboard />
     </div>
+    <div>
+    <MainHeroDashboard />
+    </div>
+</div>
   )
 }
 
