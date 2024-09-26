@@ -1,5 +1,5 @@
 import { getServerSession } from "next-auth"
-import MainHeroDashboard from "@/components/Dashboard/HeroDashboard/MainHeroDashboard";
+import NosotrosHeroDashboard from "@/components/Dashboard/HeroDashboard/NosotrosHeroDashboard";
 import HeaderDashboard from "@/components/Dashboard/HeaderDashboard";
 import SideMenuDashboard from "@/components/Dashboard/SideMenuDashboard";
 
@@ -14,7 +14,7 @@ return (
         <SideMenuDashboard />
     </div>
     <div>
-        <MainHeroDashboard />
+        <NosotrosHeroDashboard />
     </div>
 </div>
     )
