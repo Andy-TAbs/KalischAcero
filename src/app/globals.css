@@ -174,7 +174,7 @@ body {
 
 
 
-/* Btton Header */
+/* Button Header */
 .btnHeader {
   font-size: 17px;
   background: transparent;
@@ -1006,4 +1006,13 @@ body {
 
 .buttonDashboard6:active {
   transform: scale(0.9);
+}
+
+
+/* background 404 */
+.bg-404 {
+  background-image: url('/kalisch-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
