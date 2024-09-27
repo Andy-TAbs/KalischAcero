@@ -26,15 +26,15 @@ const Hero: React.FC<HeroProps> = () => {
     return (
         <div className="w-screen items-center">
             <div className='h-204 relative '>
-                <video autoPlay muted loop id="background-video" className="absolute inset-0 z-0 w-full h-full object-cover">
+                <video autoPlay muted loop id="background-video" className="absolute inset-0 z-0 w-full h-full object-cover select-none">
                     <source src="/talento_.mp4" type="video/mp4" />
                     Tu navegador no soporta el video.
                 </video>
                 <div className='absolute inset-0 flex right-144 lg:top-56 md:top-56 sm:top-56 xs:top-56 xsm:top-56 lg:left-42 md:left-32 mdl:left-48 sm:left-36 xsm:left-28 xs:left-10 z-10'>
-                    <p className='sm:text-sm xs:text-xxs font-Bebas_Neue text-white'>I N I C I O  /  N O S O T R O S</p>
+                    <p className='sm:text-sm xs:text-xxs font-Bebas_Neue text-white select-none'>I &nbsp;N &nbsp;I &nbsp;C &nbsp;I &nbsp;O  &nbsp;&nbsp;/&nbsp;&nbsp;  N &nbsp;O &nbsp;S &nbsp;O &nbsp;T &nbsp;R &nbsp;O &nbsp;S</p>
                 </div>
                 <div className='absolute inset-0 flex right-144 lg:top-56 md:top-56 sm:top-60 xs:top-60 xsm:top-60 lg:left-42 md:left-32 mdl:left-48 sm:left-36 xsm:left-28 xs:left-10 z-10'>
-                    <p className='md:text-11xl xs:text-7xl sm:text-9xl font-Bebas_Neue text-white font-extrabold'>TALENTO</p>
+                    <p className='md:text-11xl xs:text-7xl sm:text-9xl font-Bebas_Neue text-white font-extrabold select-none'>TALENTO</p>
                 </div>
             </div>
             <div className='z-50'>

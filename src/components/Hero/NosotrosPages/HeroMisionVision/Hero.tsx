@@ -31,18 +31,18 @@ const Hero: React.FC<HeroProps> = () => {
     return (
     <div className="w-screen">
         <div className='h-204 relative '>
-                <video autoPlay muted loop id="background-video" className="absolute inset-0 z-0 w-full h-full object-cover">
+                <video autoPlay muted loop id="background-video" className="absolute inset-0 z-0 w-full h-full object-cover select-none">
                     <source src="/misionvision.mp4" type="video/mp4" />
                     Tu navegador no soporta el video.
                 </video>
                 <div className='absolute inset-0 flex lg:right-144 md:right-80 sm:right-40 xs:right-32 lg:top-56 md:top-56 sm:top-56 xs:top-56 xsm:top-56 lg:left-42 md:left-32 mdl:left-48 sm:left-36 xsm:left-28 xs:left-10 z-10'>
-                    <p className='sm:text-sm xs:text-xxs font-Bebas_Neue text-white'>I &nbsp;N &nbsp;I &nbsp;C &nbsp;I &nbsp;O  &nbsp;&nbsp;/&nbsp;&nbsp;  N &nbsp;O &nbsp;S &nbsp;O &nbsp;T &nbsp;R &nbsp;O &nbsp;S</p>
+                    <p className='sm:text-sm xs:text-xxs font-Bebas_Neue text-white select-none'>I &nbsp;N &nbsp;I &nbsp;C &nbsp;I &nbsp;O  &nbsp;&nbsp;/&nbsp;&nbsp;  N &nbsp;O &nbsp;S &nbsp;O &nbsp;T &nbsp;R &nbsp;O &nbsp;S</p>
                 </div>
                 <div className='absolute inset-0 flex right-144 lg:top-56 md:top-56 sm:top-60 xs:top-60 xsm:top-60 lg:left-42 md:left-32 mdl:left-48 sm:left-36 xsm:left-28 xs:left-10 z-10'>
-                    <p className='md:text-11xl xs:text-7xl sm:text-9xl font-Bebas_Neue text-white font-extrabold'>MISIÓN Y</p>
+                    <p className='md:text-11xl xs:text-7xl sm:text-9xl font-Bebas_Neue text-white font-extrabold select-none'>MISIÓN Y</p>
                 </div>
                 <div className='absolute inset-0 flex right-144 lg:top-88 md:top-88 sm:top-88 xs:top-76 xsm:top-76 lg:left-42 md:left-32 mdl:left-48 sm:left-36 xsm:left-28 xs:left-10  z-10'>
-                    <p className='md:text-11xl xs:text-7xl sm:text-9xl font-Bebas_Neue text-white font-extrabold'>VISIÓN</p>
+                    <p className='md:text-11xl xs:text-7xl sm:text-9xl font-Bebas_Neue text-white font-extrabold select-none'>VISIÓN</p>
                 </div>
             </div>
             <div>
