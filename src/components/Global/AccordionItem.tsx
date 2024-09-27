@@ -35,7 +35,7 @@ const CustomAccordion: React.FC<CustomAccordionProps> = ({ items }) => {
             {items.map((item, index) => (
                 <div key={index} className="border border-none rounded-none  ">
                     <button
-                        className={`w-full text-left font-semibold text-lg p-4  text-black  hover:text-white focus:outline-none flex flex-row content-evenly items-center justify-between ${activeIndex === index ? 'bg-green-700 text-white transition-all ease-in duration-500' : 'bg-white transition-all text-black ease-out duration-500'}`}
+                        className={`w-full text-left font-semibold text-lg p-4  text-black  hover:text-white focus:outline-none flex flex-row content-evenly items-center justify-between ${activeIndex === index ? 'bg-green-700 text-white transition-all ease-in duration-250' : 'bg-white transition-all text-black ease-out duration-250'}`}
                         onClick={() => handleToggle(index)}
                     >
                         {item.header}

@@ -23,7 +23,7 @@ const HeroIniciarSesion: React.FC<Props> = () => {
             <div className="shadow-lg p-5 rounded-lg border-t-4  border-green-700 bg-neutral-100">
                 <div className='flex flex-col justify-center items-center'>
                     <a href="/" className="">
-                        <Image width={200} height={100} src="/kfa_movil_50.png" className="lg:h-9 w-auto sm:h-9 xs:h-10  " alt="Kalisch_Logo"/>
+                        <Image width={200} height={100} src="/kfa_movil_50.png" className="lg:h-9 w-auto sm:h-9 xs:h-10" alt="Kalisch_Logo"/>
                     </a>
                     <h1 className='px-3 pt-10 font-semibold text-2xl'>Inicio de Sesión</h1>
                 </div>
@@ -38,7 +38,7 @@ const HeroIniciarSesion: React.FC<Props> = () => {
                         <div className='flex flex-row items-center'>
                             <input type={isEyeOpen ? "text" : "password"}   placeholder='Contraseña' id="password" className='border-2 text-lg h-auto w-full border-gray-300 rounded-md p-1' />
                         </div>
-                        <div onClick={toggleeye} style={{cursor: 'pointer'}} className='h-5 pl-3'>
+                        <div onClick={toggleeye}  className='h-5 pl-3 cursor-pointer'>
                             {isEyeOpen ? <RiEyeFill /> : <RiEyeCloseFill  />}
                         </div>
                     </div>
@@ -52,13 +52,14 @@ const HeroIniciarSesion: React.FC<Props> = () => {
                         <a href='#' className='text-blue-500'>¿Olvidaste tu Contraseña?</a>
                     </div>
                     <div className='w-full flex flex-col items-center justify-center pt-5'>
-                    <button onClick={async (e) => {
-                        e.preventDefault();
-    const result = await signIn("github", {callbackUrl: "/dashboard"});
-    if (result?.error) {
-        console.error("Error al iniciar sesión:", result.error);
-    }
-}} className='bg-black hover:bg-neutral-400 transition-all text-white p-3 w-full rounded-md'>Iniciar Sesión con github</button>
+                        <button onClick={async (e) => {
+                            e.preventDefault();
+                                const result = await signIn("github", {callbackUrl: "/dashboard"});
+                                if (result?.error) {
+                                    console.error("Error al iniciar sesión:", result.error);
+                                }
+                            }} className='bg-black hover:bg-neutral-400 transition-all text-white p-3 w-full rounded-md'>Iniciar Sesión con github
+                        </button>
                         </div>
                 </form>
             </div>

@@ -174,7 +174,7 @@ body {
 
 
 
-/* Btton Header */
+/* Button Header */
 .btnHeader {
   font-size: 17px;
   background: transparent;
@@ -720,4 +720,299 @@ body {
 
 .animate-slide-up {
   animation: slide-up 1s ease-out forwards;
+}
+
+
+/*Button dashboard*/
+.buttonDashboard1 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #056912;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #056912;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.buttonDashboard1:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #056912;
+  z-index: -1;
+}
+
+.buttonDashboard1:hover, .buttonDashboard1:focus {
+  color: white;
+}
+
+.buttonDashboard1:hover:before, .buttonDashboard1:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.buttonDashboard1:active {
+  transform: scale(0.9);
+}
+
+/*Button dashboard2*/
+.buttonDashboard2 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #cc1717;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #cc1717;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.buttonDashboard2:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #cc1717;
+  z-index: -1;
+}
+
+.buttonDashboard2:hover, .buttonDashboard2:focus {
+  color: white;
+}
+
+.buttonDashboard2:hover:before, .buttonDashboard2:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.buttonDashboard2:active {
+  transform: scale(0.9);
+}
+
+/*Button dashboard3*/
+.buttonDashboard3 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #3b17cc;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #3b17cc;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.buttonDashboard3:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #3b17cc;
+  z-index: -1;
+}
+
+.buttonDashboard3:hover, .buttonDashboard2:focus {
+  color: white;
+}
+
+.buttonDashboard3:hover:before, .buttonDashboard2:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.buttonDashboard3:active {
+  transform: scale(0.9);
+}
+
+
+/*Button dashboard4*/
+.buttonDashboard4 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #9617cc;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #9617cc;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.buttonDashboard4:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #9617cc;
+  z-index: -1;
+}
+
+.buttonDashboard4:hover, .buttonDashboard4:focus {
+  color: white;
+}
+
+.buttonDashboard4:hover:before, .buttonDashboard4:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.buttonDashboard4:active {
+  transform: scale(0.9);
+}
+
+
+/*Button dashboard5*/
+.buttonDashboard5 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #17cc96;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #17cc96;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.buttonDashboard5:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #17cc96;
+  z-index: -1;
+}
+
+.buttonDashboard5:hover, .buttonDashboard5:focus {
+  color: white;
+}
+
+.buttonDashboard5:hover:before, .buttonDashboard5:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.buttonDashboard5:active {
+  transform: scale(0.9);
+}
+
+
+/*Button dashboard6*/
+.buttonDashboard6 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #dbe212;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #dbe212;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.buttonDashboard6:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #dbe212;
+  z-index: -1;
+}
+
+.buttonDashboard6:hover, .buttonDashboard6:focus {
+  color: white;
+}
+
+.buttonDashboard6:hover:before, .buttonDashboard6:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.buttonDashboard6:active {
+  transform: scale(0.9);
+}
+
+
+/* background 404 */
+.bg-404 {
+  background-image: url('/kalisch-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

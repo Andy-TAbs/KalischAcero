@@ -11,7 +11,7 @@ const Hero: React.FC<HeroProps> = () => {
     return (
         <div className="w-screen">
             <div className='h-204 xs:h-screen relative'>
-                <div className='image-background-News'></div>
+                <div className='image-background-News select-none'></div>
                 <div className='absolute inset-0 flex lg:right-144 md:right-80 sm:right-40 xs:right-32 lg:top-56 md:top-56 sm:top-56 xs:top-56 xsm:top-56 lg:left-42 md:left-32 mdl:left-48 sm:left-36 xsm:left-16 xs:left-10 z-10'>
                     <p className='sm:text-sm xs:text-xxs font-Bebas_Neue text-white'>L&nbsp; O &nbsp;&nbsp;&nbsp;&nbsp; M&nbsp; A&nbsp; S &nbsp;&nbsp;&nbsp;&nbsp; A&nbsp; C&nbsp; T&nbsp; U&nbsp; A&nbsp; L &nbsp;&nbsp;&nbsp;&nbsp; D&nbsp; E &nbsp;&nbsp;&nbsp;&nbsp; K&nbsp; A&nbsp; L&nbsp; I&nbsp; S&nbsp; C&nbsp; H &nbsp;&nbsp;&nbsp;&nbsp; A&nbsp; C&nbsp; E&nbsp; R&nbsp; O&nbsp;</p>
                 </div>
@@ -28,10 +28,10 @@ const Hero: React.FC<HeroProps> = () => {
                         <ScrollTopButton />
                     </div>
                 </div>
-                <div className='flex xs:flex-col lg:flex-row xs:mx-5 xsm:mx-32 sm:mx-52 md:mx-72 mdl:mx-90 lg:mx-16 xl:mx-32 2xl:mx-52 3xl:mx-101'>
-                    <div>
+                <div className='grid grid-cols-3 justify-center  items-center gap-4 w-screen mb-20'>
+                    <div className='w-76 h-56 '>
                         <a href=''>
-                            <div className='w-76 h-56'>
+                            <div className=''>
                                 <Image
                                         src="/Logo-ESR-PNG.png"
                                         alt="Descripción de la imagen"
@@ -48,9 +48,9 @@ const Hero: React.FC<HeroProps> = () => {
                             </div>
                         </a>
                     </div>
-                    <div className='lg:mx-4 xl:mx-20'>
+                    <div className='w-76 h-56'>
                         <a href=''>
-                            <div className='w-76 h-56'>
+                            <div className=''>
                                 <Image
                                         src="/logo-gptw-jpg.webp"
                                         alt="Descripción de la imagen"
@@ -61,15 +61,15 @@ const Hero: React.FC<HeroProps> = () => {
                             <div className='w-fit'>
                                 <p className='text-center font-semibold text-xl'>¡TRES AÑOS COMO EMPRESA SOCIALMENTE RESPONSABLE!</p>
                             </div>
-                            <div className='w-fit mt-3'>
+                            <div className=' mt-3'>
                                 <p className='text-start font-light text-base'>27 DE MARZO 2023</p>
                             </div>
                             </div>
                         </a>
                     </div>
-                    <div>
+                    <div className='w-76 h-56'>
                         <a href=''>
-                            <div className='w-76 h-56'>
+                            <div className=''>
                                 <Image
                                         src="/definicion-de-la-educacion-sssssscontinua.jpg"
                                         alt="Descripción de la imagen"

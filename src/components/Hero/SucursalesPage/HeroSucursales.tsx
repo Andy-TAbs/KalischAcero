@@ -13,15 +13,15 @@ const Hero: React.FC<HeroProps> = () => {
     return (
         <div className="w-screen">
             <div className='h-204 relative '>
-                <video autoPlay muted loop id="background-video" className="absolute inset-0 z-0 w-full h-full object-cover">
+                <video autoPlay muted loop id="background-video" className="absolute inset-0 z-0 w-full h-full object-cover select-none">
                     <source src="/mexico.mp4" type="video/mp4" />
                     Tu navegador no soporta el video.
                 </video>
                 <div className='absolute inset-0 flex lg:right-144 md:right-80 sm:right-40 xs:right-24 lg:top-56 md:top-56 sm:top-56 xs:top-56 xsm:top-56 lg:left-42 md:left-32 mdl:left-48 sm:left-36 xsm:left-28 xs:left-10 z-10'>
-                    <p className='sm:text-sm xs:text-xxs font-Bebas_Neue text-white'>E &nbsp;S &nbsp;T &nbsp;A &nbsp;M &nbsp;O &nbsp;S &nbsp;&nbsp;&nbsp;&nbsp; D &nbsp;O &nbsp;N &nbsp;D &nbsp;E &nbsp;&nbsp;&nbsp;&nbsp; T &nbsp;U &nbsp;&nbsp;&nbsp;&nbsp; N &nbsp;E &nbsp;C &nbsp;E &nbsp;S &nbsp;I &nbsp;T &nbsp;E &nbsp;S</p>
+                    <p className='sm:text-sm xs:text-xxs font-Bebas_Neue text-white select-none'>E &nbsp;S &nbsp;T &nbsp;A &nbsp;M &nbsp;O &nbsp;S &nbsp;&nbsp;&nbsp;&nbsp; D &nbsp;O &nbsp;N &nbsp;D &nbsp;E &nbsp;&nbsp;&nbsp;&nbsp; T &nbsp;U &nbsp;&nbsp;&nbsp;&nbsp; N &nbsp;E &nbsp;C &nbsp;E &nbsp;S &nbsp;I &nbsp;T &nbsp;E &nbsp;S</p>
                 </div>
                 <div className='absolute inset-0 flex right-144 lg:top-56 md:top-56 sm:top-60 xs:top-60 xsm:top-60 lg:left-42 md:left-32 mdl:left-48 sm:left-36 xsm:left-28 xs:left-10 z-10'>
-                    <p className='md:text-11xl xs:text-7xl sm:text-9xl font-Bebas_Neue text-white font-extrabold'>SUCURSALES</p>
+                    <p className='md:text-11xl xs:text-7xl sm:text-9xl font-Bebas_Neue text-white font-extrabold select-none'>SUCURSALES</p>
                 </div>
             </div>
             <div>
