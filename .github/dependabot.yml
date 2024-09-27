@@ -12,5 +12,5 @@ updates:
     reviewers:
       - "Andy-TAbs"
     target-branch: "main"
-    open-pull-requests-limit: 5
+    open-pull-requests-limit: 8
     rebase-strategy: "auto"
