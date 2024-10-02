@@ -1,5 +1,5 @@
 import { getServerSession } from "next-auth"
-import NosotrosHeroDashboard from "@/components/Dashboard/HeroDashboard/NosotrosHeroDashboard";
+import NosotrosHeroDashboard from "@/components/Dashboard/HeroDashboard/Nosotros/NosotrosHeroDashboard";
 import HeaderDashboard from "@/components/Dashboard/HeaderDashboard";
 import SideMenuDashboard from "@/components/Dashboard/SideMenuDashboard";
 
