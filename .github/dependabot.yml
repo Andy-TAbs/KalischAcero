@@ -14,3 +14,8 @@ updates:
     target-branch: "main"
     open-pull-requests-limit: 8
     rebase-strategy: "auto"
+    ignore:
+      - dependency-name: "postcss"
+        versions: []
+      - dependency-name: "eslint"
+        versions: []
