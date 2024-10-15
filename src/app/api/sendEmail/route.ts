@@ -3,8 +3,6 @@ import nodemailer from 'nodemailer';
 export async function POST(request: Request) {
   const { name, lastname, email, phonenum, city, rfc, company, products } = await request.json();
 
-  // Aquí puedes agregar validaciones adicionales si es necesario
-
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     secure: true,
@@ -39,8 +37,4 @@ export async function POST(request: Request) {
   }
 }
 
-export const config = {
-  api: {
-    bodyParser: true, // Permitir el análisis del cuerpo de la solicitud
-  },
-};
+export const runtime = 'nodejs'; // Si prefieres usar Node.js en lugar de Edge
