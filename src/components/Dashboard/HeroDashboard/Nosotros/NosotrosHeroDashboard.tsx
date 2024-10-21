@@ -1,6 +1,5 @@
 import React from 'react'
 import { getServerSession } from 'next-auth'
-import ButtonSignOut from '../ButtonSignOut'
 import Image from 'next/image'
 
 const NosotrosHeroDashboard = async () => {
@@ -26,7 +25,7 @@ return (
                 <a className='buttonDashboard5 w-full shadow-md select-none'>Talento</a>
             </div>
             <div className='min-w-full'>
-                <a className='buttonDashboard6 w-full shadow-md select-none'>Noticias</a>
+                <a href='/dashboard/Nosotros/Noticias' className='buttonDashboard6 w-full shadow-md select-none'>Noticias</a>
             </div>
         </div>
     </div>
