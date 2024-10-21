@@ -32,7 +32,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@types/mongodb": "^4.0.6",
+    "@types/mongodb": "^4.0.7",
     "@types/node": "^22",
     "@types/nodemailer": "^6.4.16",
     "@types/react": "^18",
