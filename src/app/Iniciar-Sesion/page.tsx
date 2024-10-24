@@ -6,14 +6,14 @@ import HeroIniciarSesion from "@/components/Hero/HeroiniciarSesion/HeroIniciarSe
 
 export default function Home() {
     return (
-        <div className="flex-col flex w-full overflow-hidden">
+        <main className="flex-col flex w-full overflow-hidden">
             <div className=" overflow-hidden ">
                 <HeroIniciarSesion />
             </div>
-            <div className="w-screen overflow-hidden">
+            <footer className="w-screen overflow-hidden">
                 <Footer />
-            </div>
+            </footer>
             <SpeedInsights />
-        </div>
+        </main>
     );
 }

@@ -3,10 +3,12 @@ import NewsHeroDashboard from "@/components/Dashboard/HeroDashboard/Nosotros/New
 import HeaderDashboard from "@/components/Dashboard/HeaderDashboard";
 import SideMenuDashboard from "@/components/Dashboard/SideMenuDashboard";
 
+
 async function Home() {
 
     const session = await getServerSession();
     console.log(session);
+
 return (
 <div>
         <HeaderDashboard />
@@ -14,7 +16,7 @@ return (
         <SideMenuDashboard />
     </div>
     <div>
-        <NewsHeroDashboard />
+        <NewsHeroDashboard  />
     </div>
 </div>
     )

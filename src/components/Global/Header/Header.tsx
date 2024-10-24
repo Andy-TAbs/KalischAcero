@@ -62,13 +62,13 @@ const headerOptionsPromociones = [
 
 export const Header: React.FC<HeaderProps> = ({ title }) => {
     return (
-        <header>
+        <div>
         <div className=''>
             <div className="hidden lg:block z-50">
                 <SecHeader title="Header" />
             </div>
-            <div className="w-full z-40">
-                    <nav className="bg-white px-2 bg-opacity-100 backdrop-blur-md  lg:px-4 border-b-2 shadow-md lg:h-16 xs:items-center lg:items-baseline xs:h10 z-40">
+            <div className="w-full ">
+                    <nav className="bg-white px-2 bg-opacity-100  lg:px-4 border-b-2 shadow-md lg:h-16 xs:items-center lg:items-baseline xs:h10 z-40">
                         <div className="flex items-center justify-between w-full lg:justify-start lg:flex-grow-0 lg:order-2  ">
                         <div className="lg:hidden">
                                 <DropdownMenuMobile />
@@ -109,6 +109,6 @@ export const Header: React.FC<HeaderProps> = ({ title }) => {
                     </nav>
             </div>
         </div>
-        </header>
+        </div>
     );
 };
