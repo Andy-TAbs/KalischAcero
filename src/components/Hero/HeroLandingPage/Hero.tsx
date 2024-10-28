@@ -4,10 +4,8 @@ import React, { useEffect, useState } from "react";
 import Carousel from "./Carousel";
 import { useInView } from 'react-intersection-observer';
 import FlipCardSlider from "../../Global/SliderCards";
-import { FaArrowRight } from "react-icons/fa";
 import NewsCarousel from "./NewsCarousel";
 import FlipCard2 from "../../Global/FlipCard2";
-import SliderAlliance from "./SliderAlliance";
 import ScrollTopButton from "@/components/Global/ScrollTopButton";
 import SocialButtons from "@/components/Global/SocialButtons";
 import { MapAccordion } from "./MapAccordion";
@@ -115,7 +113,7 @@ export const Hero = () => {
                 {/* Seccion de Sucursales*/}
                 <div className="flex flex-col mb-16 mx-36 items-center">
                     <div className="">
-                        <p className=" font-normal my-14 text-3xl">Divisiones</p>
+                        <p className=" font-normal my-14 text-3xl text-neutral-800">Divisiones</p>
                     </div>
                     <div className="flex lg:flex-row xs:flex-col ">
 
@@ -162,7 +160,7 @@ export const Hero = () => {
                 </div>
                 <div className="flex flex-col items-center">
                     <div className="items-center mb-5">
-                        <p className=" text-3xl">¿Dónde estamos?</p>
+                        <p className=" text-3xl text-neutral-800">¿Dónde estamos?</p>
                     </div>
                     <div className="lg:flex lg:flex-row">
                         <div className="">
@@ -185,7 +183,7 @@ export const Hero = () => {
                 </div>
                 <div className="flex flex-col mb-16 lg:mx-36 items-center">
                     <div className="">
-                        <p className=" font-normal my-14 text-3xl">Noticias</p>
+                        <p className=" font-normal my-14 text-3xl text-neutral-800">Noticias</p>
                     </div>
                     <div className=" w-screen flex items-center justify-center pb-10">
                         <NewsCarousel />

@@ -32,7 +32,7 @@ export const MapAccordion = ({ items }: { items: AccordionItem[] }) => {
                             <FaArrowRight className={`w-7 h-7${ openIndexes.includes(index) ? '' : ''}`} />
                         </div>
                         <div className="items-center ml-5">
-                            <p className="text-2xl">{item.stateName}</p>
+                            <p className="text-2xl text-neutral-800">{item.stateName}</p>
                         </div>
                     </button>
                     <div 

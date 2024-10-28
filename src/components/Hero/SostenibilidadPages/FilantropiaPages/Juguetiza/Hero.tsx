@@ -37,10 +37,10 @@ const Hero: React.FC<Props> = () => {
 
                 <div className='flex flex-col w-4/6  md:mx-12  items-start'>
                     <div className=''>
-                        <p className='text-2xl'>¡REGALANDO SONRISAS!</p>
+                        <p className='text-2xl text-neutral-800'>¡REGALANDO SONRISAS!</p>
                     </div>
                     <div className='mt-4 w-auto'>
-                        <p className='w-auto text-justify font-light'>En el año 2019 comenzamos con un proyecto que busca el beneficio de los más pequeños de nuestra comunidad, así es como nace “Juguetiza”, esta actividad tiene el propósito de estimular la creatividad, imaginación y desarrollo de los niños a través de donativos de juguetes. Con “Juguetiza” buscamos ser solidarios con nuestros niños y hemos logrado más de 8 mil sonrisas a través de esta iniciativa.</p>
+                        <p className='w-auto text-justify font-light text-neutral-800'>En el año 2019 comenzamos con un proyecto que busca el beneficio de los más pequeños de nuestra comunidad, así es como nace “Juguetiza”, esta actividad tiene el propósito de estimular la creatividad, imaginación y desarrollo de los niños a través de donativos de juguetes. Con “Juguetiza” buscamos ser solidarios con nuestros niños y hemos logrado más de 8 mil sonrisas a través de esta iniciativa.</p>
                     </div>
                 </div>
             </div>

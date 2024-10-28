@@ -98,7 +98,7 @@ export const Header: React.FC<HeaderProps> = ({ title }) => {
                                         <DropdownMenu title='Promociones' options={headerOptionsPromociones}/>
                                     </li>
                                     <li className="lg:mr-10 pt-3">
-                                        <a href="#" className=" pt-3">Tienda en línea</a>
+                                        <a href="#" className=" pt-3 text-neutral-600">Tienda en línea</a>
                                     </li>
                                     <li>
                                         <img src="/search.png" className="w-6 h-6 mt-3" alt="Search" />

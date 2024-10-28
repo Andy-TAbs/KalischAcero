@@ -11,7 +11,7 @@
             return (
                 <div>
                 <div className="flex items-center justify-center">
-                    <p className="font-normal my-14 text-3xl">Industrias</p>
+                    <p className="font-normal my-14 text-3xl text-neutral-800">Industrias</p>
                 </div>
                 <div className='flex justify-center items-center '>
                 <Carousel activeIndex={index} onSelect={handleSelect} className='w-screen'>

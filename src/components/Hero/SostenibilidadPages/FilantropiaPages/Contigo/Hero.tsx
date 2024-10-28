@@ -37,10 +37,10 @@ const Hero: React.FC<Props> = () => {
 
                 <div className='flex flex-col w-4/6  md:mx-12  items-start'>
                     <div className=''>
-                        <p className='text-2xl'>Estamos &quot;Contigo&quot;</p>
+                        <p className='text-2xl text-neutral-800'>Estamos &quot;Contigo&quot;</p>
                     </div>
                     <div className='mt-4 w-auto'>
-                        <p className='w-auto text-justify font-light'>Una de nuestras principales actividades de responsabilidad social, es el programa “Contigo” que tiene la finalidad de brindar apoyo para asilos de ancianos y contribuir a mejorar su calidad de vida. El programa consiste en realizar donativos en especie a asilos de las comunidades donde tenemos operaciones. Desde que iniciamos esta actividad en el año 2020 hemos logrado beneficiar a más de 400 adultos mayores</p>
+                        <p className='w-auto text-justify font-light text-neutral-800'>Una de nuestras principales actividades de responsabilidad social, es el programa “Contigo” que tiene la finalidad de brindar apoyo para asilos de ancianos y contribuir a mejorar su calidad de vida. El programa consiste en realizar donativos en especie a asilos de las comunidades donde tenemos operaciones. Desde que iniciamos esta actividad en el año 2020 hemos logrado beneficiar a más de 400 adultos mayores</p>
                     </div>
                 </div>
             </div>

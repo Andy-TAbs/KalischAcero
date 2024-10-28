@@ -37,10 +37,10 @@ const Hero: React.FC<Props> = () => {
 
                 <div className='flex flex-col w-4/6  md:mx-12  items-start'>
                     <div className=''>
-                        <p className='text-2xl'>Tapatón</p>
+                        <p className='text-2xl text-neutral-800'>Tapatón</p>
                     </div>
                     <div className='mt-4 w-auto'>
-                        <p className='w-auto text-justify font-light'>En el mes de diciembre del año 2022 iniciamos con el proyecto <strong>“Tapatón”</strong>, en el cual estaremos recolectando tapas de plástico en contenedores que estarán distribuidos en nuestras sucursales de la ciudad de Chihuahua. Estas tapitas posteriormente se donarán para reciclarlas y de esta manera apoyaremos con el financiamiento de quimioterapias para niños con cáncer. Como Empresa Socialmente Responsable estamos comprometidos con el cuidado del medio ambiente y el bienestar de nuestra comunidad y gracias a esta iniciativa podremos impactar en ambos pilares, dando un paso más en nuestro camino a la sostenibilidad.</p>
+                        <p className='w-auto text-justify font-light text-neutral-800'>En el mes de diciembre del año 2022 iniciamos con el proyecto <strong>“Tapatón”</strong>, en el cual estaremos recolectando tapas de plástico en contenedores que estarán distribuidos en nuestras sucursales de la ciudad de Chihuahua. Estas tapitas posteriormente se donarán para reciclarlas y de esta manera apoyaremos con el financiamiento de quimioterapias para niños con cáncer. Como Empresa Socialmente Responsable estamos comprometidos con el cuidado del medio ambiente y el bienestar de nuestra comunidad y gracias a esta iniciativa podremos impactar en ambos pilares, dando un paso más en nuestro camino a la sostenibilidad.</p>
                     </div>
                 </div>
             </div>
