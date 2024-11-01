@@ -1,12 +1,11 @@
 "use client";
 import React, { useEffect, useRef, useState } from 'react';
 import SocialButtons from '@/components/Global/SocialButtons';
-import {useRouter} from 'next/router';
+import { useRouter } from 'next/navigation';
 
     const HeroCotizar = () => {
-      const router = useRouter();
-        const targetRef = useRef(null);
-        const [formData, setFormData] = useState({
+      const targetRef = useRef(null);
+      const [formData, setFormData] = useState({
           name: '',
           lastname: '',
           email: '',
@@ -15,62 +14,61 @@ import {useRouter} from 'next/router';
           rfc: '',
           company: '',
           products: ''
-        });
-
-        useEffect(() => {
+      });
+      const router = useRouter();
+  
+      useEffect(() => {
           const observer = new IntersectionObserver(
-            (entries) => {
-              entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                  entry.target.classList.add('animate-slide-up');
-                }
-              });
-            },
-            { threshold: 0.1 }
+              (entries) => {
+                  entries.forEach((entry) => {
+                      if (entry.isIntersecting) {
+                          entry.target.classList.add('animate-slide-up');
+                      }
+                  });
+              },
+              { threshold: 0.1 }
           );
-
+  
           if (targetRef.current) {
-            observer.observe(targetRef.current);
+              observer.observe(targetRef.current);
           }
-
+  
           return () => {
-            const currentTarget = targetRef.current;
-            if (currentTarget) {
-              observer.unobserve(currentTarget);
-            }
+              if (targetRef.current) {
+                  observer.unobserve(targetRef.current);
+              }
           };
-        }, []);
-
-        const handleChange = (e: { target: { name: any; value: any; }; }) => {
+      }, []);
+  
+      const handleChange = (e: { target: { name: any; value: any; }; }) => {
           const { name, value } = e.target;
           setFormData((prevData) => ({
-            ...prevData,
-            [name]: value
+              ...prevData,
+              [name]: value
           }));
-        };
-
-        const handleSubmit = async (e: { preventDefault: () => void; }) => {
+      };
+  
+      const handleSubmit = async (e: { preventDefault: () => void; }) => {
           e.preventDefault();
           try {
-            const response = await fetch('/api/sendEmail', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify(formData),
-            });
-            if (response.ok) {
-              router.push('/Cotizar/Gracias');
-            } else {
-              alert('Failed to send email');
-              router.push('/Cotizar/Fallo');
-            }
+              const response = await fetch('/api/sendEmail', {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify(formData),
+              });
+              if (response.ok) {
+                  router.push('/cotizar/Gracias');
+              } else {
+                  router.push('/cotizar/Error');
+              }
           } catch (error) {
-            console.error('Error sending email:', error);
-            alert('Failed to send email');
+              console.error('Error sending email:', error);
+              router.push('/cotizar/error');
           }
-        };
-
+      };
+  
 
     return (
         <div className='overflow-hidden'>

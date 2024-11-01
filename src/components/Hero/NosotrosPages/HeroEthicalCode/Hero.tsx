@@ -66,7 +66,7 @@ const Hero: React.FC<HeroProps> = () => {
                             border-b-[4px] hover:bg-green-700 hover:border-green-800 hover:-translate-y-[1px] hover:border-b-[6px]
                             active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
                             <div>
-                                <p className=' text-neutral-800 hover:text-white'>Politica de Bienestar</p>
+                                <p className=' '>Politica de Bienestar</p>
                             </div>
                             <div>
                                 <FaDownload className="inline-block text-sm text-zinc-400 hover:text-white  ml-2" />

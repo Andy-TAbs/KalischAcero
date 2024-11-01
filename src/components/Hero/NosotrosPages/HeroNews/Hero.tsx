@@ -30,21 +30,21 @@ const Hero: React.FC = () => {
             </div>
             <div className='bg-white flex items-center justify-center'>
                 <div className='grid grid-cols-3  items-center justify-items-center bg-white w-3/4 h-auto mx-28 pb-20'>
-                    <div className='flex flex-col items-center justify-center w-76 h-48'>
+                    <a href='#' className='flex flex-col items-center justify-center w-76 h-48'>
                         <Image src='/Logo-ESR-PNG.png' alt='noticia1' width={500} height={500} />
                         <p className='min-w-full text-2xl mt-2 text-neutral-800'> Hola como estas</p>
                         <p className='text-left min-w-full mt-3 text-neutral-800'>27/04/2023</p>
-                    </div>
-                    <div className='flex flex-col items-center justify-center w-76 h-48'>
+                    </a>
+                    <a href='#' className='flex flex-col items-center justify-center w-76 h-48'>
                         <Image src='/Logo-ESR-PNG.png' alt='noticia1' width={500} height={500} />
                         <p className='min-w-full text-2xl mt-2 text-neutral-800'> Hola como estas</p>
                         <p className='text-left min-w-full mt-3 text-neutral-800'>27/04/2023</p>
-                    </div>
-                    <div className='flex flex-col items-center justify-center w-76 h-48'>
+                    </a>
+                    <a href='#' className='flex flex-col items-center justify-center w-76 h-48'>
                         <Image src='/Logo-ESR-PNG.png' alt='noticia1' width={500} height={500} />
                         <p className='min-w-full text-2xl mt-2 text-neutral-800'> Hola como estas</p>
                         <p className='text-left min-w-full mt-3 text-neutral-800'>27/04/2023</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
