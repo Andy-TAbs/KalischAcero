@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Header } from "../../../components/Global/Header/Header";
 import { Footer } from "../../../components/Global/Footer/Footer";
-import  HeroEstructurales   from "../../../components/Hero/productosPage/HeroEstructurales/HeroEstructurales";
+import  HeroPolineria   from "../../../components/Hero/productosPage/HeroPolineria/HeroPolineria";
 import dynamic from 'next/dynamic';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
@@ -13,7 +13,7 @@ export default function Home() {
                 <Header title="Kalisch Acero" />
             </header>
             <main className=" overflow-hidden lg:mt-11 md:mt-5 sm:mt-2">
-                <HeroEstructurales />
+                <HeroPolineria />
             </main>
             <footer className="w-screen overflow-hidden">
                 <Footer />
