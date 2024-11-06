@@ -83,19 +83,19 @@ export const Header: React.FC<HeaderProps> = ({ title }) => {
                                     <a href='/Cotizar'><button className="btnHeader">Cotizar</button></a>
                                     </li>
                                         <li className="lg:mr-10 pt-2">
-                                            <DropdownMenu title="Nosotros" options={headerOptionsNosotros}/>
+                                            <DropdownMenu title="Nosotros" options={headerOptionsNosotros} page='#'/>
                                         </li>
                                         <li className="lg:mr-10 pt-2">
-                                            <DropdownMenuWSubMenu title="Sostenibilidad" options={headerOptionsSostenibilidad}/>
+                                            <DropdownMenuWSubMenu title="Sostenibilidad" options={headerOptionsSostenibilidad} />
                                         </li>
                                         <li className="lg:mr-10 pt-2">
-                                            <DropdownMenu title="Divisiones" options={headerOptionsDivisiones}/>
+                                            <DropdownMenu title="Divisiones" options={headerOptionsDivisiones} page='#'/>
                                         </li>
                                         <li className="lg:mr-10 pt-2">
-                                            <DropdownMenu title='Productos' options={headerOptionsProductos}/>
+                                            <DropdownMenu title='Productos' options={headerOptionsProductos} page='/productos'/>
                                         </li>
                                         <li className="lg:mr-10 pt-2">
-                                            <DropdownMenu title='Promociones' options={headerOptionsPromociones}/>
+                                            <DropdownMenu title='Promociones' options={headerOptionsPromociones} page='#'/>
                                         </li>
                                         <li className="lg:mr-10 pt-3">
                                             <a href="#" className=" pt-3 text-neutral-600">Tienda en línea</a>

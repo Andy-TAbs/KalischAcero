@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import { Header } from "../../components/Global/Header/Header";
-import { Footer } from "../../components/Global/Footer/Footer";
-import  HeroCotizar   from "../../components/Hero/CotizarPage/HeroCotizar";
+import { Header } from "../../../components/Global/Header/Header";
+import { Footer } from "../../../components/Global/Footer/Footer";
+import  HeroGracias  from "../../../components/Hero/CotizarPage/HeroGracias";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
                 <Header title="Kalisch Acero" />
             </div>
             <div className=" overflow-hidden lg:mt-11 md:mt-5 sm:mt-2">
-                <HeroCotizar />
+                <HeroGracias />
             </div>
             <div className="w-screen overflow-hidden">
                 <Footer />
