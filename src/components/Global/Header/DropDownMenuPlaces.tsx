@@ -22,7 +22,7 @@ const DropdownMenuPlaces: React.FC<buttonTextPlaces> = ({ title, options }) => {
     return (
         <div className="relative transition duration-200 ease-in  transform hover:scale-110 z-50" onClick={handleClick}>
             <button
-                className="block py-2 pr-4 pl-3 lg:text-sm xl:text-base text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 pr-4 pl-3 lg:text-sm xl:text-base text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0  "
             >
                 <div className="flex flex-row lg:pl-0 2xl:pl-20">
                     <div className="">
@@ -30,7 +30,7 @@ const DropdownMenuPlaces: React.FC<buttonTextPlaces> = ({ title, options }) => {
                     </div>
                     <div className="flex flex-col items-start justify-start">
                         <div>
-                            <span className="self-center text-xs font-semibold whitespace-nowrap dark:text-white">
+                            <span className="self-center text-xs font-semibold whitespace-nowrap ">
                                 {selectedTitle || title}
                             </span>
                         </div>
@@ -59,7 +59,7 @@ const DropdownMenuPlaces: React.FC<buttonTextPlaces> = ({ title, options }) => {
                                     </div>
                                     <div className="flex flex-col ml-3">
                                         <div>
-                                            <span className="self-center text-sm font-semibold whitespace-nowrap dark:text-white">{option.label}</span>
+                                            <span className="self-center text-sm font-semibold whitespace-nowrap ">{option.label}</span>
                                         </div>
                                         <div>
                                             <p className="text-xs">8:00AM - 5:30PM</p>

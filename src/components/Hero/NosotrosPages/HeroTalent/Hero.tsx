@@ -49,17 +49,17 @@ const Hero: React.FC<HeroProps> = () => {
                 <div className='flex flex-col h-full items-center'>
                     <div className='lg:mx-52 md:mx-12 my-12 items-center'>
                         <div className=''>
-                            <p className='text-2xl'>Formando Lideres</p>
+                            <p className='text-2xl text-neutral-800'>Formando Lideres</p>
                         </div>
                         <div className='mt-7 w-auto '>
-                            <p className='w-auto text-justify font-light'>En <strong><b>Kalisch Acero</b></strong> ofrecemos programas de desarrollo de competencias de liderazgo para que nuestros colaboradores tengan un plan de vida y carrera dentro de la organización.</p>
+                            <p className='w-auto text-justify font-light text-neutral-800'>En <strong><b>Kalisch Acero</b></strong> ofrecemos programas de desarrollo de competencias de liderazgo para que nuestros colaboradores tengan un plan de vida y carrera dentro de la organización.</p>
                         </div>
                     </div>
                 </div>
                     <div className=' lg:mx-20 xs:mx-5 h-full before:w-11/12 after:w-11/12 flex items-center justify-center'>
                         <div className='lg:mx-32  my-8 w-fit items-center'>
                             <div className='mb-5'>
-                                <p className='text-2xl'>¿Cúales son nuestras  competencias de liderazgo?</p>
+                                <p className='text-2xl text-neutral-800'>¿Cúales son nuestras  competencias de liderazgo?</p>
                             </div>
                             <div className="p-4 w-256">
                                 <AccordionItem items={accordionItems} />
@@ -79,10 +79,10 @@ const Hero: React.FC<HeroProps> = () => {
                         <div className='flex flex-col items-center justify-center'>
                             <div className='lg:mx-52 justify-center md:mx-12 my-12 items-center'>
                                 <div className=''>
-                                    <p className='text-2xl'>Desarrollo de Talento</p>
+                                    <p className='text-2xl text-neutral-800'>Desarrollo de Talento</p>
                                 </div>
                                 <div className='my-10 w-auto '>
-                                    <p className='w-auto text-justify font-light'>En <strong><b>Kalisch Acero</b></strong> creemos en el potencial de nuestros colaboradores por lo cual ofrecemos oportunidades de desarrollo personal y profesional a través de nuestra plataforma interna “Postúlate”.</p>
+                                    <p className='w-auto text-justify font-light text-neutral-800'>En <strong><b>Kalisch Acero</b></strong> creemos en el potencial de nuestros colaboradores por lo cual ofrecemos oportunidades de desarrollo personal y profesional a través de nuestra plataforma interna “Postúlate”.</p>
                                 </div>
                             </div>
                             <div className='flex flex-col'>
@@ -200,10 +200,10 @@ const Hero: React.FC<HeroProps> = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex items-center justify-center mt-60'>
-                            <p className='text-2xl'>Testimonios</p>
+                        <div className='flex items-center justify-center mt-20'>
+                            <p className='text-2xl text-neutral-800'>Testimonios</p>
                         </div>
-                        <div className='mb-40'>
+                        <div className='mb-20'>
                         <CarouselTalent />
                         </div>
                     </div>

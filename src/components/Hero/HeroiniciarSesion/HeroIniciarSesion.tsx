@@ -25,15 +25,15 @@ const HeroIniciarSesion: React.FC<Props> = () => {
                     <a href="/" className="">
                         <Image width={200} height={100} src="/kfa_movil_50.png" className="lg:h-9 w-auto sm:h-9 xs:h-10" alt="Kalisch_Logo"/>
                     </a>
-                    <h1 className='px-3 pt-10 font-semibold text-2xl'>Inicio de Sesión</h1>
+                    <h1 className='px-3 pt-10 font-semibold text-2xl text-neutral-800'>Inicio de Sesión</h1>
                 </div>
                 <form  className='flex flex-col pt-4 ' >
-                    <label className='text-lg font-semibold pb-2' >Email:
+                    <label className='text-lg font-semibold pb-2 text-neutral-800' >Email:
                         <div>
                             <input  id="User" type="text" placeholder='Usuario' className='border-2 text-lg border-gray-300 rounded-md p-1' />
                         </div>
                     </label>
-                    <label className='text-lg font-semibold pb-2'>Contraseña:
+                    <label className='text-lg font-semibold pb-2 text-neutral-800'>Contraseña:
                     <div className='flex flex-row items-center justify-center'>
                         <div className='flex flex-row items-center'>
                             <input type={isEyeOpen ? "text" : "password"}   placeholder='Contraseña' id="password" className='border-2 text-lg h-auto w-full border-gray-300 rounded-md p-1' />

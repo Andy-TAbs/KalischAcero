@@ -28,12 +28,12 @@ import Carousel from 'react-bootstrap/Carousel';
                         <div className="flex flex-col items-center h-80 xs:mx-5  lg:mx-0">
                             <div className="flex flex-row mb-3   lg:ml-0">
                                 <div className="xs:mt-7 lg:ml-5 lg:mt-0 ">
-                                    <p className="text-2xl xs:mx-5 lg:mx-0">Sucursal Exprés: Mazatlán Delfín</p>
+                                    <p className="text-2xl xs:mx-5 lg:mx-0 text-neutral-800">Sucursal Exprés: Mazatlán Delfín</p>
                                 </div>
                             </div>
                             <div className="flex flex-row  lg:ml-0">
                                 <div className="lg:ml-5 lg:w-144 xs:w-96 md:w-128">
-                                    <p className="text-base text-gray-500 xs:mx-5 lg:mx-0 text-justify">
+                                    <p className="text-base text-neutral-800 xs:mx-5 lg:mx-0 text-justify">
                                         El Cuatro de Octubre inauguramos la primera sucursal exprés de Kalisch Acero en la ciudad de Mazatlán. En un terreno de 33m2 y con un total de 5 colaboradores damos inicio la operación de este nuevo modelo de negocio.
                                     </p>
                                 </div>
@@ -66,12 +66,12 @@ import Carousel from 'react-bootstrap/Carousel';
                         <div className="flex flex-col items-center h-80 xs:mx-5  lg:mx-0">
                             <div className="flex flex-row mb-3   lg:ml-0">
                                 <div className="xs:mt-7 lg:ml-5 lg:mt-0 ">
-                                    <p className="text-2xl xs:mx-5 lg:mx-0">Sucursal Exprés: Mazatlán Delfín</p>
+                                    <p className="text-2xl xs:mx-5 text-neutral-800 lg:mx-0">Sucursal Exprés: Mazatlán Delfín</p>
                                 </div>
                             </div>
                             <div className="flex flex-row  lg:ml-0">
                                 <div className="lg:ml-5 lg:w-144 xs:w-96 md:w-128">
-                                    <p className="text-base text-gray-500 xs:mx-5 lg:mx-0 text-justify">
+                                    <p className="text-base text-neutral-800 xs:mx-5 lg:mx-0 text-justify">
                                         El Cuatro de Octubre inauguramos la primera sucursal exprés de Kalisch Acero en la ciudad de Mazatlán. En un terreno de 33m2 y con un total de 5 colaboradores damos inicio la operación de este nuevo modelo de negocio.
                                     </p>
                                 </div>

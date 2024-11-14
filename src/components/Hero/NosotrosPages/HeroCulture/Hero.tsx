@@ -64,13 +64,13 @@ const Hero: React.FC<HeroProps> = () => {
                 <div className='flex flex-col xs:mx-5 md:mx-20  justify-center'>
                     <div className='lg:mx-32 md:mx-12 my-12 items-center'>
                         <div className=''>
-                            <p className='text-2xl'>Cultura Kalisch</p>
+                            <p className='text-2xl text-neutral-800'>Cultura Kalisch</p>
                         </div>
                         <div className='mt-5 w-auto'>
-                            <p className='w-auto text-justify font-light'>Nuestro marco cultural está compuesto por comportamientos acorde a la estrategia e identidad de la organización, que nos llevan a cumplir nuestra misión y visión como compañía.</p>
+                            <p className='w-auto text-justify font-light text-neutral-800'>Nuestro marco cultural está compuesto por comportamientos acorde a la estrategia e identidad de la organización, que nos llevan a cumplir nuestra misión y visión como compañía.</p>
                         </div>
                         <div className='mt-7 w-auto '>
-                            <p className='w-auto text-justify font-light'>Te los presentamos aquí:</p>
+                            <p className='w-auto text-justify font-light text-neutral-800'>Te los presentamos aquí:</p>
                         </div>
                     </div>
                 </div>
@@ -121,18 +121,18 @@ const Hero: React.FC<HeroProps> = () => {
                 </div>
                 <div className='xs:h-256 md:h-0'></div>
                 <div className='flex flex-col xs:mx-5 md:mx-20 '>
-                    <div className=' md:h-auto mt-60 flex justify-center '>
+                    <div className=' md:h-auto mt-20 flex justify-center '>
                         <Image src='/konecta_logo.svg' alt='Culture' width={360} height={144} className='xs:h-40 xs:w-56 md:h-32 md:w-auto' />
                     </div>
                         <div className='xl:mx-32 lg:mx-16 md:mx-12 my-12 items-center'>
                             <div className='flex lg:flex-row xs:flex-col'>
                                 <div className='flex flex-col lg:w-3/5 md:w-fit '>
                                     <div className=''>
-                                        <p className='text-2xl'>Cultura Kalisch</p>
+                                        <p className='text-2xl text-neutral-800'>Cultura Kalisch</p>
                                     </div>
                                     <div className='mt-5'>
-                                        <p className='w-auto text-justify font-light'>Nuestro objetivo es comunicar a los integrantes de nuestro equipo los resultados, avances, retos, estrategias y logros de nuestra compañía durante el semestre.</p>
-                                        <p className='w-auto text-justify font-light'>En Kalisch Acero queremos que nuestros colaboradores sean partícipes del esfuerzo que invierten en sus actividades, además, el involucramiento que realizamos con nuestra gente en este tipo de actividades es fundamental para fomentar la participación, comunicación y sentido de pertenencia.</p>
+                                        <p className='w-auto text-justify font-light text-neutral-800'>Nuestro objetivo es comunicar a los integrantes de nuestro equipo los resultados, avances, retos, estrategias y logros de nuestra compañía durante el semestre.</p>
+                                        <p className='w-auto text-justify font-light text-neutral-800'>En Kalisch Acero queremos que nuestros colaboradores sean partícipes del esfuerzo que invierten en sus actividades, además, el involucramiento que realizamos con nuestra gente en este tipo de actividades es fundamental para fomentar la participación, comunicación y sentido de pertenencia.</p>
                                     </div>
                                 </div>
                                 <div className='mt-7 flex 2xl:w-2/5 xs:w-full items-center justify-center'>
@@ -160,10 +160,10 @@ const Hero: React.FC<HeroProps> = () => {
                     <div className='flex flex-col xs:mx-5  '>
                     <div className=' my-12 items-center'>
                         <div className='md:mx-32'>
-                            <p className='text-2xl'>Reconocimiento</p>
+                            <p className='text-2xl text-neutral-800'>Reconocimiento</p>
                         </div>
                         <div className='mt-5 w-auto md:mx-32'>
-                            <p className='w-auto text-justify font-light mb-10'>Somos un equipo que constantemente se esfuerza por lograr los objetivos que nos proponemos, en Kalisch Acero reconocemos la excelencia de nuestros colaboradores a través de los siguientes premios:</p>
+                            <p className='w-auto text-justify font-light mb-10 text-neutral-800'>Somos un equipo que constantemente se esfuerza por lograr los objetivos que nos proponemos, en Kalisch Acero reconocemos la excelencia de nuestros colaboradores a través de los siguientes premios:</p>
                         </div>
                         <div className="flex lg:flex-row xs:flex-col justify-center xs:justify-center xs:items-center  xl:mx-32 xs:mb-10">
 
@@ -221,10 +221,10 @@ const Hero: React.FC<HeroProps> = () => {
                         <div className='flex md:flex-row xs:flex-col justify-center items-center'>
                             <div className='flex flex-col'>
                                 <div className=''>
-                                    <p className='text-2xl'>Cultura Kalisch</p>
+                                    <p className='text-2xl text-neutral-800'>Cultura Kalisch</p>
                                 </div>
                                 <div className='md:w-10/12'>
-                                    <p className='w-auto text-justify font-light'>En Kalisch Acero reconocemos que nuestro equipo de trabajo es lo más importante y un pilar fundamental para lograr el crecimiento de nuestra compañía, por eso nuestros esfuerzos están enfocados en el desarrollo de nuestra gente, buscamos siempre contar con óptimas condiciones para trabajar, en un ambiente basado en la confianza y el respeto.</p>
+                                    <p className='w-auto text-justify font-light text-neutral-800'>En Kalisch Acero reconocemos que nuestro equipo de trabajo es lo más importante y un pilar fundamental para lograr el crecimiento de nuestra compañía, por eso nuestros esfuerzos están enfocados en el desarrollo de nuestra gente, buscamos siempre contar con óptimas condiciones para trabajar, en un ambiente basado en la confianza y el respeto.</p>
                                 </div>
                             </div>
                             <div className='xs:h-auto mt-5 md:w-6/12'>
@@ -238,10 +238,10 @@ const Hero: React.FC<HeroProps> = () => {
                 </div>
                 <div className="flex flex-col lg:w-3/5 md:w-fit mt-40 mx-auto ">
                     <div>
-                        <p className="text-2xl">Cultura Kalisch</p>
+                        <p className="text-2xl text-neutral-800">Cultura Kalisch</p>
                     </div>
                     <div className="mt-5">
-                        <p className="w-auto text-justify font-light">Nuestro objetivo es comunicar a los integrantes de nuestro equipo los resultados, avances, retos, estrategias y logros de nuestra compañía durante el semestre.</p>
+                        <p className="w-auto text-justify font-light text-neutral-800">Nuestro objetivo es comunicar a los integrantes de nuestro equipo los resultados, avances, retos, estrategias y logros de nuestra compañía durante el semestre.</p>
                     </div>
                     <div className='flex flex-col xl:mx-20 3xl:mx-90 h-full items-center justify-center'>
                 </div>

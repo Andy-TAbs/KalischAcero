@@ -35,20 +35,20 @@ const CustomAccordion: React.FC<CustomAccordionProps> = ({ items }) => {
             {items.map((item, index) => (
                 <div key={index} className="border border-none rounded-none  ">
                     <button
-                        className={`w-full text-left font-semibold text-lg p-4  text-black  hover:text-white focus:outline-none flex flex-row content-evenly items-center justify-between ${activeIndex === index ? 'bg-green-700 text-white transition-all ease-in duration-250' : 'bg-white transition-all text-black ease-out duration-250'}`}
+                        className={`w-full text-left font-semibold text-lg p-4  text-neutral-800  hover:text-white focus:outline-none flex flex-row content-evenly items-center justify-between ${activeIndex === index ? 'bg-green-700 text-white transition-all ease-in ' : 'bg-white transition-all text-black ease-out '}`}
                         onClick={() => handleToggle(index)}
                     >
                         {item.header}
                         <div className='w-7 h-7 '>
-                        <CiCirclePlus className={`w-full h-full font-semibold transform duration-200 transition-transform ${activeIndex === index ? 'rotate-45' : 'rotate-0 transform transition-transform'}`}/>
+                        <CiCirclePlus className={`w-full h-full font-semibold transform duration-100 transition-transform ${activeIndex === index ? 'rotate-45' : 'rotate-0 transform transition-transform'}`}/>
                         </div>
                     </button>
                     <div
-                        className={`overflow-hidden transition-all duration-890 ${
+                        className={`overflow-hidden transition-all duration-500 ${
                             activeIndex === index ? 'max-h-screen' : 'max-h-0'
                         }`}
                     >
-                        <div className="p-4 border-t border-t-green-700 text-black justify-center">
+                        <div className="p-4 border-t border-t-green-700 text-neutral-800 justify-center">
                             <p className='text-justify'>{item.body}</p>
                         </div>
                     </div>
