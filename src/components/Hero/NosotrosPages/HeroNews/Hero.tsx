@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
                 <div className='absolute inset-0 flex right-144 lg:top-56 md:top-56 sm:top-60 xs:top-60 xsm:top-60 lg:left-42 md:left-32 mdl:left-48 sm:left-36 xsm:left-16 xs:left-10 z-10'>
                     <p className='md:text-11xl xs:text-9xl sm:text-9xl font-Bebas_Neue text-white font-extrabold'>NOTICIAS</p>
                 </div>
-            </div>
+                </div>
             <div>
                 <SocialButtons />
             </div>

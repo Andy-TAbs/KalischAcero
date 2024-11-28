@@ -57,16 +57,17 @@ export const Hero = () => {
             <div className="bg-white">
                 <div>
                     <div className="flex flex-row w-full min-h-full overflow-x-hidden relative">
-                    <video autoPlay muted loop id="background-video" className="absolute inset-0 z-0 w-full h-full object-cover">
+                    <video autoPlay muted loop id="background-video" className="absolute inset-0 z-0 w-full h-full object-cover filter brightness-50">
                         <source src="/Kalisch-Acero_CONSTRUYAMOS-EL-FUTURO.mp4" type="video/mp4" />
                         Tu navegador no soporta el video.
                     </video>
                         <div className="flex-shrink-0 relative z-0  overflow-x-hidden">
-                            <img src="/Portada_K_1.png" className="relative object-contain overflow-visible 3xl:h-220 md:right-44 lg:right-32" alt="Portada_K_1" />
+                            <img src="/Portada_K_1.png" className="relative object-contain overflow-visible 3xl:h-220 xs:right-44 lg:right-32" alt="Portada_K_1" />
+                            <img src="/Logotipo_KA2022_v19.png" className="absolute xs:top-64 md:hidden ml-2" alt="Logotipo_KA2022_v19" />
                         </div>
                         <div className="relative flex-shrink-0 z-10 overflow-x-hidden">
                             <img src="/Portada_K_2.png" className="relative object-cover overflow-visible w-full  h-full 3xl:ml-40" alt="Portada_K_2" />
-                            <img src="/Logotipo_KA2022_v19.png" className="absolute  lg:top-64 xl:top-64 3xl:top-80 lg:left-60 xl:left-104 3xl:left-144 lg:h-36 xl:h-44 3xl:h-52 xs:w-auto xl:w-112 3xl:w-auto max-w-full max-h-full ml-8" alt="Logotipo_KA2022_v19" />
+                            <img src="/Logotipo_KA2022_v19.png" className="absolute   md:top-64 lg:top-64 xl:top-64 3xl:top-80 md:left-10 lg:left-60 xl:left-104 3xl:left-144  md:h-28 lg:h-36 xl:h-44 3xl:h-52 xs:w-auto  xl:w-112 3xl:w-auto max-w-full max-h-full ml-8" alt="Logotipo_KA2022_v19" />
                         </div>
                         <div className="z-50">
                             <SocialButtons />
