@@ -125,7 +125,7 @@ const DropdownMenuMobile: React.FC<DropdownMenuMobileProps> = (DropdownMenuMobil
                         <li className="relative w-full border-y-1 border-neutral-200">
                             <button
                                 onClick={() => setIsSubMenuOpenDivisiones(!isSubMenuOpenDivisiones)}
-                                className={`h-12 pl-4 text-left font-semibold text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600`}
+                                className={`h-12 pl-4 text-left font-semibold text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700  hover:bg-gray-200 `}
                             >
                                 Divisiones
                                 <IoIosArrowForward className={`${isSubMenuOpenDivisiones ? 'rotate-90' : 'rotate-0'} ml-auto mr-7 transition-all ease-in duration-100`} />
@@ -133,16 +133,16 @@ const DropdownMenuMobile: React.FC<DropdownMenuMobileProps> = (DropdownMenuMobil
                             {isSubMenuOpenDivisiones && (
                                 <ul className="w-full">
                                     <li className="relative w-full border-t-1 border-neutral-200">
-                                    <a href="#" className="pl-8 h-12 text-left  text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Besthal</a>
+                                    <a href="#" className="pl-8 h-12 text-left  text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700  hover:bg-gray-200 ">Besthal</a>
                                     </li>
                                     <li className="relative w-full border-t-1 border-neutral-200">
-                                    <a href="#" className="pl-8 h-12 text-left  text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Faber</a>
+                                    <a href="#" className="pl-8 h-12 text-left  text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700  hover:bg-gray-200 ">Faber</a>
                                     </li>
                                     <li className="relative w-full border-t-1 border-neutral-200">
-                                    <a href="#" className="pl-8 h-12 text-left  text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Kalisch Steel</a>
+                                    <a href="#" className="pl-8 h-12 text-left  text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700  hover:bg-gray-200 ">Kalisch Steel</a>
                                     </li>
                                     <li className="relative w-full border-t-1 border-neutral-200">
-                                    <a href="#" className="pl-8 h-12 text-left  text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Tienda en linea</a>
+                                    <a href="#" className="pl-8 h-12 text-left  text-2xl flex flex-row max-w-screen w-full items-center justify-between text-gray-700  hover:bg-gray-200 ">Tienda en linea</a>
                                     </li>
                                 </ul>
                             )}

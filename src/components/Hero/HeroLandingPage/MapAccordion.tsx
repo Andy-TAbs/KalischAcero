@@ -21,7 +21,7 @@ export const MapAccordion = ({ items }: { items: AccordionItem[] }) => {
     return (
         <div className="flex flex-col lg:ml-10 xs:w-screen lg:w-160">
             {items.map((item, index) => (
-                <div key={index} className="w-120">
+                <div key={index} className="w-120 text-neutral-800">
                     <button
                         onClick={() => toggleAccordion(index)}
                         className={`flex flex-row before:text-black pr-8 w-full hover:bg-green-900 transition ease-in-out duration-300 py-4 pl-5 ${
@@ -32,7 +32,7 @@ export const MapAccordion = ({ items }: { items: AccordionItem[] }) => {
                             <FaArrowRight className={`w-7 h-7${ openIndexes.includes(index) ? '' : ''}`} />
                         </div>
                         <div className="items-center ml-5">
-                            <p className="text-2xl text-neutral-800">{item.stateName}</p>
+                            <p className="text-2xl">{item.stateName}</p>
                         </div>
                     </button>
                     <div 
