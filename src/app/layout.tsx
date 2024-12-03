@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 const inter = Inter({ subsets: ["latin"] });
 

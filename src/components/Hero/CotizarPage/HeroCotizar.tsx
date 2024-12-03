@@ -2,12 +2,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import SocialButtons from '@/components/Global/SocialButtons';
 import { useRouter } from 'next/navigation';
-import ReCAPTCHA from 'react-google-recaptcha';
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 import { getToken } from 'next-auth/jwt';
 
         const HeroCotizar = () => {
         const targetRef = useRef(null);
-        const recaptchaRef = useRef<ReCAPTCHA>(null);
+        const { executeRecaptcha } = useGoogleReCaptcha();
         const [formData, setFormData] = useState({
             name: '',
             lastname: '',
@@ -52,19 +52,26 @@ import { getToken } from 'next-auth/jwt';
     
         const handleSubmit = async (e: { preventDefault: () => void; }) => {
             e.preventDefault();
+            if (!executeRecaptcha) {
+                console.error('Recaptcha not loaded');
+                return;
+            }
+               
 
-            let token : string | null = null;
-                if (recaptchaRef.current) {
-                    token = await recaptchaRef.current.executeAsync();
-                    recaptchaRef.current.reset();
-                }
             try {
+                const token = await executeRecaptcha('cotizar');
+
+                if (!token) {
+                    console.error('Recaptcha token not found');
+                    return;
+                }
+
                 const response = await fetch('/api/sendEmail', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify({ ...formData, recaptchaToken: token }),
+                    body: JSON.stringify({ ...formData, token }),
                 });
                 if (response.ok) {
                     router.push('/Cotizar/Gracias');
